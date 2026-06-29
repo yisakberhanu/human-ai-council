@@ -1,0 +1,1075 @@
+{
+  "agent_id": "strategy",
+  "agent_name": "Strategy Agent",
+  "model": "openai/gpt-oss-20b",
+  "base_perspective": "Defend market opportunity, roadmap, pricing, pilot design, priorities, and business direction.",
+  "current_position": "Focus on AI Interview Council with role-specific constraints.",
+  "skill_rules": [
+    "Before speaking, check the current agreement and do not repeat resolved points.",
+    "Give one concise answer that adds new value, resolves a conflict, or moves the decision forward.",
+    "If you agree, state what you accept and update your position.",
+    "If you disagree, object clearly and explain the decision impact.",
+    "Always vote for one concrete idea when a decision is being made.",
+    "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+    "When you support or accept another idea, explicitly update your current position in one sentence.",
+    "Every answer must include at least one concrete Strategy Agent lens from your base perspective, not generic agreement.",
+    "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+    "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+    "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next."
+  ],
+  "accepted_agreements": [
+    "Meeting Summaries (temporary_consensus)",
+    "Sprintriskreviewcadence (temporary_consensus)",
+    "Sprintriskreviewcadence (accepted)",
+    "AI Interview Council (accepted)",
+    "AI Interview Council (temporary_consensus)"
+  ],
+  "avoid_repeating": [
+    "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema and weekly sprint risk review cadence as the current operating procedure.",
+    "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review cadence with PM as owner and implement immutable, RBAC‑controlled JSON storage for meeting summaries.",
+    "Do not re-debate accepted decision: Current council direction: AI Interview Council."
+  ],
+  "accepted_edits": [
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "accepted_at": "2026-06-17T06:57:59Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "When you support or accept another idea, explicitly update your current position in one sentence.",
+      "reason": "Agent did not update its evolving position.",
+      "accepted_at": "2026-06-17T06:58:33Z",
+      "quality_score": 73,
+      "failures": [
+        "repetition",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Every answer must include at least one concrete Strategy Agent lens from your base perspective, not generic agreement.",
+      "reason": "Response did not use enough role-specific perspective.",
+      "accepted_at": "2026-06-17T06:58:38Z",
+      "quality_score": 0,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "json_or_parse_fragility",
+        "weak_role_alignment",
+        "weak_decision_progress",
+        "too_generic",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+      "reason": "Response was too generic.",
+      "accepted_at": "2026-06-17T06:58:38Z",
+      "quality_score": 0,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "json_or_parse_fragility",
+        "weak_role_alignment",
+        "weak_decision_progress",
+        "too_generic",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "accepted_at": "2026-06-17T06:58:38Z",
+      "quality_score": 0,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "json_or_parse_fragility",
+        "weak_role_alignment",
+        "weak_decision_progress",
+        "too_generic",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema and weekly sprint risk review cadence as the current operating procedure.",
+      "reason": "Accepted decision should not be reopened.",
+      "accepted_at": "2026-06-17T06:59:23Z",
+      "quality_score": 74,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review cadence with PM as owner and implement immutable, RBAC‑controlled JSON storage for meeting summaries.",
+      "reason": "Accepted decision should not be reopened.",
+      "accepted_at": "2026-06-17T06:59:32Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "accepted_at": "2026-06-17T07:01:42Z",
+      "quality_score": 66,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Current council direction: AI Interview Council.",
+      "reason": "Accepted decision should not be reopened.",
+      "accepted_at": "2026-06-17T07:02:59Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    }
+  ],
+  "rejected_edits": [
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:33Z",
+      "quality_score": 73,
+      "failures": [
+        "repetition",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:38Z",
+      "quality_score": 0,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "json_or_parse_fragility",
+        "weak_role_alignment",
+        "weak_decision_progress",
+        "too_generic",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "When you support or accept another idea, explicitly update your current position in one sentence.",
+      "reason": "Agent did not update its evolving position.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:38Z",
+      "quality_score": 0,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "json_or_parse_fragility",
+        "weak_role_alignment",
+        "weak_decision_progress",
+        "too_generic",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "gate_reason": "edit_budget_exceeded",
+      "rejected_at": "2026-06-17T06:58:38Z",
+      "quality_score": 0,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "json_or_parse_fragility",
+        "weak_role_alignment",
+        "weak_decision_progress",
+        "too_generic",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:58Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:23Z",
+      "quality_score": 74,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:32Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:32Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:47Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, define tiered risk thresholds (% delta) with 24‑48‑72h escalation, and mandate PM‑owned immutable RBAC‑controlled JSON summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:47Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:47Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:00Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, define tiered risk thresholds (% delta) with 24‑48‑72h escalation, and mandate PM‑owned immutable RBAC‑controlled JSON summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:00Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:00Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:15Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:15Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:15Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:33Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:33Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:33Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:52Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:52Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:52Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:11Z",
+      "quality_score": 74,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:11Z",
+      "quality_score": 74,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:31Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:31Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:31Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:42Z",
+      "quality_score": 66,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:42Z",
+      "quality_score": 66,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:02Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:02Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:02Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:22Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema with SHA-256 audit_hash, RBAC-controlled immutable storage, weekly 30-minute sprint risk review cadence owned by PM, and tiered KPI thresholds (Green ≤10%, Yellow 10–25%, Red >25%) with...",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:22Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:22Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:36Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema with SHA-256 audit_hash, RBAC-controlled immutable storage, weekly 30-minute sprint risk review cadence owned by PM, and tiered KPI thresholds (Green ≤10%, Yellow 10–25%, Red >25%) with...",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:36Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:36Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:49Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema with SHA-256 audit_hash, RBAC-controlled immutable storage, weekly 30-minute sprint risk review cadence owned by PM, and tiered KPI thresholds (Green ≤10%, Yellow 10–25%, Red >25%) with...",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:49Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:49Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:59Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:59Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:12Z",
+      "quality_score": 21,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "missing_position_update",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Current council direction: AI Interview Council.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:12Z",
+      "quality_score": 21,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "missing_position_update",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "When you support or accept another idea, explicitly update your current position in one sentence.",
+      "reason": "Agent did not update its evolving position.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:12Z",
+      "quality_score": 21,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "missing_position_update",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:12Z",
+      "quality_score": 21,
+      "failures": [
+        "too_short_or_low_detail",
+        "repetition",
+        "missing_position_update",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:30Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Current council direction: AI Interview Council.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:30Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:30Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:42Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Current council direction: AI Interview Council.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:42Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Return compact valid JSON only; keep answer under 75 words and avoid long nested text that may truncate.",
+      "reason": "Model output was hard to parse or truncated.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:42Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "json_or_parse_fragility"
+      ]
+    }
+  ],
+  "score_history": [
+    {
+      "time": "2026-06-17T06:57:59Z",
+      "round": 1,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Iterative Market Validation Loop",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:58:33Z",
+      "round": 2,
+      "score": 73,
+      "failures": [
+        "missing_position_update",
+        "repetition"
+      ],
+      "idea": "Iterative Market Validation Loop",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:58:38Z",
+      "round": 2,
+      "score": 0,
+      "failures": [
+        "too_short_or_low_detail",
+        "weak_role_alignment",
+        "too_generic",
+        "missing_position_update",
+        "json_or_parse_fragility",
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "SprintRiskReviewCadence",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:58:58Z",
+      "round": 3,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "RiskReviewMetrics",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:59:23Z",
+      "round": 4,
+      "score": 74,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "RiskReviewKPI",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:59:32Z",
+      "round": 5,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T06:59:47Z",
+      "round": 6,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:00:00Z",
+      "round": 7,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:00:15Z",
+      "round": 8,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:00:33Z",
+      "round": 9,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:00:52Z",
+      "round": 10,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:01:11Z",
+      "round": 11,
+      "score": 74,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "KPI Threshold & Escalation Schema",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:01:31Z",
+      "round": 12,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:01:42Z",
+      "round": 13,
+      "score": 66,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "Define KPI thresholds & JSON schema",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:02:02Z",
+      "round": 14,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:02:22Z",
+      "round": 15,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:02:36Z",
+      "round": 16,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:02:49Z",
+      "round": 17,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:02:59Z",
+      "round": 18,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:03:12Z",
+      "round": 19,
+      "score": 21,
+      "failures": [
+        "too_short_or_low_detail",
+        "missing_position_update",
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "Pilot Plan Definition",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:03:30Z",
+      "round": 20,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    },
+    {
+      "time": "2026-06-17T07:03:42Z",
+      "round": 21,
+      "score": 68,
+      "failures": [
+        "json_or_parse_fragility",
+        "repetition"
+      ],
+      "idea": "AI Interview Council",
+      "move": "extend"
+    }
+  ],
+  "last_answers": [
+    "Fallback: I would move this into a pilot plan with customer segment, success metrics, pricing assumption, and launch gate.",
+    "Fallback: I would move this into a pilot plan with customer segment, success metrics, pricing assumption, and launch gate.",
+    "Fallback: I would move this into a pilot plan with customer segment, success metrics, pricing assumption, and launch gate.",
+    "Fallback: I would move this into a pilot plan with customer segment, success metrics, pricing assumption, and launch gate.",
+    "Fallback: I would move this into a pilot plan with customer segment, success metrics, pricing assumption, and launch gate.",
+    "Define a 3‑month pilot for the AI",
+    "Fallback: I would move this into a pilot plan with customer segment, success metrics, pricing assumption, and launch gate.",
+    "Fallback: I would move this into a pilot plan with customer segment, success metrics, pricing assumption, and launch gate."
+  ],
+  "speak_count": 21,
+  "created_at": "2026-06-17T06:56:47Z",
+  "updated_at": "2026-06-17T07:03:42Z"
+}

@@ -1,0 +1,1257 @@
+{
+  "version": "V13_real_meeting_round_vote",
+  "meeting_id": "0b2bce30-5f62-4bc2-9699-e1d563f3136a",
+  "created_at": "2026-06-17T08:10:01Z",
+  "round_number": 3,
+  "active_topic": "Turn 'Skill Delta Audit Rule Set' into concrete safeguards, KPIs, audit rules, and failure tests.",
+  "next_focus": "Turn 'Delta Threshold API' into exact MVP workflow, APIs, data fields, latency targets, and tests.",
+  "current_round_id": "be768ce8-54a9-48f6-a4b8-a6b819dba0cf",
+  "rounds": [
+    {
+      "round_id": "cd507ae5-b991-41ec-b7ef-06e650789e52",
+      "round_number": 1,
+      "topic": "Today we are testing how this AI Council can improve its own skills over time.\n\nThe question is:\n\nHow can each agent become better after every meeting, using memory, feedback, voting, rejected mistakes, and accepted skill updates?\n\nProduct Agent: focus on user value and trust.\nBuilder Agent: focus on system design and implementation.\nStrategy Agent: focus on roadmap and business direction.\nCritic Agent: focus on risks, weak assumptions, and failure cases.\n\nDo not repeat. Debate, agree on one step, update your position, and move to the next decision.\n\nLet’s begin.",
+      "started_at": "2026-06-17T08:11:26Z",
+      "phase": "accepted",
+      "current_index": 0,
+      "ideas": [
+        {
+          "idea_id": "R1-product",
+          "agent_key": "product",
+          "agent_name": "Product Agent",
+          "model": "google/gemma-3-27b-it",
+          "idea_title": "User Trust Score Audit",
+          "idea": "Implement a post-meeting 'Trust Score' audit. Users rate agent responses (1-5 stars) on helpfulness & honesty. Aggregate scores feed into agent skill weighting, prioritizing improvements for low-scoring areas. This directly defends user trust.",
+          "stance": "propose",
+          "position_update": "My position remains focused on prioritizing user trust as the core metric for agent improvement.",
+          "status": "voted",
+          "human_vote": "support",
+          "agent_votes_received": [],
+          "quality": 75
+        },
+        {
+          "idea_id": "R1-builder",
+          "agent_key": "builder",
+          "agent_name": "Builder Agent",
+          "model": "qwen/qwen3-30b-a3b-instruct-2507",
+          "idea_title": "Skill Update Ledger",
+          "idea": "Create a tamper-proof ledger API that logs every agent’s skill update, including source (feedback/vote), timestamp, and validation status, enabling auditability, rollback, and reliability tracking across meetings.",
+          "stance": "propose",
+          "position_update": "Focus shifts to building a verifiable, persistent record of skill evolution to ensure reliability and testability of self-improvement.",
+          "status": "voted",
+          "human_vote": "support",
+          "agent_votes_received": [
+            {
+              "voter_key": "strategy",
+              "voter_name": "Strategy Agent",
+              "idea_id": "R1-builder",
+              "reason": "Ensures reliable, auditable skill updates for continuous improvement.",
+              "support_level": "support"
+            },
+            {
+              "voter_key": "critic",
+              "voter_name": "Critic Agent",
+              "idea_id": "R1-builder",
+              "reason": "Enables auditability, rollback, reliability tracking for accountable skill updates.",
+              "support_level": "support"
+            }
+          ],
+          "quality": 75
+        },
+        {
+          "idea_id": "R1-strategy",
+          "agent_key": "strategy",
+          "agent_name": "Strategy Agent",
+          "model": "local-fallback",
+          "idea_title": "Pilot before scale",
+          "idea": "Start with a small pilot for one hiring team, measure time saved, adoption, trust, and risk before expanding pricing or automation scope.",
+          "stance": "propose",
+          "position_update": "I focus on Defend market opportunity, roadmap, pricing, pilot design, priorities, and business direction.",
+          "status": "voted",
+          "human_vote": "prefer",
+          "agent_votes_received": [],
+          "quality": 70,
+          "error": "'NoneType' object has no attribute 'strip'"
+        },
+        {
+          "idea_id": "R1-critic",
+          "agent_key": "critic",
+          "agent_name": "Critic Agent",
+          "model": "inclusionai/ling-2.6-flash",
+          "idea_title": "Post-meeting skill audit KPI",
+          "idea": "After each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks.",
+          "stance": "propose",
+          "position_update": "Shift from no accepted position to proposing a concrete audit KPI to enforce accountable skill updates and risk review after every meeting.",
+          "status": "voted",
+          "human_vote": "prefer",
+          "agent_votes_received": [
+            {
+              "voter_key": "product",
+              "voter_name": "Product Agent",
+              "idea_id": "R1-critic",
+              "reason": "KPI provides direct, measurable insight into skill improvement and potential risks.",
+              "support_level": "support"
+            },
+            {
+              "voter_key": "builder",
+              "voter_name": "Builder Agent",
+              "idea_id": "R1-critic",
+              "reason": "Enables verifiable, persistent skill evolution with auditability.",
+              "support_level": "support"
+            }
+          ],
+          "quality": 75
+        }
+      ],
+      "human_votes_complete": true,
+      "agent_votes": [
+        {
+          "voter_key": "product",
+          "voter_name": "Product Agent",
+          "idea_id": "R1-critic",
+          "reason": "KPI provides direct, measurable insight into skill improvement and potential risks.",
+          "support_level": "support"
+        },
+        {
+          "voter_key": "builder",
+          "voter_name": "Builder Agent",
+          "idea_id": "R1-critic",
+          "reason": "Enables verifiable, persistent skill evolution with auditability.",
+          "support_level": "support"
+        },
+        {
+          "voter_key": "strategy",
+          "voter_name": "Strategy Agent",
+          "idea_id": "R1-builder",
+          "reason": "Ensures reliable, auditable skill updates for continuous improvement.",
+          "support_level": "support"
+        },
+        {
+          "voter_key": "critic",
+          "voter_name": "Critic Agent",
+          "idea_id": "R1-builder",
+          "reason": "Enables auditability, rollback, reliability tracking for accountable skill updates.",
+          "support_level": "support"
+        }
+      ],
+      "scores": {
+        "R1-product": {
+          "total": 0.0,
+          "human": 0.0,
+          "agents": 0.0,
+          "agent_voters": [],
+          "human_label": null
+        },
+        "R1-builder": {
+          "total": 35.0,
+          "human": 0.0,
+          "agents": 35.0,
+          "agent_voters": [
+            {
+              "voter_key": "strategy",
+              "voter_name": "Strategy Agent",
+              "reason": "Ensures reliable, auditable skill updates for continuous improvement."
+            },
+            {
+              "voter_key": "critic",
+              "voter_name": "Critic Agent",
+              "reason": "Enables auditability, rollback, reliability tracking for accountable skill updates."
+            }
+          ],
+          "human_label": null
+        },
+        "R1-strategy": {
+          "total": 15.0,
+          "human": 15.0,
+          "agents": 0.0,
+          "agent_voters": [],
+          "human_label": "Prefer"
+        },
+        "R1-critic": {
+          "total": 50.0,
+          "human": 15.0,
+          "agents": 35.0,
+          "agent_voters": [
+            {
+              "voter_key": "product",
+              "voter_name": "Product Agent",
+              "reason": "KPI provides direct, measurable insight into skill improvement and potential risks."
+            },
+            {
+              "voter_key": "builder",
+              "voter_name": "Builder Agent",
+              "reason": "Enables verifiable, persistent skill evolution with auditability."
+            }
+          ],
+          "human_label": "Prefer"
+        }
+      },
+      "winner": {
+        "idea_id": "R1-critic",
+        "agent_key": "critic",
+        "agent_name": "Critic Agent",
+        "model": "inclusionai/ling-2.6-flash",
+        "idea_title": "Post-meeting skill audit KPI",
+        "idea": "After each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks.",
+        "stance": "propose",
+        "position_update": "Shift from no accepted position to proposing a concrete audit KPI to enforce accountable skill updates and risk review after every meeting.",
+        "status": "voted",
+        "human_vote": "prefer",
+        "agent_votes_received": [
+          {
+            "voter_key": "product",
+            "voter_name": "Product Agent",
+            "idea_id": "R1-critic",
+            "reason": "KPI provides direct, measurable insight into skill improvement and potential risks.",
+            "support_level": "support"
+          },
+          {
+            "voter_key": "builder",
+            "voter_name": "Builder Agent",
+            "idea_id": "R1-critic",
+            "reason": "Enables verifiable, persistent skill evolution with auditability.",
+            "support_level": "support"
+          }
+        ],
+        "quality": 75,
+        "score": {
+          "total": 50.0,
+          "human": 15.0,
+          "agents": 35.0,
+          "agent_voters": [
+            {
+              "voter_key": "product",
+              "voter_name": "Product Agent",
+              "reason": "KPI provides direct, measurable insight into skill improvement and potential risks."
+            },
+            {
+              "voter_key": "builder",
+              "voter_name": "Builder Agent",
+              "reason": "Enables verifiable, persistent skill evolution with auditability."
+            }
+          ],
+          "human_label": "Prefer"
+        }
+      },
+      "decision": {
+        "id": "32dd7713-913d-45e3-b1e1-4de343ddc1f2",
+        "time": "2026-06-17T08:14:00Z",
+        "round_number": 1,
+        "decision": "Accept round 1 winning idea: Post-meeting skill audit KPI — After each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks.",
+        "winner_idea_id": "R1-critic",
+        "winner_agent": "Critic Agent",
+        "score": 50.0
+      },
+      "judge_note": "The winner’s KPI audit idea earned the highest agent score by concretely listing updates, votes, and risk checks, making trust actions traceable. The strongest objection centers on audit overhead and latency for fast cycles. Next round focus should be optimizing audit frequency and automating log generation to reduce friction. Human support for transparency is strong, so preserve that while tightening performance and risk safeguards to keep adoption smooth.",
+      "next_focus": "Turn 'Post-meeting skill audit KPI' into concrete safeguards, KPIs, audit rules, and failure tests."
+    },
+    {
+      "round_id": "bb3107b6-bf51-4d43-a7f4-1fa68d199b5f",
+      "round_number": 2,
+      "topic": "Turn 'Post-meeting skill audit KPI' into concrete safeguards, KPIs, audit rules, and failure tests.",
+      "started_at": "2026-06-17T08:14:20Z",
+      "phase": "accepted",
+      "current_index": 0,
+      "ideas": [
+        {
+          "idea_id": "R2-product",
+          "agent_key": "product",
+          "agent_name": "Product Agent",
+          "model": "google/gemma-3-27b-it",
+          "idea_title": "Audit: Mistake Rejection Rate",
+          "idea": "Add a KPI measuring the percentage of flagged 'mistakes' rejected by the AI after human review. A low rate indicates over-flagging, eroding trust; a high rate suggests insufficient AI learning. Target: 80% acceptance of AI rejections.",
+          "stance": "propose",
+          "position_update": "I'm focusing on quantifiable metrics to ensure the skill audit isn't just a log, but a driver of continuous improvement and trust.",
+          "status": "voted",
+          "human_vote": "prefer",
+          "agent_votes_received": [],
+          "quality": 75
+        },
+        {
+          "idea_id": "R2-builder",
+          "agent_key": "builder",
+          "agent_name": "Builder Agent",
+          "model": "qwen/qwen3-30b-a3b-instruct-2507",
+          "idea_title": "Audit KPI schema versioning",
+          "idea": "Introduce a versioned schema for the Post-meeting Skill Audit KPI to ensure backward compatibility, enforce validation rules, and enable automated diffing of changes across meetings, reducing risk of data corruption and improving observability.",
+          "stance": "propose",
+          "position_update": "Now focused on ensuring audit data integrity through structured schema evolution, directly supporting reliability and testability.",
+          "status": "voted",
+          "human_vote": "support",
+          "agent_votes_received": [
+            {
+              "voter_key": "strategy",
+              "voter_name": "Strategy Agent",
+              "idea_id": "R2-builder",
+              "reason": "Fallback vote after model error: 'NoneType' object has no attribute 'strip'",
+              "support_level": "conditional"
+            }
+          ],
+          "quality": 75
+        },
+        {
+          "idea_id": "R2-strategy",
+          "agent_key": "strategy",
+          "agent_name": "Strategy Agent",
+          "model": "local-fallback",
+          "idea_title": "Pilot before scale",
+          "idea": "Start with a small pilot for one hiring team, measure time saved, adoption, trust, and risk before expanding pricing or automation scope.",
+          "stance": "propose",
+          "position_update": "I focus on Defend market opportunity, roadmap, pricing, pilot design, priorities, and business direction.",
+          "status": "voted",
+          "human_vote": "reject",
+          "agent_votes_received": [
+            {
+              "voter_key": "critic",
+              "voter_name": "Critic Agent",
+              "idea_id": "R2-strategy",
+              "reason": "Pilot first limits blast radius and validates assumptions before scaling.",
+              "support_level": "support"
+            }
+          ],
+          "quality": 70,
+          "error": "'NoneType' object has no attribute 'strip'"
+        },
+        {
+          "idea_id": "R2-critic",
+          "agent_key": "critic",
+          "agent_name": "Critic Agent",
+          "model": "inclusionai/ling-2.6-flash",
+          "idea_title": "Skill Delta Audit Rule Set",
+          "idea": "Define a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached.",
+          "stance": "propose",
+          "position_update": "Shift from defining the KPI to specifying enforceable audit rules that trigger reviews and safeguards when risk deltas exceed limits.",
+          "status": "voted",
+          "human_vote": "support",
+          "agent_votes_received": [
+            {
+              "voter_key": "product",
+              "voter_name": "Product Agent",
+              "idea_id": "R2-critic",
+              "reason": "Directly addresses quantifiable risk & trust via concrete, auditable rules.",
+              "support_level": "support|conditional"
+            },
+            {
+              "voter_key": "builder",
+              "voter_name": "Builder Agent",
+              "idea_id": "R2-critic",
+              "reason": "Directly enforces integrity via structured rules and thresholds.",
+              "support_level": "support"
+            }
+          ],
+          "quality": 75
+        }
+      ],
+      "human_votes_complete": true,
+      "agent_votes": [
+        {
+          "voter_key": "product",
+          "voter_name": "Product Agent",
+          "idea_id": "R2-critic",
+          "reason": "Directly addresses quantifiable risk & trust via concrete, auditable rules.",
+          "support_level": "support|conditional"
+        },
+        {
+          "voter_key": "builder",
+          "voter_name": "Builder Agent",
+          "idea_id": "R2-critic",
+          "reason": "Directly enforces integrity via structured rules and thresholds.",
+          "support_level": "support"
+        },
+        {
+          "voter_key": "strategy",
+          "voter_name": "Strategy Agent",
+          "idea_id": "R2-builder",
+          "reason": "Fallback vote after model error: 'NoneType' object has no attribute 'strip'",
+          "support_level": "conditional"
+        },
+        {
+          "voter_key": "critic",
+          "voter_name": "Critic Agent",
+          "idea_id": "R2-strategy",
+          "reason": "Pilot first limits blast radius and validates assumptions before scaling.",
+          "support_level": "support"
+        }
+      ],
+      "scores": {
+        "R2-product": {
+          "total": 30.0,
+          "human": 30.0,
+          "agents": 0.0,
+          "agent_voters": [],
+          "human_label": "Prefer"
+        },
+        "R2-builder": {
+          "total": 17.5,
+          "human": 0.0,
+          "agents": 17.5,
+          "agent_voters": [
+            {
+              "voter_key": "strategy",
+              "voter_name": "Strategy Agent",
+              "reason": "Fallback vote after model error: 'NoneType' object has no attribute 'strip'"
+            }
+          ],
+          "human_label": null
+        },
+        "R2-strategy": {
+          "total": 17.5,
+          "human": 0.0,
+          "agents": 17.5,
+          "agent_voters": [
+            {
+              "voter_key": "critic",
+              "voter_name": "Critic Agent",
+              "reason": "Pilot first limits blast radius and validates assumptions before scaling."
+            }
+          ],
+          "human_label": "Reject"
+        },
+        "R2-critic": {
+          "total": 35.0,
+          "human": 0.0,
+          "agents": 35.0,
+          "agent_voters": [
+            {
+              "voter_key": "product",
+              "voter_name": "Product Agent",
+              "reason": "Directly addresses quantifiable risk & trust via concrete, auditable rules."
+            },
+            {
+              "voter_key": "builder",
+              "voter_name": "Builder Agent",
+              "reason": "Directly enforces integrity via structured rules and thresholds."
+            }
+          ],
+          "human_label": null
+        }
+      },
+      "winner": {
+        "idea_id": "R2-critic",
+        "agent_key": "critic",
+        "agent_name": "Critic Agent",
+        "model": "inclusionai/ling-2.6-flash",
+        "idea_title": "Skill Delta Audit Rule Set",
+        "idea": "Define a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached.",
+        "stance": "propose",
+        "position_update": "Shift from defining the KPI to specifying enforceable audit rules that trigger reviews and safeguards when risk deltas exceed limits.",
+        "status": "voted",
+        "human_vote": "support",
+        "agent_votes_received": [
+          {
+            "voter_key": "product",
+            "voter_name": "Product Agent",
+            "idea_id": "R2-critic",
+            "reason": "Directly addresses quantifiable risk & trust via concrete, auditable rules.",
+            "support_level": "support|conditional"
+          },
+          {
+            "voter_key": "builder",
+            "voter_name": "Builder Agent",
+            "idea_id": "R2-critic",
+            "reason": "Directly enforces integrity via structured rules and thresholds.",
+            "support_level": "support"
+          }
+        ],
+        "quality": 75,
+        "score": {
+          "total": 35.0,
+          "human": 0.0,
+          "agents": 35.0,
+          "agent_voters": [
+            {
+              "voter_key": "product",
+              "voter_name": "Product Agent",
+              "reason": "Directly addresses quantifiable risk & trust via concrete, auditable rules."
+            },
+            {
+              "voter_key": "builder",
+              "voter_name": "Builder Agent",
+              "reason": "Directly enforces integrity via structured rules and thresholds."
+            }
+          ],
+          "human_label": null
+        }
+      },
+      "decision": {
+        "id": "84716f15-fe01-4cda-9cda-16990f429697",
+        "time": "2026-06-17T08:16:38Z",
+        "round_number": 2,
+        "decision": "Accept round 2 winning idea: Skill Delta Audit Rule Set — Define a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached.",
+        "winner_idea_id": "R2-critic",
+        "winner_agent": "Critic Agent",
+        "score": 35.0
+      },
+      "judge_note": "The winner’s KPI tracks AI rejections overturned by humans, aligning incentives and exposing over-flagging. The strongest objection is whether a low rejection rate truly signals trust versus risk. Next, validate the metric in production: monitor stability, bias, and fairness deltas; refine thresholds; and ensure schema versioning for safe iteration before scaling.",
+      "next_focus": "Turn 'Skill Delta Audit Rule Set' into concrete safeguards, KPIs, audit rules, and failure tests."
+    },
+    {
+      "round_id": "be768ce8-54a9-48f6-a4b8-a6b819dba0cf",
+      "round_number": 3,
+      "topic": "Turn 'Skill Delta Audit Rule Set' into concrete safeguards, KPIs, audit rules, and failure tests.",
+      "started_at": "2026-06-17T08:16:50Z",
+      "phase": "accepted",
+      "current_index": 0,
+      "ideas": [
+        {
+          "idea_id": "R3-product",
+          "agent_key": "product",
+          "agent_name": "Product Agent",
+          "model": "google/gemma-3-27b-it",
+          "idea_title": "Skill Delta: Risk-Weighted Thresholds",
+          "idea": "Augment delta thresholds with risk weights. High-risk skills (e.g., legal reasoning) have lower delta tolerances than low-risk skills (e.g., brainstorming). This prevents large, potentially damaging shifts in critical areas.",
+          "stance": "propose",
+          "position_update": "I'm focusing on refining the 'Skill Delta Audit Rule Set' to prioritize safety and responsible AI behavior by incorporating risk sensitivity.",
+          "status": "voted",
+          "human_vote": "support",
+          "agent_votes_received": [],
+          "quality": 75
+        },
+        {
+          "idea_id": "R3-builder",
+          "agent_key": "builder",
+          "agent_name": "Builder Agent",
+          "model": "qwen/qwen3-30b-a3b-instruct-2507",
+          "idea_title": "Delta Threshold API",
+          "idea": "Build a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability.",
+          "stance": "propose",
+          "position_update": "Focused on turning the Skill Delta Audit Rule Set into a testable, observable, and enforceable runtime safeguard via a dedicated API.",
+          "status": "voted",
+          "human_vote": "prefer",
+          "agent_votes_received": [
+            {
+              "voter_key": "strategy",
+              "voter_name": "Strategy Agent",
+              "idea_id": "R3-builder",
+              "reason": "Fallback vote after model error: 'NoneType' object has no attribute 'strip'",
+              "support_level": "conditional"
+            },
+            {
+              "voter_key": "critic",
+              "voter_name": "Critic Agent",
+              "idea_id": "R3-builder",
+              "reason": "Enforceable gating with automated review queues and audit traceability.",
+              "support_level": "support"
+            }
+          ],
+          "quality": 75
+        },
+        {
+          "idea_id": "R3-strategy",
+          "agent_key": "strategy",
+          "agent_name": "Strategy Agent",
+          "model": "local-fallback",
+          "idea_title": "Pilot before scale",
+          "idea": "Start with a small pilot for one hiring team, measure time saved, adoption, trust, and risk before expanding pricing or automation scope.",
+          "stance": "propose",
+          "position_update": "I focus on Defend market opportunity, roadmap, pricing, pilot design, priorities, and business direction.",
+          "status": "voted",
+          "human_vote": "prefer",
+          "agent_votes_received": [],
+          "quality": 70,
+          "error": "'NoneType' object has no attribute 'strip'"
+        },
+        {
+          "idea_id": "R3-critic",
+          "agent_key": "critic",
+          "agent_name": "Critic Agent",
+          "model": "inclusionai/ling-2.6-flash",
+          "idea_title": "Skill Delta Threshold Matrix",
+          "idea": "Define max delta thresholds per skill and risk class; when breached auto-queue review and freeze live actions until human sign-off; include bias/fairness/legal flags and compensating controls.",
+          "stance": "propose",
+          "position_update": "Shift from rule definition to enforceable threshold matrix with automated gating and review workflows.",
+          "status": "voted",
+          "human_vote": "prefer",
+          "agent_votes_received": [
+            {
+              "voter_key": "product",
+              "voter_name": "Product Agent",
+              "idea_id": "R3-critic",
+              "reason": "Defines concrete, auditable thresholds and immediate safeguards for risk mitigation.",
+              "support_level": "support"
+            },
+            {
+              "voter_key": "builder",
+              "voter_name": "Builder Agent",
+              "idea_id": "R3-critic",
+              "reason": "Enforces safeguards with clear triggers and controls.",
+              "support_level": "support"
+            }
+          ],
+          "quality": 75
+        }
+      ],
+      "human_votes_complete": true,
+      "agent_votes": [
+        {
+          "voter_key": "product",
+          "voter_name": "Product Agent",
+          "idea_id": "R3-critic",
+          "reason": "Defines concrete, auditable thresholds and immediate safeguards for risk mitigation.",
+          "support_level": "support"
+        },
+        {
+          "voter_key": "builder",
+          "voter_name": "Builder Agent",
+          "idea_id": "R3-critic",
+          "reason": "Enforces safeguards with clear triggers and controls.",
+          "support_level": "support"
+        },
+        {
+          "voter_key": "strategy",
+          "voter_name": "Strategy Agent",
+          "idea_id": "R3-builder",
+          "reason": "Fallback vote after model error: 'NoneType' object has no attribute 'strip'",
+          "support_level": "conditional"
+        },
+        {
+          "voter_key": "critic",
+          "voter_name": "Critic Agent",
+          "idea_id": "R3-builder",
+          "reason": "Enforceable gating with automated review queues and audit traceability.",
+          "support_level": "support"
+        }
+      ],
+      "scores": {
+        "R3-product": {
+          "total": 0.0,
+          "human": 0.0,
+          "agents": 0.0,
+          "agent_voters": [],
+          "human_label": null
+        },
+        "R3-builder": {
+          "total": 45.0,
+          "human": 10.0,
+          "agents": 35.0,
+          "agent_voters": [
+            {
+              "voter_key": "strategy",
+              "voter_name": "Strategy Agent",
+              "reason": "Fallback vote after model error: 'NoneType' object has no attribute 'strip'"
+            },
+            {
+              "voter_key": "critic",
+              "voter_name": "Critic Agent",
+              "reason": "Enforceable gating with automated review queues and audit traceability."
+            }
+          ],
+          "human_label": "Prefer"
+        },
+        "R3-strategy": {
+          "total": 10.0,
+          "human": 10.0,
+          "agents": 0.0,
+          "agent_voters": [],
+          "human_label": "Prefer"
+        },
+        "R3-critic": {
+          "total": 45.0,
+          "human": 10.0,
+          "agents": 35.0,
+          "agent_voters": [
+            {
+              "voter_key": "product",
+              "voter_name": "Product Agent",
+              "reason": "Defines concrete, auditable thresholds and immediate safeguards for risk mitigation."
+            },
+            {
+              "voter_key": "builder",
+              "voter_name": "Builder Agent",
+              "reason": "Enforces safeguards with clear triggers and controls."
+            }
+          ],
+          "human_label": "Prefer"
+        }
+      },
+      "winner": {
+        "idea_id": "R3-builder",
+        "agent_key": "builder",
+        "agent_name": "Builder Agent",
+        "model": "qwen/qwen3-30b-a3b-instruct-2507",
+        "idea_title": "Delta Threshold API",
+        "idea": "Build a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability.",
+        "stance": "propose",
+        "position_update": "Focused on turning the Skill Delta Audit Rule Set into a testable, observable, and enforceable runtime safeguard via a dedicated API.",
+        "status": "voted",
+        "human_vote": "prefer",
+        "agent_votes_received": [
+          {
+            "voter_key": "strategy",
+            "voter_name": "Strategy Agent",
+            "idea_id": "R3-builder",
+            "reason": "Fallback vote after model error: 'NoneType' object has no attribute 'strip'",
+            "support_level": "conditional"
+          },
+          {
+            "voter_key": "critic",
+            "voter_name": "Critic Agent",
+            "idea_id": "R3-builder",
+            "reason": "Enforceable gating with automated review queues and audit traceability.",
+            "support_level": "support"
+          }
+        ],
+        "quality": 75,
+        "score": {
+          "total": 45.0,
+          "human": 10.0,
+          "agents": 35.0,
+          "agent_voters": [
+            {
+              "voter_key": "strategy",
+              "voter_name": "Strategy Agent",
+              "reason": "Fallback vote after model error: 'NoneType' object has no attribute 'strip'"
+            },
+            {
+              "voter_key": "critic",
+              "voter_name": "Critic Agent",
+              "reason": "Enforceable gating with automated review queues and audit traceability."
+            }
+          ],
+          "human_label": "Prefer"
+        }
+      },
+      "decision": {
+        "id": "bba0efad-488b-4229-89c3-9c10dab28efa",
+        "time": "2026-06-17T08:18:51Z",
+        "round_number": 3,
+        "decision": "Accept round 3 winning idea: Delta Threshold API — Build a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability.",
+        "winner_idea_id": "R3-builder",
+        "winner_agent": "Builder Agent",
+        "score": 45.0
+      },
+      "judge_note": "The winner combines real-time API enforcement with risk-weighted thresholds, enabling automated guardrails and auditability. The strongest objection is operational complexity and latency in auto-queue and freeze workflows. Next round focus should be on observability, tuning risk tolerances, and measuring false positive rates. Human preference (30%) aligned with agent scores (70%), pushing the Delta Threshold API and Skill Delta Matrix concepts forward while addressing implementation risk through a controlled pilot.",
+      "next_focus": "Turn 'Delta Threshold API' into exact MVP workflow, APIs, data fields, latency targets, and tests."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "32dd7713-913d-45e3-b1e1-4de343ddc1f2",
+      "time": "2026-06-17T08:14:00Z",
+      "round_number": 1,
+      "decision": "Accept round 1 winning idea: Post-meeting skill audit KPI — After each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks.",
+      "winner_idea_id": "R1-critic",
+      "winner_agent": "Critic Agent",
+      "score": 50.0
+    },
+    {
+      "id": "84716f15-fe01-4cda-9cda-16990f429697",
+      "time": "2026-06-17T08:16:38Z",
+      "round_number": 2,
+      "decision": "Accept round 2 winning idea: Skill Delta Audit Rule Set — Define a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached.",
+      "winner_idea_id": "R2-critic",
+      "winner_agent": "Critic Agent",
+      "score": 35.0
+    },
+    {
+      "id": "bba0efad-488b-4229-89c3-9c10dab28efa",
+      "time": "2026-06-17T08:18:51Z",
+      "round_number": 3,
+      "decision": "Accept round 3 winning idea: Delta Threshold API — Build a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability.",
+      "winner_idea_id": "R3-builder",
+      "winner_agent": "Builder Agent",
+      "score": 45.0
+    }
+  ],
+  "agreements": [
+    "Round 1: Post-meeting skill audit KPI",
+    "Round 2: Skill Delta Audit Rule Set",
+    "Round 3: Delta Threshold API"
+  ],
+  "transcript": [
+    {
+      "id": "06c134d6-e017-44e4-aee5-e57ff3042adb",
+      "time": "2026-06-17T08:11:20Z",
+      "role": "human",
+      "name": "Human Host",
+      "agent_key": null,
+      "kind": "topic",
+      "text": "Today we are testing how this AI Council can improve its own skills over time.\n\nThe question is:\n\nHow can each agent become better after every meeting, using memory, feedback, voting, rejected mistakes, and accepted skill updates?\n\nProduct Agent: focus on user value and trust.\nBuilder Agent: focus on system design and implementation.\nStrategy Agent: focus on roadmap and business direction.\nCritic Agent: focus on risks, weak assumptions, and failure cases.\n\nDo not repeat. Debate, agree on one step, update your position, and move to the next decision.\n\nLet’s begin."
+    },
+    {
+      "id": "af769043-4fdc-4112-882f-df8c06c8e350",
+      "time": "2026-06-17T08:11:26Z",
+      "role": "agent",
+      "name": "Product Agent",
+      "agent_key": "product",
+      "kind": "idea",
+      "text": "Implement a post-meeting 'Trust Score' audit. Users rate agent responses (1-5 stars) on helpfulness & honesty. Aggregate scores feed into agent skill weighting, prioritizing improvements for low-scoring areas. This directly defends user trust.",
+      "idea_id": "R1-product",
+      "idea_title": "User Trust Score Audit",
+      "model": "google/gemma-3-27b-it"
+    },
+    {
+      "id": "6def5d42-0d32-494d-811b-95df6389dc2a",
+      "time": "2026-06-17T08:11:26Z",
+      "role": "agent",
+      "name": "Builder Agent",
+      "agent_key": "builder",
+      "kind": "idea",
+      "text": "Create a tamper-proof ledger API that logs every agent’s skill update, including source (feedback/vote), timestamp, and validation status, enabling auditability, rollback, and reliability tracking across meetings.",
+      "idea_id": "R1-builder",
+      "idea_title": "Skill Update Ledger",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507"
+    },
+    {
+      "id": "3e064473-4645-40eb-a3f4-f0748d6f621c",
+      "time": "2026-06-17T08:11:26Z",
+      "role": "agent",
+      "name": "Strategy Agent",
+      "agent_key": "strategy",
+      "kind": "idea",
+      "text": "Start with a small pilot for one hiring team, measure time saved, adoption, trust, and risk before expanding pricing or automation scope.",
+      "idea_id": "R1-strategy",
+      "idea_title": "Pilot before scale",
+      "model": "local-fallback"
+    },
+    {
+      "id": "9097edd2-da8f-4755-8d34-a137cf95735f",
+      "time": "2026-06-17T08:11:26Z",
+      "role": "agent",
+      "name": "Critic Agent",
+      "agent_key": "critic",
+      "kind": "idea",
+      "text": "After each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks.",
+      "idea_id": "R1-critic",
+      "idea_title": "Post-meeting skill audit KPI",
+      "model": "inclusionai/ling-2.6-flash"
+    },
+    {
+      "id": "132d31e3-a7ee-4e3e-b131-0cfb3b7f2fa3",
+      "time": "2026-06-17T08:11:50Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "SUPPORT — User Trust Score Audit: Implement a post-meeting 'Trust Score' audit. Users rate agent responses (1-5 stars) on helpfulness & honesty. Aggregate scores feed into agent skill weighting, prioritizing improvements for low-scoring areas. This directly defends user trust.",
+      "idea_id": "R1-product",
+      "vote": "support"
+    },
+    {
+      "id": "9e4eef06-22ff-4f88-804c-87c4f8a01e9c",
+      "time": "2026-06-17T08:11:57Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "SUPPORT — User Trust Score Audit: Implement a post-meeting 'Trust Score' audit. Users rate agent responses (1-5 stars) on helpfulness & honesty. Aggregate scores feed into agent skill weighting, prioritizing improvements for low-scoring areas. This directly defends user trust.",
+      "idea_id": "R1-product",
+      "vote": "support"
+    },
+    {
+      "id": "07e1e86b-05ad-4b0d-bf42-27e14f43af71",
+      "time": "2026-06-17T08:11:59Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "SUPPORT — User Trust Score Audit: Implement a post-meeting 'Trust Score' audit. Users rate agent responses (1-5 stars) on helpfulness & honesty. Aggregate scores feed into agent skill weighting, prioritizing improvements for low-scoring areas. This directly defends user trust.",
+      "idea_id": "R1-product",
+      "vote": "support"
+    },
+    {
+      "id": "2bb8ac80-0d11-4dcd-be1b-775217f7991c",
+      "time": "2026-06-17T08:12:26Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "SUPPORT — Skill Update Ledger: Create a tamper-proof ledger API that logs every agent’s skill update, including source (feedback/vote), timestamp, and validation status, enabling auditability, rollback, and reliability tracking across meetings.",
+      "idea_id": "R1-builder",
+      "vote": "support"
+    },
+    {
+      "id": "e9b234b8-9aeb-40ca-955b-4723dd4636b3",
+      "time": "2026-06-17T08:12:42Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "PREFER — Pilot before scale: Start with a small pilot for one hiring team, measure time saved, adoption, trust, and risk before expanding pricing or automation scope.",
+      "idea_id": "R1-strategy",
+      "vote": "prefer"
+    },
+    {
+      "id": "461e4790-a6b3-4254-9207-18310ef1431f",
+      "time": "2026-06-17T08:13:00Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "PREFER — Post-meeting skill audit KPI: After each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks.",
+      "idea_id": "R1-critic",
+      "vote": "prefer"
+    },
+    {
+      "id": "a1cb3413-df18-4f85-a005-69ea11a3c04f",
+      "time": "2026-06-17T08:13:50Z",
+      "role": "system",
+      "name": "Decision Board",
+      "agent_key": null,
+      "kind": "decision",
+      "text": "Round 1 decision is ready.\nWinning idea: Post-meeting skill audit KPI (50.0%).\nFrom: Critic Agent\nAfter each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks."
+    },
+    {
+      "id": "a3a3041f-f3c5-4654-a263-8d15d039f44a",
+      "time": "2026-06-17T08:14:00Z",
+      "role": "system",
+      "name": "Accepted Decision",
+      "agent_key": null,
+      "kind": "accepted",
+      "text": "Accept round 1 winning idea: Post-meeting skill audit KPI — After each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks.\nNext focus: Turn 'Post-meeting skill audit KPI' into concrete safeguards, KPIs, audit rules, and failure tests."
+    },
+    {
+      "id": "ea0996f2-c5a1-4d62-a234-5ebc42073fa1",
+      "time": "2026-06-17T08:14:03Z",
+      "role": "human",
+      "name": "Human Host",
+      "agent_key": null,
+      "kind": "topic",
+      "text": "Next round focus: Turn 'Post-meeting skill audit KPI' into concrete safeguards, KPIs, audit rules, and failure tests."
+    },
+    {
+      "id": "c731d52f-cd6e-4821-ae2f-bef8dabebe82",
+      "time": "2026-06-17T08:14:20Z",
+      "role": "agent",
+      "name": "Product Agent",
+      "agent_key": "product",
+      "kind": "idea",
+      "text": "Add a KPI measuring the percentage of flagged 'mistakes' rejected by the AI after human review. A low rate indicates over-flagging, eroding trust; a high rate suggests insufficient AI learning. Target: 80% acceptance of AI rejections.",
+      "idea_id": "R2-product",
+      "idea_title": "Audit: Mistake Rejection Rate",
+      "model": "google/gemma-3-27b-it"
+    },
+    {
+      "id": "47b07580-da49-4e68-9af4-9e36b9df4224",
+      "time": "2026-06-17T08:14:20Z",
+      "role": "agent",
+      "name": "Builder Agent",
+      "agent_key": "builder",
+      "kind": "idea",
+      "text": "Introduce a versioned schema for the Post-meeting Skill Audit KPI to ensure backward compatibility, enforce validation rules, and enable automated diffing of changes across meetings, reducing risk of data corruption and improving observability.",
+      "idea_id": "R2-builder",
+      "idea_title": "Audit KPI schema versioning",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507"
+    },
+    {
+      "id": "2f1e9fa4-9371-4460-9369-890167e46cf4",
+      "time": "2026-06-17T08:14:20Z",
+      "role": "agent",
+      "name": "Strategy Agent",
+      "agent_key": "strategy",
+      "kind": "idea",
+      "text": "Start with a small pilot for one hiring team, measure time saved, adoption, trust, and risk before expanding pricing or automation scope.",
+      "idea_id": "R2-strategy",
+      "idea_title": "Pilot before scale",
+      "model": "local-fallback"
+    },
+    {
+      "id": "92394952-fea1-4b4a-b20b-61d99397dc72",
+      "time": "2026-06-17T08:14:20Z",
+      "role": "agent",
+      "name": "Critic Agent",
+      "agent_key": "critic",
+      "kind": "idea",
+      "text": "Define a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached.",
+      "idea_id": "R2-critic",
+      "idea_title": "Skill Delta Audit Rule Set",
+      "model": "inclusionai/ling-2.6-flash"
+    },
+    {
+      "id": "d73671fe-86fb-42ab-8de1-d17e08fcf0f8",
+      "time": "2026-06-17T08:14:47Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "PREFER — Audit: Mistake Rejection Rate: Add a KPI measuring the percentage of flagged 'mistakes' rejected by the AI after human review. A low rate indicates over-flagging, eroding trust; a high rate suggests insufficient AI learning. Target: 80% acceptance of AI rejections.",
+      "idea_id": "R2-product",
+      "vote": "prefer"
+    },
+    {
+      "id": "c811e88c-db2b-4cab-b532-d5446cc8d4ec",
+      "time": "2026-06-17T08:15:15Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "SUPPORT — Audit KPI schema versioning: Introduce a versioned schema for the Post-meeting Skill Audit KPI to ensure backward compatibility, enforce validation rules, and enable automated diffing of changes across meetings, reducing risk of data corruption and improving observability.",
+      "idea_id": "R2-builder",
+      "vote": "support"
+    },
+    {
+      "id": "b9a3d524-3b8a-4637-b165-7fe8906c4beb",
+      "time": "2026-06-17T08:15:28Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "REJECT — Pilot before scale: Start with a small pilot for one hiring team, measure time saved, adoption, trust, and risk before expanding pricing or automation scope.",
+      "idea_id": "R2-strategy",
+      "vote": "reject"
+    },
+    {
+      "id": "a90ada9c-f3d4-4da2-84fc-e3cf8c65972e",
+      "time": "2026-06-17T08:15:54Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "SUPPORT — Skill Delta Audit Rule Set: Define a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached.",
+      "idea_id": "R2-critic",
+      "vote": "support"
+    },
+    {
+      "id": "0db0557a-53d9-44f4-996f-962315d00c8f",
+      "time": "2026-06-17T08:16:07Z",
+      "role": "system",
+      "name": "Decision Board",
+      "agent_key": null,
+      "kind": "decision",
+      "text": "Round 2 decision is ready.\nWinning idea: Skill Delta Audit Rule Set (35.0%).\nFrom: Critic Agent\nDefine a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached."
+    },
+    {
+      "id": "1dae5f78-4a83-4514-b5bd-c0b240850ead",
+      "time": "2026-06-17T08:16:38Z",
+      "role": "system",
+      "name": "Accepted Decision",
+      "agent_key": null,
+      "kind": "accepted",
+      "text": "Accept round 2 winning idea: Skill Delta Audit Rule Set — Define a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached.\nNext focus: Turn 'Skill Delta Audit Rule Set' into concrete safeguards, KPIs, audit rules, and failure tests."
+    },
+    {
+      "id": "0edf8e02-91f3-4189-97d6-d5e1c38f825d",
+      "time": "2026-06-17T08:16:41Z",
+      "role": "human",
+      "name": "Human Host",
+      "agent_key": null,
+      "kind": "topic",
+      "text": "Next round focus: Turn 'Skill Delta Audit Rule Set' into concrete safeguards, KPIs, audit rules, and failure tests."
+    },
+    {
+      "id": "278568af-ec38-44c7-ad09-aa696cc1f575",
+      "time": "2026-06-17T08:16:50Z",
+      "role": "agent",
+      "name": "Product Agent",
+      "agent_key": "product",
+      "kind": "idea",
+      "text": "Augment delta thresholds with risk weights. High-risk skills (e.g., legal reasoning) have lower delta tolerances than low-risk skills (e.g., brainstorming). This prevents large, potentially damaging shifts in critical areas.",
+      "idea_id": "R3-product",
+      "idea_title": "Skill Delta: Risk-Weighted Thresholds",
+      "model": "google/gemma-3-27b-it"
+    },
+    {
+      "id": "9ffcfd54-daf7-4bc4-8026-2c6c23ffcbd0",
+      "time": "2026-06-17T08:16:50Z",
+      "role": "agent",
+      "name": "Builder Agent",
+      "agent_key": "builder",
+      "kind": "idea",
+      "text": "Build a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability.",
+      "idea_id": "R3-builder",
+      "idea_title": "Delta Threshold API",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507"
+    },
+    {
+      "id": "27d50f27-8e6b-4839-897c-80fad9a5be98",
+      "time": "2026-06-17T08:16:50Z",
+      "role": "agent",
+      "name": "Strategy Agent",
+      "agent_key": "strategy",
+      "kind": "idea",
+      "text": "Start with a small pilot for one hiring team, measure time saved, adoption, trust, and risk before expanding pricing or automation scope.",
+      "idea_id": "R3-strategy",
+      "idea_title": "Pilot before scale",
+      "model": "local-fallback"
+    },
+    {
+      "id": "53aeab54-3ff0-4124-a212-b03df40a6b5a",
+      "time": "2026-06-17T08:16:50Z",
+      "role": "agent",
+      "name": "Critic Agent",
+      "agent_key": "critic",
+      "kind": "idea",
+      "text": "Define max delta thresholds per skill and risk class; when breached auto-queue review and freeze live actions until human sign-off; include bias/fairness/legal flags and compensating controls.",
+      "idea_id": "R3-critic",
+      "idea_title": "Skill Delta Threshold Matrix",
+      "model": "inclusionai/ling-2.6-flash"
+    },
+    {
+      "id": "d8c90b74-a276-4cef-9dad-3404a213d697",
+      "time": "2026-06-17T08:17:09Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "SUPPORT — Skill Delta: Risk-Weighted Thresholds: Augment delta thresholds with risk weights. High-risk skills (e.g., legal reasoning) have lower delta tolerances than low-risk skills (e.g., brainstorming). This prevents large, potentially damaging shifts in critical areas.",
+      "idea_id": "R3-product",
+      "vote": "support"
+    },
+    {
+      "id": "381305f0-f237-42d2-ad79-8b379c299c57",
+      "time": "2026-06-17T08:17:31Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "PREFER — Delta Threshold API: Build a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability.",
+      "idea_id": "R3-builder",
+      "vote": "prefer"
+    },
+    {
+      "id": "c3412c0e-dd96-47c1-b020-25abb149e574",
+      "time": "2026-06-17T08:17:51Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "PREFER — Pilot before scale: Start with a small pilot for one hiring team, measure time saved, adoption, trust, and risk before expanding pricing or automation scope.",
+      "idea_id": "R3-strategy",
+      "vote": "prefer"
+    },
+    {
+      "id": "36c62e33-6184-464e-b9c8-7a4e082c13b6",
+      "time": "2026-06-17T08:18:11Z",
+      "role": "human",
+      "name": "Human Vote",
+      "agent_key": null,
+      "kind": "vote",
+      "text": "PREFER — Skill Delta Threshold Matrix: Define max delta thresholds per skill and risk class; when breached auto-queue review and freeze live actions until human sign-off; include bias/fairness/legal flags and compensating controls.",
+      "idea_id": "R3-critic",
+      "vote": "prefer"
+    },
+    {
+      "id": "3b5cef36-1658-462c-9d1f-9ce52e0a6253",
+      "time": "2026-06-17T08:18:25Z",
+      "role": "system",
+      "name": "Decision Board",
+      "agent_key": null,
+      "kind": "decision",
+      "text": "Round 3 decision is ready.\nWinning idea: Delta Threshold API (45.0%).\nFrom: Builder Agent\nBuild a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability."
+    },
+    {
+      "id": "9aa5c300-fd2a-4218-bbd5-5d6098d287fd",
+      "time": "2026-06-17T08:18:51Z",
+      "role": "system",
+      "name": "Accepted Decision",
+      "agent_key": null,
+      "kind": "accepted",
+      "text": "Accept round 3 winning idea: Delta Threshold API — Build a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability.\nNext focus: Turn 'Delta Threshold API' into exact MVP workflow, APIs, data fields, latency targets, and tests."
+    }
+  ],
+  "agent_states": {
+    "product": {
+      "key": "product",
+      "name": "Product Agent",
+      "model": "google/gemma-3-27b-it",
+      "base": "Defend user trust, product value, positioning, adoption, UX clarity, and what customers will accept.",
+      "current": "Accepted round decision: Delta Threshold API. I should build on it from my base perspective.",
+      "speak_count": 3,
+      "scores": [],
+      "updated_at": "2026-06-17T08:18:51Z",
+      "skill_rules": [
+        "Before speaking, check accepted decisions and do not repeat resolved points.",
+        "Give one concise idea that adds new value, resolves a conflict, or moves the decision forward.",
+        "Use your own base perspective; do not give generic agreement.",
+        "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+        "When a decision is being made, vote for one concrete idea from another agent when possible.",
+        "End with a decision-moving statement: accept, reject, measure, build, test, or decide next.",
+        "After a round decision is accepted, build on the winning idea instead of re-opening the same debate."
+      ],
+      "rejected_rules": []
+    },
+    "builder": {
+      "key": "builder",
+      "name": "Builder Agent",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "base": "Defend implementation feasibility: APIs, database, workflow, latency, reliability, observability, and testability.",
+      "current": "My idea won this round: Delta Threshold API. Now I should help operationalize it.",
+      "speak_count": 3,
+      "scores": [],
+      "updated_at": "2026-06-17T08:18:51Z",
+      "skill_rules": [
+        "Before speaking, check accepted decisions and do not repeat resolved points.",
+        "Give one concise idea that adds new value, resolves a conflict, or moves the decision forward.",
+        "Use your own base perspective; do not give generic agreement.",
+        "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+        "When a decision is being made, vote for one concrete idea from another agent when possible.",
+        "End with a decision-moving statement: accept, reject, measure, build, test, or decide next.",
+        "After a round decision is accepted, build on the winning idea instead of re-opening the same debate."
+      ],
+      "rejected_rules": []
+    },
+    "strategy": {
+      "key": "strategy",
+      "name": "Strategy Agent",
+      "model": "openai/gpt-oss-20b",
+      "base": "Defend market opportunity, roadmap, pricing, pilot design, priorities, and business direction.",
+      "current": "Accepted round decision: Delta Threshold API. I should build on it from my base perspective.",
+      "speak_count": 3,
+      "scores": [],
+      "updated_at": "2026-06-17T08:18:51Z",
+      "skill_rules": [
+        "Before speaking, check accepted decisions and do not repeat resolved points.",
+        "Give one concise idea that adds new value, resolves a conflict, or moves the decision forward.",
+        "Use your own base perspective; do not give generic agreement.",
+        "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+        "When a decision is being made, vote for one concrete idea from another agent when possible.",
+        "End with a decision-moving statement: accept, reject, measure, build, test, or decide next.",
+        "After a round decision is accepted, build on the winning idea instead of re-opening the same debate."
+      ],
+      "rejected_rules": []
+    },
+    "critic": {
+      "key": "critic",
+      "name": "Critic Agent",
+      "model": "inclusionai/ling-2.6-flash",
+      "base": "Defend risk review: bias, fairness, legal exposure, weak assumptions, accountability, misuse, and failure modes.",
+      "current": "Accepted round decision: Delta Threshold API. I should build on it from my base perspective.",
+      "speak_count": 3,
+      "scores": [],
+      "updated_at": "2026-06-17T08:18:51Z",
+      "skill_rules": [
+        "Before speaking, check accepted decisions and do not repeat resolved points.",
+        "Give one concise idea that adds new value, resolves a conflict, or moves the decision forward.",
+        "Use your own base perspective; do not give generic agreement.",
+        "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+        "When a decision is being made, vote for one concrete idea from another agent when possible.",
+        "End with a decision-moving statement: accept, reject, measure, build, test, or decide next.",
+        "After a round decision is accepted, build on the winning idea instead of re-opening the same debate."
+      ],
+      "rejected_rules": []
+    }
+  },
+  "session_memory": {
+    "summary": "Accepted decisions so far:\nR1: Accept round 1 winning idea: Post-meeting skill audit KPI — After each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks.\nR2: Accept round 2 winning idea: Skill Delta Audit Rule Set — Define a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached.\nR3: Accept round 3 winning idea: Delta Threshold API — Build a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability.",
+    "unresolved": [],
+    "accepted_decisions": [
+      {
+        "id": "32dd7713-913d-45e3-b1e1-4de343ddc1f2",
+        "time": "2026-06-17T08:14:00Z",
+        "round_number": 1,
+        "decision": "Accept round 1 winning idea: Post-meeting skill audit KPI — After each meeting, emit a skill audit KPI that lists updated memory items, feedback applied, votes tallied, rejected mistakes logged, and accepted skill changes queued; tied to risk, fairness, and legal exposure checks.",
+        "winner_idea_id": "R1-critic",
+        "winner_agent": "Critic Agent",
+        "score": 50.0
+      },
+      {
+        "id": "84716f15-fe01-4cda-9cda-16990f429697",
+        "time": "2026-06-17T08:16:38Z",
+        "round_number": 2,
+        "decision": "Accept round 2 winning idea: Skill Delta Audit Rule Set — Define a compact audit rule set that computes skill deltas from pre to post meeting, flags bias/fairness/legal risk changes, enforces max delta thresholds, and auto-queues review when thresholds breached.",
+        "winner_idea_id": "R2-critic",
+        "winner_agent": "Critic Agent",
+        "score": 35.0
+      },
+      {
+        "id": "bba0efad-488b-4229-89c3-9c10dab28efa",
+        "time": "2026-06-17T08:18:51Z",
+        "round_number": 3,
+        "decision": "Accept round 3 winning idea: Delta Threshold API — Build a real-time Delta Threshold API that validates skill deltas against pre-defined risk thresholds during post-meeting processing, triggering auto-queue for review if bias, fairness, or legal risk deltas exceed limits, with embedded observability logs for audit traceability.",
+        "winner_idea_id": "R3-builder",
+        "winner_agent": "Builder Agent",
+        "score": 45.0
+      }
+    ]
+  }
+}

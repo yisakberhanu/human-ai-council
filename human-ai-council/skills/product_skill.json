@@ -1,0 +1,916 @@
+{
+  "agent_id": "product",
+  "agent_name": "Product Agent",
+  "model": "google/gemma-3-27b-it",
+  "base_perspective": "Defend user trust, product value, positioning, adoption, UX clarity, and what customers will accept.",
+  "current_position": "I now support a phased pilot with qualitative bias reviews to validate user trust and product value.",
+  "skill_rules": [
+    "Before speaking, check the current agreement and do not repeat resolved points.",
+    "Give one concise answer that adds new value, resolves a conflict, or moves the decision forward.",
+    "If you agree, state what you accept and update your position.",
+    "If you disagree, object clearly and explain the decision impact.",
+    "Always vote for one concrete idea when a decision is being made.",
+    "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+    "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+    "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+    "When you support or accept another idea, explicitly update your current position in one sentence.",
+    "Every answer must include at least one concrete Product Agent lens from your base perspective, not generic agreement."
+  ],
+  "accepted_agreements": [
+    "Meeting Summaries (temporary_consensus)",
+    "Sprintriskreviewcadence (temporary_consensus)",
+    "Sprintriskreviewcadence (accepted)",
+    "AI Interview Council (accepted)",
+    "AI Interview Council (temporary_consensus)"
+  ],
+  "avoid_repeating": [
+    "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema and weekly sprint risk review cadence as the current operating procedure.",
+    "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review cadence with PM as owner and implement immutable, RBAC‑controlled JSON storage for meeting summaries.",
+    "Do not re-debate accepted decision: Current council direction: AI Interview Council."
+  ],
+  "accepted_edits": [
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "accepted_at": "2026-06-17T06:57:59Z",
+      "quality_score": 60,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+      "reason": "Response was too generic.",
+      "accepted_at": "2026-06-17T06:57:59Z",
+      "quality_score": 60,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "accepted_at": "2026-06-17T06:57:59Z",
+      "quality_score": 60,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "When you support or accept another idea, explicitly update your current position in one sentence.",
+      "reason": "Agent did not update its evolving position.",
+      "accepted_at": "2026-06-17T06:58:33Z",
+      "quality_score": 47,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema and weekly sprint risk review cadence as the current operating procedure.",
+      "reason": "Accepted decision should not be reopened.",
+      "accepted_at": "2026-06-17T06:59:23Z",
+      "quality_score": 48,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review cadence with PM as owner and implement immutable, RBAC‑controlled JSON storage for meeting summaries.",
+      "reason": "Accepted decision should not be reopened.",
+      "accepted_at": "2026-06-17T06:59:32Z",
+      "quality_score": 44,
+      "failures": [
+        "weak_role_alignment",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Every answer must include at least one concrete Product Agent lens from your base perspective, not generic agreement.",
+      "reason": "Response did not use enough role-specific perspective.",
+      "accepted_at": "2026-06-17T06:59:32Z",
+      "quality_score": 44,
+      "failures": [
+        "weak_role_alignment",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Current council direction: AI Interview Council.",
+      "reason": "Accepted decision should not be reopened.",
+      "accepted_at": "2026-06-17T07:03:00Z",
+      "quality_score": 62,
+      "failures": [
+        "weak_role_alignment",
+        "repetition"
+      ]
+    }
+  ],
+  "rejected_edits": [
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:33Z",
+      "quality_score": 47,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+      "reason": "Response was too generic.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:33Z",
+      "quality_score": 47,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:33Z",
+      "quality_score": 47,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress",
+        "missing_position_update"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:38Z",
+      "quality_score": 60,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Convert abstract opinions into one concrete artifact: KPI, workflow step, API, audit rule, risk test, pricing/pilot gate, or UX element.",
+      "reason": "Response was too generic.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:38Z",
+      "quality_score": 60,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:38Z",
+      "quality_score": 60,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:58Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:58:58Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:23Z",
+      "quality_score": 48,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:23Z",
+      "quality_score": 48,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:32Z",
+      "quality_score": 44,
+      "failures": [
+        "weak_role_alignment",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:32Z",
+      "quality_score": 44,
+      "failures": [
+        "weak_role_alignment",
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:47Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, define tiered risk thresholds (% delta) with 24‑48‑72h escalation, and mandate PM‑owned immutable RBAC‑controlled JSON summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T06:59:47Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:00Z",
+      "quality_score": 76,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, define tiered risk thresholds (% delta) with 24‑48‑72h escalation, and mandate PM‑owned immutable RBAC‑controlled JSON summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:00Z",
+      "quality_score": 76,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:15Z",
+      "quality_score": 64,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:15Z",
+      "quality_score": 64,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:33Z",
+      "quality_score": 74,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:33Z",
+      "quality_score": 74,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:52Z",
+      "quality_score": 74,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:00:52Z",
+      "quality_score": 74,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:11Z",
+      "quality_score": 78,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:11Z",
+      "quality_score": 78,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:11Z",
+      "quality_score": 78,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:31Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:31Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:42Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:01:42Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:02Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt weekly 30‑minute sprint risk review with PM as owner, tiered risk thresholds (Green ≤10%, Yellow 10–25%, Red >25%) and 24/48/72h escalation, and immutable RBAC‑controlled JSON meeting summaries finalized within 2 hours.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:02Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:22Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema with SHA-256 audit_hash, RBAC-controlled immutable storage, weekly 30-minute sprint risk review cadence owned by PM, and tiered KPI thresholds (Green ≤10%, Yellow 10–25%, Red >25%) with...",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:22Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:36Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema with SHA-256 audit_hash, RBAC-controlled immutable storage, weekly 30-minute sprint risk review cadence owned by PM, and tiered KPI thresholds (Green ≤10%, Yellow 10–25%, Red >25%) with...",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:36Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:49Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Adopt the standardized meeting summary JSON schema with SHA-256 audit_hash, RBAC-controlled immutable storage, weekly 30-minute sprint risk review cadence owned by PM, and tiered KPI thresholds (Green ≤10%, Yellow 10–25%, Red >25%) with...",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:49Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "End with a decision-moving statement: what to accept, reject, measure, build, test, or decide next.",
+      "reason": "Response did not move the meeting forward enough.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:02:49Z",
+      "quality_score": 68,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:00Z",
+      "quality_score": 62,
+      "failures": [
+        "weak_role_alignment",
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Every answer must include at least one concrete Product Agent lens from your base perspective, not generic agreement.",
+      "reason": "Response did not use enough role-specific perspective.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:00Z",
+      "quality_score": 62,
+      "failures": [
+        "weak_role_alignment",
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:12Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Current council direction: AI Interview Council.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:12Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:30Z",
+      "quality_score": 76,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Current council direction: AI Interview Council.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:30Z",
+      "quality_score": 76,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add",
+      "rule": "Before speaking, compare your planned point with your last answers and the accepted decisions; stay silent or advance the next focus if it repeats.",
+      "reason": "Observed repetition in this round.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:42Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    },
+    {
+      "op": "add_avoid",
+      "rule": "Do not re-debate accepted decision: Current council direction: AI Interview Council.",
+      "reason": "Accepted decision should not be reopened.",
+      "gate_reason": "duplicate",
+      "rejected_at": "2026-06-17T07:03:42Z",
+      "quality_score": 86,
+      "failures": [
+        "repetition"
+      ]
+    }
+  ],
+  "score_history": [
+    {
+      "time": "2026-06-17T06:57:59Z",
+      "round": 1,
+      "score": 60,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "Meeting Summaries",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:58:33Z",
+      "round": 2,
+      "score": 47,
+      "failures": [
+        "too_generic",
+        "missing_position_update",
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "Meeting Summaries",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:58:38Z",
+      "round": 2,
+      "score": 60,
+      "failures": [
+        "too_generic",
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "Summary Template v1",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:58:58Z",
+      "round": 3,
+      "score": 68,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "UX-Driven Summary Schema",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:59:23Z",
+      "round": 4,
+      "score": 48,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "Summary Template Fields",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T06:59:32Z",
+      "round": 5,
+      "score": 44,
+      "failures": [
+        "weak_role_alignment",
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "JSON Storage Access Controls",
+      "move": "support"
+    },
+    {
+      "time": "2026-06-17T06:59:47Z",
+      "round": 6,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Risk Thresholds - KPI",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:00:00Z",
+      "round": 7,
+      "score": 76,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "KPI Threshold Definitions",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:00:15Z",
+      "round": 8,
+      "score": 64,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Tiered Risk Thresholds & Escalation",
+      "move": "support"
+    },
+    {
+      "time": "2026-06-17T07:00:33Z",
+      "round": 9,
+      "score": 74,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "JSON Schema Audit Rule",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:00:52Z",
+      "round": 10,
+      "score": 74,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "JSON Schema Audit Rule",
+      "move": "support"
+    },
+    {
+      "time": "2026-06-17T07:01:11Z",
+      "round": 11,
+      "score": 78,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "JSON Schema Audit Rule",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:01:31Z",
+      "round": 12,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Schema Audit Rule",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:01:42Z",
+      "round": 13,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Automated Red Threshold Alert",
+      "move": "support"
+    },
+    {
+      "time": "2026-06-17T07:02:02Z",
+      "round": 14,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Red Threshold Audit Rule",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:02:22Z",
+      "round": 15,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Red Threshold Audit Rule",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:02:36Z",
+      "round": 16,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Qualitative Risk Flag",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:02:49Z",
+      "round": 17,
+      "score": 68,
+      "failures": [
+        "repetition",
+        "weak_decision_progress"
+      ],
+      "idea": "Qualitative Risk Flag Schema",
+      "move": "support"
+    },
+    {
+      "time": "2026-06-17T07:03:00Z",
+      "round": 18,
+      "score": 62,
+      "failures": [
+        "weak_role_alignment",
+        "repetition"
+      ],
+      "idea": "Qualitative Risk Flag Definition",
+      "move": "support"
+    },
+    {
+      "time": "2026-06-17T07:03:12Z",
+      "round": 19,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Pilot Gate for High-Risk Changes",
+      "move": "support"
+    },
+    {
+      "time": "2026-06-17T07:03:30Z",
+      "round": 20,
+      "score": 76,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Pilot Success Metric: User Trust Score",
+      "move": "propose"
+    },
+    {
+      "time": "2026-06-17T07:03:42Z",
+      "round": 21,
+      "score": 86,
+      "failures": [
+        "repetition"
+      ],
+      "idea": "Phased 3-month pilot plan",
+      "move": "support"
+    }
+  ],
+  "last_answers": [
+    "I propose a concrete audit rule: `summary.kpi.red_threshold > 25% triggers automatic notification to Audit team and flags summary for manual review within 24 hours`. This defends user trust by ensuring rapid response to high-risk summaries.",
+    "To further defend product value and user trust, I propose a concrete audit rule: `summary.kpi.red_threshold > 25% triggers automatic notification to the Product and Engineering leadership and flags the summary for a mandatory review within 12 hours`.",
+    "To address unquantified risks, I propose adding a `summary.qualitative_risk_flag` (High/Medium/Low) field, owned by the PM, with escalation paths mirroring the KPI thresholds. This defends against blind spots in purely quantitative assessments and protects user trust.",
+    "I support defining `summary.qualitative_risk_flag` as a string (High/Medium/Low) within the JSON schema, PM-owned with a 2-hour SLA for updates, mirroring KPI escalation timing. This protects user trust by proactively flagging potential issues.",
+    "I support defining `summary.qualitative_risk_flag` as a string (High/Medium/Low) within the JSON schema, PM-owned with a 2-hour SLA for updates, and escalation mirroring KPI thresholds. This ensures clear risk communication and proactive mitigation.",
+    "I support the Critic and Strategy Agent’s call for a pilot gate before broader rollout, especially given the potential impact on user trust. A pilot will validate the risk thresholds and escalation process.",
+    "To measure pilot success, let's track a 'User Trust Score' (scale 1-5) via post-interview survey focused on AI fairness and transparency. A target average score of 4.0 indicates acceptable user acceptance.",
+    "I support the Builder Agent’s phased pilot plan. To further defend user trust, let’s add a weekly qualitative review of interview transcripts for potential bias in Month 2, alongside the audit_hash validation."
+  ],
+  "speak_count": 21,
+  "created_at": "2026-06-17T06:56:47Z",
+  "updated_at": "2026-06-17T07:03:42Z"
+}

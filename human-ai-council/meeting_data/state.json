@@ -1,0 +1,109 @@
+{
+  "meeting_id": "cb83a654-71af-4a4f-9231-459c1356ccaa",
+  "created_at": 1781618807.0379608,
+  "turn_count": 1,
+  "memory": {
+    "title": "Model Council discussion",
+    "active_topic": "No active topic yet.",
+    "user_goal": "The system needs a working OpenRouter request before model agents can answer.",
+    "decisions": [],
+    "disagreements": [
+      "Do not use mock-mode as real council behavior."
+    ],
+    "open_questions": [
+      "Is the OpenRouter key out of free-model requests or missing credits?"
+    ],
+    "agent_positions": {
+      "product": "Product Agent tracks product framing and user trust.",
+      "builder": "Builder Agent tracks implementation and tool/data flow.",
+      "strategist": "Strategy Agent tracks structure, decision logic, and business direction.",
+      "critic": "Critic Agent tracks objections, risks, legal/fairness issues, and weak assumptions."
+    },
+    "concise_timeline": [
+      "Turn 1: Model call failed: OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1781654400000\"},\"provider_name\":null}},\"user_id\":"
+    ]
+  },
+  "agent_private_memory": {
+    "product": "Product Agent private memory starts empty.",
+    "builder": "Builder Agent private memory starts empty.",
+    "strategist": "Strategy Agent private memory starts empty.",
+    "critic": "Critic Agent private memory starts empty."
+  },
+  "transcript": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "type": "human",
+      "text": "hello everyone so let's discuss on replacing woman hiring manager with agent so what you have to tell me your perspective so also you okay the room is open to object others response and perspective so let's begin",
+      "raw_caption": "hello everyone so let's discuss on replacing woman hiring manager with agent so what you have to tell me your perspective so also you okay the room is open to object others response and perspective so let's begin",
+      "repair_source": "text",
+      "timestamp": 1781618851.2110627
+    },
+    {
+      "turn": 1,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "type": "agent",
+      "text": "The model agents are unavailable right now. The latest error is shown in the side panel; fix the API/rate-limit issue, then ask again.",
+      "stance": "clarify",
+      "objection": "I will not fake agent responses because that made previous tests misleading.",
+      "confidence": 100,
+      "model": "local",
+      "timestamp": 1781618851.2110627
+    }
+  ],
+  "event_graph": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "action": "asked",
+      "content_summary": "hello everyone so let's discuss on replacing woman hiring manager with agent so what you have to tell me your perspective so also you okay the room is open to object others response and perspective so let's begin",
+      "raw_caption": "hello everyone so let's discuss on replacing woman hiring manager with agent so what you have to tell me your perspective so also you okay the room is open to object others response and perspective so let's begin",
+      "mode": "critique",
+      "target_agent": "",
+      "timestamp": 1781618851.2110627
+    },
+    {
+      "turn": 1,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "action": "spoke",
+      "content_summary": "The model agents are unavailable right now. The latest error is shown in the side panel; fix the API/rate-limit issue, then ask again.",
+      "objection": "I will not fake agent responses because that made previous tests misleading.",
+      "stance": "clarify",
+      "self_confidence": 100,
+      "adjusted_score": 100,
+      "model": "local",
+      "timestamp": 1781618851.2110627
+    },
+    {
+      "turn": 1,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "timestamp": 1781618851.2110627
+    },
+    {
+      "turn": 1,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "listened_silent",
+      "timestamp": 1781618851.2110627
+    },
+    {
+      "turn": 1,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategist",
+      "action": "listened_silent",
+      "timestamp": 1781618851.2110627
+    },
+    {
+      "turn": 1,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "listened_silent",
+      "timestamp": 1781618851.2110627
+    }
+  ],
+  "last_error": "OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1781654400000\"},\"provider_name\":null}},\"user_id\":\"user_3BJ17BUj0mQQDN3BLVmYsNvK9ur\"}"
+}

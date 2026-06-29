@@ -1,0 +1,638 @@
+{
+  "meeting_id": "995cf7e8-2fe3-4790-b4a9-812f9a40999c",
+  "created_at": 1781615881.2789614,
+  "turn_count": 8,
+  "global_memory": "Meeting goal: human-led multi-model AI roundtable called Model Council. The human is the host. All model council members receive the same discussion context, think from different model perspectives, and speak only when selected by the selector layer or directly called by the human.\n\nTurn 1: Human raw caption: So, see you, we are going to discuss new things. So it is, yeah, an agent that can replace a women hiring manager. So all of you have to give me your perspective, just short way.\nSelector reason: Cover product, practical, and risk perspectives\nGemini Agent spoke: My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.\nQwen Agent spoke: My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.\nNemotron Agent spoke: Replacing a hiring manager with an agent raises serious bias, fairness, and legal compliance risks; any such s\n...\nstem must include robust auditing, transparent criteria, and human oversight to avoid discriminatory outcomes.\nSilent/listened: OpenAI OSS Agent\n\nTurn 2: Human raw caption: Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?\nSelector reason: Direct human target override.\nOpenAI OSS Agent spoke: I’ll hold off for now.\nSilent/listened: Gemini Agent, Qwen Agent, Nemotron Agent\n\nTurn 3: Human raw caption: Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?\nSelector reason: Direct human target override.\nOpenAI OSS Agent spoke: From a structured perspective, an agent replacing a hiring manager must enforce transparent, auditable decision criteria, embed bias mitigation, and maintain human oversight to satisfy legal and ethical standards.\nSilent/listened: Gemini Agent, Qwen Agent, Nemotron Agent\n\nTurn 4: Human raw caption: Please try this question, please.\nSelector reason: Direct human target override.\nOpenAI OSS Agent spoke: I’m not ready to answer yet.\nSilent/listened: Gemini Agent, Qwen Agent, Nemotron Agent\n\nTurn 5: Human raw caption: I want to test you. Please can you repeat the question? What are we talking about? Can you tell me about this?\nSelector reason: Direct human target override.\nOpenAI OSS Agent spoke: I’m not sure what specific question you’re referring to—could you clarify the topic or provide the original question?\nSilent/listened: Gemini Agent, Qwen Agent, Nemotron Agent\n\nTurn 6: Human raw caption: Tell me what I said. So, what is my topic or discussion topic? Who can remember and tell me that?\nSelector reason: Selected Qwen for practical implementation, Gemini for creative product perspective, and Nemotron for risk assessment to cover diverse viewpoints.\nQwen Agent spoke: My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.\nGemini Agent spoke: My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.\nNemotron Agent spoke: You’re discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation, product presentation, and especially the bias, fairness, legal and oversight risks.\nSilent/listened: OpenAI OSS Agent\n\nTurn 7: Human raw caption: I wanted to add tools later, keep the flow simple: record audio, transcribe, message to th\n...\n AI agent that would replace a women hiring manager, focusing on practical implementation.\nSelector reason: All requested; diverse perspectives: product view, practical implementation, risk assessment.\nGemini Agent spoke: My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.\nQwen Agent spoke: My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.\nNemotron Agent spoke: My risk view: do not trust browser captions alone. The system needs manual send, audio recording fallback, and a repair layer so agents do not respond to broken input.\nSilent/listened: OpenAI OSS Agent\n\nTurn 8: Human raw caption: I wanted to add tools later, keep the flow simple: record audio, transcribe, message to th\n...\n AI agent that would replace a women hiring manager, focusing on practical implementation.\nSelector reason: All requested and cover practical implementation, creative product view, and risk safeguards.\nQwen Agent spoke: My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.\nGemini Agent spoke: My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.\nNemotron Agent spoke: From a risk standpoint, any AI replacing a hiring manager must include rigorous bias testing, transparent scoring, regular audits, and a mandatory human‑in‑the‑loop checkpoint before any hiring decision is final.\nSilent/listened: OpenAI OSS Agent",
+  "agent_memories": {
+    "qwen": "Qwen Agent private memory starts empty.\n\nTurn 1 private note (spoke): Human asked: So, see you, we are going to discuss new things. So it is, yeah, an agent that c\n...\n hiring manager. So all of you have to give me your perspective, just short way. | I focused on Practical, implementation-focused, fast builder mindset.\n\nTurn 2 private note (listened_silent): Human asked: Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this? | I focused on Practical, implementation-focused, fast builder mindset.\n\nTurn 3 private note (listened_silent): Human asked: Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this? | I focused on Practical, implementation-focused, fast builder mindset.\n\nTurn 4 private note (listened_silent): Human asked: Please try this question, please. | I focused on Practical, implementation-focused, fast builder mindset.\n\nTurn 5 private note (listened_silent): Human asked: I want to test you. Please can you repeat the question? What are we talking about? Can you tell me about this? | I focused on Practical, implementation-focused, fast builder mindset.\n\nTurn 6 private note (spoke): Human asked: Tell me what I said. So, what is my topic or discussion topic? Who can remember and tell me that? | I focused on Practical, implementation-focused, fast builder mindset.\n\nTurn 7 private note (spoke): Human asked: I wanted to add tools later, keep the flow simple: record audio, transcribe, mes\n...\nthat would replace a women hiring manager, focusing on practical implementation. | I focused on Practical, implementation-focused, fast builder mindset.\n\nTurn 8 private note (spoke): Human asked: I wanted to add tools later, keep the flow simple: record audio, transcribe, mes\n...\nthat would replace a women hiring manager, focusing on practical implementation. | I focused on Practical, implementation-focused, fast builder mindset.",
+    "gemini": "Gemini Agent private memory starts empty.\n\nTurn 1 private note (spoke): Human asked: So, see you, we are going to discuss new things. So it is, yeah, an agent that c\n...\n hiring manager. So all of you have to give me your perspective, just short way. | I focused on Creative, broad, product/use-case connection mindset.\n\nTurn 2 private note (listened_silent): Human asked: Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this? | I focused on Creative, broad, product/use-case connection mindset.\n\nTurn 3 private note (listened_silent): Human asked: Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this? | I focused on Creative, broad, product/use-case connection mindset.\n\nTurn 4 private note (listened_silent): Human asked: Please try this question, please. | I focused on Creative, broad, product/use-case connection mindset.\n\nTurn 5 private note (listened_silent): Human asked: I want to test you. Please can you repeat the question? What are we talking about? Can you tell me about this? | I focused on Creative, broad, product/use-case connection mindset.\n\nTurn 6 private note (spoke): Human asked: Tell me what I said. So, what is my topic or discussion topic? Who can remember and tell me that? | I focused on Creative, broad, product/use-case connection mindset.\n\nTurn 7 private note (spoke): Human asked: I wanted to add tools later, keep the flow simple: record audio, transcribe, mes\n...\nthat would replace a women hiring manager, focusing on practical implementation. | I focused on Creative, broad, product/use-case connection mindset.\n\nTurn 8 private note (spoke): Human asked: I wanted to add tools later, keep the flow simple: record audio, transcribe, mes\n...\nthat would replace a women hiring manager, focusing on practical implementation. | I focused on Creative, broad, product/use-case connection mindset.",
+    "openai": "OpenAI OSS Agent private memory starts empty.\n\nTurn 1 private note (listened_silent): Heard: So, see you, we are going to discuss new things. So it is, yeah, an agent that c\n...\n hiring manager. So all of you have to give me your perspective, just short way.\n\nTurn 2 private note (spoke): Not asked to speak yet.\n\nTurn 3 private note (spoke): Human asked for OpenAI perspective; I provide risk-focused structured view.\n\nTurn 4 private note (spoke): Awaiting further instruction before speaking.\n\nTurn 5 private note (spoke): Human asks to repeat question; need clarification\n\nTurn 6 private note (listened_silent): Question: repeat the question, what are we talking about? Thought: just restate that they want clarification of the topic.\n\nTurn 7 private note (listened_silent): Awaiting direct call to speak.\n\nTurn 8 private note (listened_silent): Human reiterated topic; no direct request to speak.",
+    "nemotron": "Nemotron Agent private memory starts empty.\n\nTurn 1 private note (spoke): Question about AI replacing women hiring manager; noted concerns about bias, fairness, compliance, need for safeguards.\n\nTurn 2 private note (listened_silent): Awaiting call to discuss bias, compliance, and oversight for AI hiring manager replacement.\n\nTurn 3 private note (listened_silent): Awaiting call to discuss bias, compliance, oversight for AI hiring manager replacement.\n\nTurn 4 private note (listened_silent): Question about AI replacing women hiring manager; emphasized bias, fairness, compliance, need for audits and oversight.\n\nTurn 5 private note (listened_silent): Human asks to repeat question; unclear context\n\nTurn 6 private note (spoke): User asked to recall discussion topic – AI hiring manager replacement and its risk/implementation considerations.\n\nTurn 7 private note (spoke): Human asked: I wanted to add tools later, keep the flow simple: record audio, transcribe, mes\n...\nthat would replace a women hiring manager, focusing on practical implementation. | I focused on Critical, careful, risk/weakness-finding mindset.\n\nTurn 8 private note (spoke): User reiterated workflow and product view; I noted need to stress bias mitigation, auditability, and human oversight for AI hiring manager."
+  },
+  "transcript": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "type": "human",
+      "raw_text": "So, see you, we are going to discuss new things. So it is, yeah, an agent that can replace a women hiring manager. So all of you have to give me your perspective, just short way.",
+      "text": "So, see you, we are going to discuss new things. So it is, yeah, an agent that can replace a women hiring manager. So all of you have to give me your perspective, just short way.",
+      "timestamp": 1781615965.8050299
+    },
+    {
+      "turn": 1,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "type": "agent",
+      "text": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.",
+      "confidence": 67,
+      "model": "mock-mode",
+      "timestamp": 1781615965.8050299
+    },
+    {
+      "turn": 1,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "type": "agent",
+      "text": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.",
+      "confidence": 78,
+      "model": "mock-mode",
+      "timestamp": 1781615965.8050299
+    },
+    {
+      "turn": 1,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "type": "agent",
+      "text": "Replacing a hiring manager with an agent raises serious bias, fairness, and legal compliance risks; any such system must include robust auditing, transparent criteria, and human oversight to avoid discriminatory outcomes.",
+      "confidence": 17,
+      "model": "openrouter/free",
+      "timestamp": 1781615965.8050299
+    },
+    {
+      "turn": 2,
+      "speaker": "Human",
+      "type": "human",
+      "raw_text": "Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?",
+      "text": "Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?",
+      "timestamp": 1781616159.9908254
+    },
+    {
+      "turn": 2,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "type": "agent",
+      "text": "I’ll hold off for now.",
+      "confidence": 3,
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781616159.9908254
+    },
+    {
+      "turn": 3,
+      "speaker": "Human",
+      "type": "human",
+      "raw_text": "Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?",
+      "text": "Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?",
+      "timestamp": 1781616178.4673045
+    },
+    {
+      "turn": 3,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "type": "agent",
+      "text": "From a structured perspective, an agent replacing a hiring manager must enforce transparent, auditable decision criteria, embed bias mitigation, and maintain human oversight to satisfy legal and ethical standards.",
+      "confidence": 0,
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781616178.4673045
+    },
+    {
+      "turn": 4,
+      "speaker": "Human",
+      "type": "human",
+      "raw_text": "Please try this question, please.",
+      "text": "Please try this question, please.",
+      "timestamp": 1781616203.9733608
+    },
+    {
+      "turn": 4,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "type": "agent",
+      "text": "I’m not ready to answer yet.",
+      "confidence": 0,
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781616203.9733608
+    },
+    {
+      "turn": 5,
+      "speaker": "Human",
+      "type": "human",
+      "raw_text": "I want to test you. Please can you repeat the question? What are we talking about? Can you tell me about this?",
+      "text": "I want to test you. Please can you repeat the question? What are we talking about? Can you tell me about this?",
+      "timestamp": 1781616259.2224796
+    },
+    {
+      "turn": 5,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "type": "agent",
+      "text": "I’m not sure what specific question you’re referring to—could you clarify the topic or provide the original question?",
+      "confidence": 0,
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781616259.2224796
+    },
+    {
+      "turn": 6,
+      "speaker": "Human",
+      "type": "human",
+      "raw_text": "Tell me what I said. So, what is my topic or discussion topic? Who can remember and tell me that?",
+      "text": "Tell me what I said. So, what is my topic or discussion topic? Who can remember and tell me that?",
+      "timestamp": 1781616337.5626714
+    },
+    {
+      "turn": 6,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "type": "agent",
+      "text": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.",
+      "confidence": 90,
+      "model": "mock-mode",
+      "timestamp": 1781616337.5626714
+    },
+    {
+      "turn": 6,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "type": "agent",
+      "text": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.",
+      "confidence": 79,
+      "model": "mock-mode",
+      "timestamp": 1781616337.5626714
+    },
+    {
+      "turn": 6,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "type": "agent",
+      "text": "You’re discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation, product presentation, and especially the bias, fairness, legal and oversight risks.",
+      "confidence": 22,
+      "model": "openrouter/free",
+      "timestamp": 1781616337.5626714
+    },
+    {
+      "turn": 7,
+      "speaker": "Human",
+      "type": "human",
+      "raw_text": "I wanted to add tools later, keep the flow simple: record audio, transcribe, message to the agents. My product view: so the human knows what the agents received, this makes the meeting feel more reliable. You are discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation.",
+      "text": "I wanted to add tools later, keep the flow simple: record audio, transcribe, message to the agents. My product view: so the human knows what the agents received, this makes the meeting feel more reliable. You are discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation.",
+      "timestamp": 1781616457.822477
+    },
+    {
+      "turn": 7,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "type": "agent",
+      "text": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.",
+      "confidence": 67,
+      "model": "mock-mode",
+      "timestamp": 1781616457.822477
+    },
+    {
+      "turn": 7,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "type": "agent",
+      "text": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.",
+      "confidence": 78,
+      "model": "mock-mode",
+      "timestamp": 1781616457.822477
+    },
+    {
+      "turn": 7,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "type": "agent",
+      "text": "My risk view: do not trust browser captions alone. The system needs manual send, audio recording fallback, and a repair layer so agents do not respond to broken input.",
+      "confidence": 78,
+      "model": "mock-mode",
+      "timestamp": 1781616457.822477
+    },
+    {
+      "turn": 8,
+      "speaker": "Human",
+      "type": "human",
+      "raw_text": "I wanted to add tools later, keep the flow simple: record audio, transcribe, message to the agents. My product view: so the human knows what the agents received, this makes the meeting feel more reliable. You are discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation.",
+      "text": "I wanted to add tools later, keep the flow simple: record audio, transcribe, message to the agents. My product view: so the human knows what the agents received, this makes the meeting feel more reliable. You are discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation.",
+      "timestamp": 1781616478.8452036
+    },
+    {
+      "turn": 8,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "type": "agent",
+      "text": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.",
+      "confidence": 78,
+      "model": "mock-mode",
+      "timestamp": 1781616478.8452036
+    },
+    {
+      "turn": 8,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "type": "agent",
+      "text": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.",
+      "confidence": 67,
+      "model": "mock-mode",
+      "timestamp": 1781616478.8452036
+    },
+    {
+      "turn": 8,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "type": "agent",
+      "text": "From a risk standpoint, any AI replacing a hiring manager must include rigorous bias testing, transparent scoring, regular audits, and a mandatory human‑in‑the‑loop checkpoint before any hiring decision is final.",
+      "confidence": 55,
+      "model": "openrouter/free",
+      "timestamp": 1781616478.8452036
+    }
+  ],
+  "event_graph": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "action": "asked",
+      "raw_caption": "So, see you, we are going to discuss new things. So it is, yeah, an agent that can replace a women hiring manager. So all of you have to give me your perspective, just short way.",
+      "corrected_message": "So, see you, we are going to discuss new things. So it is, yeah, an agent that can replace a women hiring manager. So all of you have to give me your perspective, just short way.",
+      "repair_source": "manual",
+      "timestamp": 1781615965.8050299
+    },
+    {
+      "turn": 1,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "action": "spoke",
+      "adjusted_score": 67,
+      "self_confidence": 72,
+      "content_summary": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.",
+      "model": "mock-mode",
+      "timestamp": 1781615965.8050299
+    },
+    {
+      "turn": 1,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "action": "spoke",
+      "adjusted_score": 78,
+      "self_confidence": 70,
+      "content_summary": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.",
+      "model": "mock-mode",
+      "timestamp": 1781615965.8050299
+    },
+    {
+      "turn": 1,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "action": "spoke",
+      "adjusted_score": 17,
+      "self_confidence": 7,
+      "content_summary": "Replacing a hiring manager with an agent raises serious bias, fairness, and legal compliance risks; any such system must include robust auditing, transparent criteria, and human oversight to avoid discriminatory outcomes.",
+      "model": "openrouter/free",
+      "timestamp": 1781615965.8050299
+    },
+    {
+      "turn": 1,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "action": "listened_silent",
+      "adjusted_score": 0,
+      "answer_summary": "",
+      "timestamp": 1781615965.8050299
+    },
+    {
+      "turn": 2,
+      "speaker": "Human",
+      "action": "asked",
+      "raw_caption": "Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?",
+      "corrected_message": "Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?",
+      "repair_source": "manual",
+      "timestamp": 1781616159.9908254
+    },
+    {
+      "turn": 2,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "action": "spoke",
+      "adjusted_score": 3,
+      "self_confidence": 0,
+      "content_summary": "I’ll hold off for now.",
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781616159.9908254
+    },
+    {
+      "turn": 2,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "action": "listened_silent",
+      "adjusted_score": 70,
+      "answer_summary": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliab",
+      "timestamp": 1781616159.9908254
+    },
+    {
+      "turn": 2,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "action": "listened_silent",
+      "adjusted_score": 81,
+      "answer_summary": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then sen",
+      "timestamp": 1781616159.9908254
+    },
+    {
+      "turn": 2,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "action": "listened_silent",
+      "adjusted_score": 13,
+      "answer_summary": "OpenAI OSS Agent remains silent, ready to contribute a structured risk assessment.",
+      "timestamp": 1781616159.9908254
+    },
+    {
+      "turn": 3,
+      "speaker": "Human",
+      "action": "asked",
+      "raw_caption": "Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?",
+      "corrected_message": "Great, but I didn't get any perspective from OpenAI or the agent, so let's give a chance to the OpenAI model. Please can you try this?",
+      "repair_source": "manual",
+      "timestamp": 1781616178.4673045
+    },
+    {
+      "turn": 3,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "action": "spoke",
+      "adjusted_score": 0,
+      "self_confidence": 0,
+      "content_summary": "From a structured perspective, an agent replacing a hiring manager must enforce transparent, auditable decision criteria, embed bias mitigation, and maintain human oversight to satisfy legal and ethical standards.",
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781616178.4673045
+    },
+    {
+      "turn": 3,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "action": "listened_silent",
+      "adjusted_score": 73,
+      "answer_summary": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliab",
+      "timestamp": 1781616178.4673045
+    },
+    {
+      "turn": 3,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "action": "listened_silent",
+      "adjusted_score": 84,
+      "answer_summary": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then sen",
+      "timestamp": 1781616178.4673045
+    },
+    {
+      "turn": 3,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "action": "listened_silent",
+      "adjusted_score": 16,
+      "answer_summary": "No response yet.",
+      "timestamp": 1781616178.4673045
+    },
+    {
+      "turn": 4,
+      "speaker": "Human",
+      "action": "asked",
+      "raw_caption": "Please try this question, please.",
+      "corrected_message": "Please try this question, please.",
+      "repair_source": "manual",
+      "timestamp": 1781616203.9733608
+    },
+    {
+      "turn": 4,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "action": "spoke",
+      "adjusted_score": 0,
+      "self_confidence": 0,
+      "content_summary": "I’m not ready to answer yet.",
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781616203.9733608
+    },
+    {
+      "turn": 4,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "action": "listened_silent",
+      "adjusted_score": 76,
+      "answer_summary": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliab",
+      "timestamp": 1781616203.9733608
+    },
+    {
+      "turn": 4,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "action": "listened_silent",
+      "adjusted_score": 87,
+      "answer_summary": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then sen",
+      "timestamp": 1781616203.9733608
+    },
+    {
+      "turn": 4,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "action": "listened_silent",
+      "adjusted_score": 23,
+      "answer_summary": "AI hiring agents need strict bias controls and human oversight.",
+      "timestamp": 1781616203.9733608
+    },
+    {
+      "turn": 5,
+      "speaker": "Human",
+      "action": "asked",
+      "raw_caption": "I want to test you. Please can you repeat the question? What are we talking about? Can you tell me about this?",
+      "corrected_message": "I want to test you. Please can you repeat the question? What are we talking about? Can you tell me about this?",
+      "repair_source": "manual",
+      "timestamp": 1781616259.2224796
+    },
+    {
+      "turn": 5,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "action": "spoke",
+      "adjusted_score": 0,
+      "self_confidence": 0,
+      "content_summary": "I’m not sure what specific question you’re referring to—could you clarify the topic or provide the original question?",
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781616259.2224796
+    },
+    {
+      "turn": 5,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "action": "listened_silent",
+      "adjusted_score": 79,
+      "answer_summary": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliab",
+      "timestamp": 1781616259.2224796
+    },
+    {
+      "turn": 5,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "action": "listened_silent",
+      "adjusted_score": 90,
+      "answer_summary": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then sen",
+      "timestamp": 1781616259.2224796
+    },
+    {
+      "turn": 5,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "action": "listened_silent",
+      "adjusted_score": 22,
+      "answer_summary": "Request for clarification",
+      "timestamp": 1781616259.2224796
+    },
+    {
+      "turn": 6,
+      "speaker": "Human",
+      "action": "asked",
+      "raw_caption": "Tell me what I said. So, what is my topic or discussion topic? Who can remember and tell me that?",
+      "corrected_message": "Tell me what I said. So, what is my topic or discussion topic? Who can remember and tell me that?",
+      "repair_source": "manual",
+      "timestamp": 1781616337.5626714
+    },
+    {
+      "turn": 6,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "action": "spoke",
+      "adjusted_score": 90,
+      "self_confidence": 70,
+      "content_summary": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.",
+      "model": "mock-mode",
+      "timestamp": 1781616337.5626714
+    },
+    {
+      "turn": 6,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "action": "spoke",
+      "adjusted_score": 79,
+      "self_confidence": 72,
+      "content_summary": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.",
+      "model": "mock-mode",
+      "timestamp": 1781616337.5626714
+    },
+    {
+      "turn": 6,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "action": "spoke",
+      "adjusted_score": 22,
+      "self_confidence": 0,
+      "content_summary": "You’re discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation, product presentation, and especially the bias, fairness, legal and oversight risks.",
+      "model": "openrouter/free",
+      "timestamp": 1781616337.5626714
+    },
+    {
+      "turn": 6,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "action": "listened_silent",
+      "adjusted_score": 3,
+      "answer_summary": "Human wants me to restate the discussion topic.",
+      "timestamp": 1781616337.5626714
+    },
+    {
+      "turn": 7,
+      "speaker": "Human",
+      "action": "asked",
+      "raw_caption": "I wanted to add tools later, keep the flow simple: record audio, transcribe, message to the agents. My product view: so \n...\n are discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation.",
+      "corrected_message": "I wanted to add tools later, keep the flow simple: record audio, transcribe, message to the agents. My product view: so the human \n...\niable. You are discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation.",
+      "repair_source": "manual",
+      "timestamp": 1781616457.822477
+    },
+    {
+      "turn": 7,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "action": "spoke",
+      "adjusted_score": 67,
+      "self_confidence": 72,
+      "content_summary": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.",
+      "model": "mock-mode",
+      "timestamp": 1781616457.822477
+    },
+    {
+      "turn": 7,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "action": "spoke",
+      "adjusted_score": 78,
+      "self_confidence": 70,
+      "content_summary": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.",
+      "model": "mock-mode",
+      "timestamp": 1781616457.822477
+    },
+    {
+      "turn": 7,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "action": "spoke",
+      "adjusted_score": 78,
+      "self_confidence": 68,
+      "content_summary": "My risk view: do not trust browser captions alone. The system needs manual send, audio recording fallback, and a repair layer so agents do not respond to broken input.",
+      "model": "mock-mode",
+      "timestamp": 1781616457.822477
+    },
+    {
+      "turn": 7,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "action": "listened_silent",
+      "adjusted_score": 6,
+      "answer_summary": "No response needed yet.",
+      "timestamp": 1781616457.822477
+    },
+    {
+      "turn": 8,
+      "speaker": "Human",
+      "action": "asked",
+      "raw_caption": "I wanted to add tools later, keep the flow simple: record audio, transcribe, message to the agents. My product view: so \n...\n are discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation.",
+      "corrected_message": "I wanted to add tools later, keep the flow simple: record audio, transcribe, message to the agents. My product view: so the human \n...\niable. You are discussing the idea of an AI agent that would replace a women hiring manager, focusing on practical implementation.",
+      "repair_source": "manual",
+      "timestamp": 1781616478.8452036
+    },
+    {
+      "turn": 8,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "action": "spoke",
+      "adjusted_score": 78,
+      "self_confidence": 70,
+      "content_summary": "My practical view: first fix the voice pipeline, then add tools later. Keep the flow simple: record audio, transcribe, repair text, then send the cleaned message to the agents.",
+      "model": "mock-mode",
+      "timestamp": 1781616478.8452036
+    },
+    {
+      "turn": 8,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "action": "spoke",
+      "adjusted_score": 67,
+      "self_confidence": 72,
+      "content_summary": "My product view: show raw and cleaned captions clearly, so the human knows what the agents received. This makes the meeting feel more reliable.",
+      "model": "mock-mode",
+      "timestamp": 1781616478.8452036
+    },
+    {
+      "turn": 8,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "action": "spoke",
+      "adjusted_score": 55,
+      "self_confidence": 70,
+      "content_summary": "From a risk standpoint, any AI replacing a hiring manager must include rigorous bias testing, transparent scoring, regular audits, and a mandatory human‑in‑the‑loop checkpoint before any hiring decision is final.",
+      "model": "openrouter/free",
+      "timestamp": 1781616478.8452036
+    },
+    {
+      "turn": 8,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "action": "listened_silent",
+      "adjusted_score": 9,
+      "answer_summary": "No response needed yet.",
+      "timestamp": 1781616478.8452036
+    }
+  ],
+  "silent_counts": {
+    "qwen": 0,
+    "gemini": 0,
+    "openai": 3,
+    "nemotron": 0
+  }
+}

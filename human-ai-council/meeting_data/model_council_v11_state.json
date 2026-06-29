@@ -1,0 +1,1792 @@
+{
+  "meeting_id": "de5b3a9c-fb33-49da-9bf8-88a8b89d4096",
+  "created_at": 1781631300.6280813,
+  "round_count": 11,
+  "auto_rounds": 10,
+  "is_running": false,
+  "active_topic": "uman human Use this as your first strong meeting topic:  ```text Hello everyone. Today we are discussing whether AI agents can replace or assist a hum\n...\n KPIs and audit cadence.\",   \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override Objection: I will not fake agent responses.",
+  "user_goal": "The human host wants adaptive debate, positive/negative views, objections, voting, agreements, and progressive decisions.",
+  "meeting_stage": "continue",
+  "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+  "current_conflict": "The council has not yet converged on a clear next decision.",
+  "agreements": [
+    "Current leading agreement: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant.",
+    "Current leading agreement: MVP Workflow Definition.",
+    "Current leading agreement: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant.",
+    "Current leading agreement: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant.",
+    "Current leading agreement: define_kpi_suite.",
+    "Current leading agreement: concrete_kpi_evidence_and_audit_plan.",
+    "Human host supported: KPI Thresholds",
+    "Current leading agreement: KPI Thresholds.",
+    "Human host supported: concrete_kpi_evidence_and_audit_plan",
+    "Current leading agreement: Audit Cadence & Evidence Plan.",
+    "Current leading agreement: Audit Sampling Rate.",
+    "Current leading agreement: tiered_audit_sampling_with_pre_pilot_clarity_valid.",
+    "Current leading agreement: Rejection Override SLA."
+  ],
+  "decisions": [
+    "Accept AI Hiring Assistant as the current first-product direction.",
+    "Accept mandatory guardrails as required for the hiring assistant.",
+    "Human preference recorded: KPI Thresholds",
+    "Human preference recorded: concrete_kpi_evidence_and_audit_plan"
+  ],
+  "open_questions": [
+    "What concrete evidence or guardrail is needed before moving forward?",
+    "What audit cadence (frequency, sampling rate) is sustainable?",
+    "What are the practical thresholds for explanation clarity and rejection overrides?",
+    "Which data inputs and formats are in-scope for the MVP?",
+    "How should human review SLAs and escalation paths be defined?"
+  ],
+  "disagreements": [
+    "Human host rejected: KPI Thresholds with Audit Sampling"
+  ],
+  "consensus_log": [
+    "Round 1: accepted — Mandatory Guardrails for Human-in-the-Loop Hiring Assistant → next: Define the MVP workflow: data inputs, safe tasks, explanations, audit logs, and human approval.",
+    "Round 2: accepted — MVP Workflow Definition → next: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+    "Round 3: accepted — Mandatory Guardrails for Human-in-the-Loop Hiring Assistant → next: Turn guardrails into measurable KPIs, audit cadence, and human review rules.",
+    "Round 4: accepted — Mandatory Guardrails for Human-in-the-Loop Hiring Assistant → next: Specify concrete KPI targets, audit cadence, and human review rules; define safe task scope and required evidence before pilot.",
+    "Round 5: accepted — define_kpi_suite → next: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+    "Round 6: temporary_consensus — concrete_kpi_evidence_and_audit_plan → next: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+    "Round 7: accepted — KPI Thresholds → next: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+    "Round 8: accepted — Audit Cadence & Evidence Plan → next: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+    "Round 9: accepted — Audit Sampling Rate → next: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+    "Round 10: accepted — tiered_audit_sampling_with_pre_pilot_clarity_valid → next: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+    "Round 11: accepted — Rejection Override SLA → next: Resolve the highest-value unresolved objection and convert it into a concrete decision."
+  ],
+  "ideas": [
+    {
+      "id": "rejection_override_sla",
+      "title": "Rejection Override SLA",
+      "summary": "I support defining a 24-hour SLA for human review of AI rejections, prioritizing diverse candidates. This directly addresses user trust and provides a crucial safety net.",
+      "score": 174,
+      "supporting_agents": [
+        "Product Agent",
+        "Builder Agent"
+      ],
+      "risks": ""
+    },
+    {
+      "id": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "title": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "summary": "Propose tiered audit sampling with pre-pilot clarity validation as the concrete decision to resolve the highest-value objection.",
+      "score": 80,
+      "supporting_agents": [
+        "Critic Agent"
+      ],
+      "risks": ""
+    },
+    {
+      "id": "kpi_thresholds",
+      "title": "KPI Thresholds",
+      "summary": "KPI Thresholds",
+      "score": 60,
+      "supporting_agents": [
+        "Human"
+      ],
+      "risks": ""
+    },
+    {
+      "id": "concrete_kpi_evidence_and_audit_plan",
+      "title": "concrete_kpi_evidence_and_audit_plan",
+      "summary": "concrete_kpi_evidence_and_audit_plan",
+      "score": 60,
+      "supporting_agents": [
+        "Human"
+      ],
+      "risks": ""
+    },
+    {
+      "id": "rejection_override_sla_with_diversity_priority",
+      "title": "Rejection Override SLA with Diversity Priority",
+      "summary": "Propose 24-hour SLA for human review of AI rejections, prioritizing candidates with diversity attributes to ensure fairness and trust. Aligns with guardrails and audit plan.",
+      "score": 15,
+      "supporting_agents": [
+        "Builder Agent"
+      ],
+      "risks": ""
+    },
+    {
+      "id": "kpi_thresholds_with_audit_sampling",
+      "title": "KPI Thresholds with Audit Sampling",
+      "summary": "KPI Thresholds with Audit Sampling",
+      "score": -60,
+      "supporting_agents": [
+        "Human"
+      ],
+      "risks": ""
+    }
+  ],
+  "human_votes": [
+    {
+      "timestamp": 1781631748.9166453,
+      "idea_id": "kpi_thresholds",
+      "idea_title": "KPI Thresholds",
+      "vote": "support",
+      "note": ""
+    },
+    {
+      "timestamp": 1781631768.6234875,
+      "idea_id": "concrete_kpi_evidence_and_audit_plan",
+      "idea_title": "concrete_kpi_evidence_and_audit_plan",
+      "vote": "support",
+      "note": ""
+    },
+    {
+      "timestamp": 1781631819.5250013,
+      "idea_id": "kpi_thresholds_with_audit_sampling",
+      "idea_title": "KPI Thresholds with Audit Sampling",
+      "vote": "reject",
+      "note": ""
+    }
+  ],
+  "last_evaluation": {
+    "round_summary": "The council compared proposals, counted agent/human votes, and selected the current leading idea.",
+    "ideas": [
+      {
+        "id": "rejection_override_sla",
+        "title": "Rejection Override SLA",
+        "summary": "I support defining a 24-hour SLA for human review of AI rejections, prioritizing diverse candidates. This directly addresses user trust and provides a crucial safety net.",
+        "score": 174,
+        "supporting_agents": [
+          "Product Agent",
+          "Builder Agent"
+        ],
+        "risks": ""
+      },
+      {
+        "id": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+        "title": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+        "summary": "Propose tiered audit sampling with pre-pilot clarity validation as the concrete decision to resolve the highest-value objection.",
+        "score": 80,
+        "supporting_agents": [
+          "Critic Agent"
+        ],
+        "risks": ""
+      },
+      {
+        "id": "kpi_thresholds",
+        "title": "KPI Thresholds",
+        "summary": "KPI Thresholds",
+        "score": 60,
+        "supporting_agents": [
+          "Human"
+        ],
+        "risks": ""
+      },
+      {
+        "id": "concrete_kpi_evidence_and_audit_plan",
+        "title": "concrete_kpi_evidence_and_audit_plan",
+        "summary": "concrete_kpi_evidence_and_audit_plan",
+        "score": 60,
+        "supporting_agents": [
+          "Human"
+        ],
+        "risks": ""
+      },
+      {
+        "id": "rejection_override_sla_with_diversity_priority",
+        "title": "Rejection Override SLA with Diversity Priority",
+        "summary": "Propose 24-hour SLA for human review of AI rejections, prioritizing candidates with diversity attributes to ensure fairness and trust. Aligns with guardrails and audit plan.",
+        "score": 15,
+        "supporting_agents": [
+          "Builder Agent"
+        ],
+        "risks": ""
+      },
+      {
+        "id": "kpi_thresholds_with_audit_sampling",
+        "title": "KPI Thresholds with Audit Sampling",
+        "summary": "KPI Thresholds with Audit Sampling",
+        "score": -60,
+        "supporting_agents": [
+          "Human"
+        ],
+        "risks": ""
+      }
+    ],
+    "agent_votes": {
+      "Product Agent": "Rejection Override SLA",
+      "Critic Agent": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "Strategy Agent": "No vote",
+      "Builder Agent": "rejection_override_sla"
+    },
+    "winning_idea_id": "rejection_override_sla",
+    "winning_idea_title": "Rejection Override SLA",
+    "winning_score": 174,
+    "agreement_status": "accepted",
+    "agreement": "Current leading agreement: Rejection Override SLA.",
+    "decision": "",
+    "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+    "current_conflict": "The council has not yet converged on a clear next decision.",
+    "open_questions": [
+      "What concrete evidence or guardrail is needed before moving forward?"
+    ],
+    "position_updates": {}
+  },
+  "last_error": "",
+  "transcript": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "type": "human",
+      "text": "uman human Use this as your first strong meeting topic:  ```text Hello everyone. Today we are discussing whether AI agents can replace or assist a human hiring manager.  I want this meeting to be realistic. Do not just agree with me. Each agent must give both the positive side and the negative side.  The main question is:  Can an AI agent reduce hiring cost and improve hiring decisions, or is it too risky because of bias, fairness, legal responsibility, and lack of human judgment?  Product Agent: focus on product value, user trust, and how to position this idea.  Builder Agent: focus on what we can actually build first, what tools/data are needed, and what should not be automated yet.  Strategy Agent: focus on business opportunity, market, pricing, and whether this is a good startup direction.  Critic Agent: focus on objections, risks, weak assumptions, bias, legal issues, and why this idea may fail.  After one agent speaks, the others must listen and respond. If you disagree, object clearly. If you agree, add something new. Do not repeat each other.  The goal of this meeting is to decide whether the first product should be: 1. AI hiring manager replacement 2. AI hiring assistant 3. AI interview council 4. or something else.  Let’s begin. ``` Critic Agent inclusionai/ling-2.6-flash I object to replacing human hiring managers. The risk of biased outcomes, legal exposure, and lost trust is too high without human-in-the-loop safeguards. Objection: Bias and legal accountability: automated rejections can discriminate and expose the company to liability; lack of context understanding risks bad hires and brand damage. Builder Agent qwen/qwen3-30b-a3b-instruct-2507 I propose we start with an AI hiring assistant that handles screening and scheduling—feasible now with existing NLP and calendar APIs—but requires human sign-off. This balances value, risk, and buildability. Product Agent google/gemma-3-27b-it I support starting with an AI hiring assistant. It offers strong product value by augmenting recruiters, rather than replacing them outright. This approach minimizes risk to user trust and allows us to build responsibly. Evaluator inclusionai/ling-2.6-flash The council discussed the current topic and produced candidate ideas. Winning idea: AI hiring manager replacement (0). Next focus: Resolve the strongest remaining objection and make the idea more buildable. Human human Continue the council discussion. Current next focus: Resolve the strongest remaining objection and make the idea more buildable. Memory System local No agent could speak this round. Latest model error: Model returned non-JSON: {   \"meeting_move\": \"object\",   \"stance\": \"negative\",   \"positive_view\": \"An AI hiring assistant with human-in-the-loop can augment recruiters and sca ... ral to requiring human-in-the-loop guardrails for any hiring automation.\",   \"private_memory_update\": \"Push to make human-in-the-loop for rejections a Objection: I will not fake agent responses. Human Vote vote PREFER — AI hiring manager replacement.  Human Vote vote SUPPORT — AI Hiring Assistant.  Human human Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: AI Hiring Assistant Critic Agent inclusionai/ling-2.6-flash I support extending the assistant to human-in-the-loop, but we must codify guardrails: mandatory human review for rejections, explainability standards, and ongoing bias monitoring KPIs. Evaluator inclusionai/ling-2.6-flash The council discussed the current topic and produced candidate ideas. Winning idea: Define mandatory guardrails for human-in-the-loop hiring assistant (0). Next focus: Resolve the strongest remaining objection and make the idea more buildable. Human human Continue the council discussion. Current next focus: Resolve the strongest remaining objection and make the idea more buildable. Memory System local No agent could speak this round. Latest model error: Model returned non-JSON: {   \"meeting_move\": \"extend\",   \"stance\": \"mixed\",   \"positive_view\": \"Codifying guardrails (human review for rejections, explainability, bias KPIs) m ... audit log to prove compliance.\",   \"position_update\": \"Moved from cautious support to specifying concrete, testable guardrails that make the assistant Objection: I will not fake agent responses. Human Vote vote SUPPORT — Define mandatory guardrails for human-in-the-loop hiring assistant.  Human human Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: Define mandatory guardrails for human-in-the-loop hiring assistant Memory System local No agent could speak this round. Latest model error: Model returned non-JSON: {   \"meeting_move\": \"extend\",   \"stance\": \"mixed\",   \"positive_view\": \"Strong guardrails (human review for rejections, explainability, bias KPIs) redu ... ing measurable guardrails with pilot metrics and override processes.\",   \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override Objection: I will not fake agent responses. Human human Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: Define mandatory guardrails for human-in-the-loop hiring assistant Memory System local No agent could speak this round. Latest model error: Model returned non-JSON: {   \"meeting_move\": \"extend\",   \"stance\": \"mixed\",   \"positive_view\": \"Concrete guardrails (human review for high-risk decisions, explainability logs, ... g concrete, testable guardrails with defined KPIs and audit cadence.\",   \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override Objection: I will not fake agent responses.",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 1,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "Propose concrete KPIs: 5% rejection override rate, explainability logs, and monthly bias audits. This operationalizes guardrails for pilot testing.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 1,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "type": "agent",
+      "text": "Let's define specific, measurable KPIs for bias detection and rejection override rates. A 5% random audit of rejections, with a clear escalation path, could be a starting point. This balances risk mitigation with practical implementation.",
+      "model": "google/gemma-3-27b-it",
+      "move": "extend",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 1,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals, counted agent/human votes, and selected the current leading idea.\nWinning idea: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant (160).\nAgreement: Current leading agreement: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant.\nDecision: Accept AI Hiring Assistant as the current first-product direction.\nNext focus: Define the MVP workflow: data inputs, safe tasks, explanations, audit logs, and human approval.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 2,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Define the MVP workflow: data inputs, safe tasks, explanations, audit logs, and human approval.",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 2,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "type": "agent",
+      "text": "Define MVP: 1) Data inputs: resumes, assessments, video. 2) Safe tasks: pre‑screening, shortlisting. 3) Explanations: confidence scores, feature importance. 4) Audit logs: timestamp, action, model",
+      "model": "openai/gpt-oss-20b",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 2,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "Let’s define the MVP workflow with clear data inputs, safe low-risk tasks, explanation requirements, audit logs, and human approval gates. This operationalizes guardrails and reduces automation bias risk.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "extend",
+      "stance": "mixed",
+      "objection": "Need concrete thresholds for safe tasks and explanation depth before pilot.",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 2,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "Propose defining safe tasks (e.g., resume screening) with clear input/output boundaries and 100% audit logging. This ensures traceability and aligns with guardrails. Avoid overloading with edge cases early.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 2,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals and selected the MVP Workflow Definition as the leading idea. Key tension remains between moving fast (MVP Data Inputs / limited safe tasks) and adding guardrails (Mandatory Guardrails proposal). The highest-value unresolved objection is the need for concrete evidence/guardrail thresholds before proceeding.\nWinning idea: MVP Workflow Definition (104).\nAgreement: Current leading agreement: MVP Workflow Definition.\nDecision: \nNext focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 3,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 3,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "type": "agent",
+      "text": "We propose setting concrete guardrail thresholds for the pilot: 100% audit logging, 80% explanation clarity, and a 5% rejection override rate. These metrics give us measurable safety before full rollout.",
+      "model": "openai/gpt-oss-20b",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 3,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "Proceed with pilot once thresholds are met: 2% adverse impact cap, 0.8 explanation confidence, 100% audit completeness and human override within 24h.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 3,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "type": "agent",
+      "text": "Let's propose a KPI: percentage of AI rejections overridden by humans, categorized by protected characteristics. A 5% threshold warrants immediate investigation. This directly addresses the 'Bias' objection.",
+      "model": "google/gemma-3-27b-it",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 3,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals, counted agent/human votes, and selected the current leading idea.\nWinning idea: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant (199).\nAgreement: Current leading agreement: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant.\nDecision: Accept mandatory guardrails as required for the hiring assistant.\nNext focus: Turn guardrails into measurable KPIs, audit cadence, and human review rules.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 4,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Turn guardrails into measurable KPIs, audit cadence, and human review rules.",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 4,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "type": "agent",
+      "text": "We propose a KPI suite: 100% audit logging, 80% explanation clarity score, <5% human override rate, weekly audit of 10% sample, and automatic human review for any confidence <90% or bias flag. This quantifies guardrails and sets audit cadence.",
+      "model": "openai/gpt-oss-20b",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 4,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "We should define concrete guardrail KPIs, audit cadence, and human review rules to operationalize safety and enable measurable pilot success.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "extend",
+      "stance": "mixed",
+      "objection": "Need to ensure thresholds are practical and audit load is sustainable.",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 4,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "Propose: KPIs must be measurable with current tech. Audit logging (100%) and override rate (5%) are feasible. Explanation clarity needs a scoring proxy. Push for pilot with these thresholds.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose",
+      "stance": "mixed",
+      "objection": "",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 4,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals and selected the leading idea: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant, with next steps to define measurable KPIs, audit cadence, and human review rules.\nWinning idea: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant (160).\nAgreement: Current leading agreement: Mandatory Guardrails for Human-in-the-Loop Hiring Assistant.\nDecision: Accept mandatory guardrails as required for the hiring assistant.\nNext focus: Specify concrete KPI targets, audit cadence, and human review rules; define safe task scope and required evidence before pilot.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 5,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Specify concrete KPI targets, audit cadence, and human review rules; define safe task scope and required evidence before pilot.",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 5,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "Proposed concrete KPI targets, audit cadence, and human review rules for the hiring assistant MVP.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "Need to validate audit capacity and ensure explanation clarity metric is measurable.",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 5,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "type": "agent",
+      "text": "I support defining a KPI suite. The proposed metrics offer a strong starting point for measuring safety and performance. However, let's discuss the feasibility of the 80% explanation clarity score – can we operationalize that effectively?",
+      "model": "google/gemma-3-27b-it",
+      "move": "support",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 5,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "Propose: 100% logging, 80% clarity (post-MVP), <5% override, weekly 10% audit, auto-review at <90% confidence. Feasible now with minimal latency impact.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose",
+      "stance": "mixed",
+      "objection": "",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 5,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals, counted agent/human votes, and selected the current leading idea.\nWinning idea: define_kpi_suite (160).\nAgreement: Current leading agreement: define_kpi_suite.\nDecision: \nNext focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 6,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "Produce concrete evidence and guardrail requirements plus a sustainable audit cadence.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "propose",
+      "stance": "mixed",
+      "objection": "",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "type": "agent",
+      "text": "Let's focus on defining specific KPI thresholds. I propose: <5% rejection override rate, >80% explanation clarity (measured via user feedback post-pilot), and a weekly audit of 10% of flagged cases. This balances risk with utility.",
+      "model": "google/gemma-3-27b-it",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "Propose adopting the KPI Suite with Audit Sampling as the concrete decision—immediately implementable, low latency, and aligns with guardrails. Explanation clarity deferred to post-MVP.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals, counted agent/human votes, and selected the current leading idea.\nWinning idea: concrete_kpi_evidence_and_audit_plan (80).\nAgreement: Current leading agreement: concrete_kpi_evidence_and_audit_plan.\nDecision: \nNext focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Human Vote",
+      "type": "vote",
+      "text": "SUPPORT — KPI Thresholds. ",
+      "timestamp": 1781631748.9166453
+    },
+    {
+      "turn": 7,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: KPI Thresholds",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "Propose finalizing KPI Thresholds with audit sampling: <5% override, >80% clarity (post-pilot), weekly 10% audit. Feasible, low latency, aligns with guardrails. Critic: validate clarity metric pre-pilot.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose",
+      "stance": "mixed",
+      "objection": "Explanation clarity requires pre-pilot validation to avoid proxy failure.",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "type": "agent",
+      "text": "Let's build on the proposed thresholds: <5% rejection override, >80% explanation clarity, 10% weekly audit. I propose we *also* track 'time to resolution' for rejected candidates – a UX signal.",
+      "model": "google/gemma-3-27b-it",
+      "move": "extend",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals, counted agent/human votes, and selected the current leading idea.\nWinning idea: KPI Thresholds (115).\nAgreement: Current leading agreement: KPI Thresholds.\nDecision: \nNext focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Human Vote",
+      "type": "vote",
+      "text": "SUPPORT — concrete_kpi_evidence_and_audit_plan. ",
+      "timestamp": 1781631768.6234875
+    },
+    {
+      "turn": 8,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: concrete_kpi_evidence_and_audit_plan",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "type": "agent",
+      "text": "Propose a 10% weekly",
+      "model": "openai/gpt-oss-20b",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "Define the evidence schema and audit protocol to standardize logs and validate explanation clarity pre-pilot; this reduces proxy failure but adds pre-pilot work.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "extend",
+      "stance": "mixed",
+      "objection": "Need to confirm data input scope and audit capacity before finalizing schema and cadence.",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "Propose finalizing KPI Thresholds with Audit Sampling as operational baseline: <5% override, >80% clarity (post-pilot), weekly 10% audit. Feasible, low-latency, aligns with guardrails. Requires pre-pilot clarity validation.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals, counted agent/human votes, and selected the current leading idea.\nWinning idea: Audit Cadence & Evidence Plan (104).\nAgreement: Current leading agreement: Audit Cadence & Evidence Plan.\nDecision: \nNext focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Human Vote",
+      "type": "vote",
+      "text": "REJECT — KPI Thresholds with Audit Sampling. ",
+      "timestamp": 1781631819.5250013
+    },
+    {
+      "turn": 9,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Find a better alternative to rejected idea: KPI Thresholds with Audit Sampling",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 9,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "type": "agent",
+      "text": "I support the tiered Audit Sampling Rate idea: 10% of rejections for full",
+      "model": "openai/gpt-oss-20b",
+      "move": "support",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 9,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "type": "agent",
+      "text": "Let's operationalize audit sampling. I propose a tiered approach: 10% of *rejected* candidates for full review, 5% of *approved* candidates for spot-check clarity. This prioritizes learning from errors while managing audit load.",
+      "model": "google/gemma-3-27b-it",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 9,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "Propose adaptive, tiered audit sampling with dynamic thresholds to balance learning, safety, and audit capacity.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "propose",
+      "stance": "mixed",
+      "objection": "",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 9,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals, counted agent/human votes, and selected the current leading idea.\nWinning idea: Audit Sampling Rate (159).\nAgreement: Current leading agreement: Audit Sampling Rate.\nDecision: \nNext focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 10,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 10,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "Proposing to finalize tiered audit sampling with pre-pilot clarity validation as the concrete decision. This aligns with builder feasibility and product safety goals.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 10,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "type": "agent",
+      "text": "Let's define an SLA for human review of AI rejections. A 24-hour response time, prioritizing candidates with diversity attributes, would build trust and ensure fairness.",
+      "model": "google/gemma-3-27b-it",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 10,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "Propose tiered audit sampling (10% rejections, 5% spot-checks) with pre-pilot clarity validation to convert the highest-value objection into a concrete, measurable decision.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 10,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals, counted agent/human votes, and selected the current leading idea.\nWinning idea: tiered_audit_sampling_with_pre_pilot_clarity_valid (95).\nAgreement: Current leading agreement: tiered_audit_sampling_with_pre_pilot_clarity_valid.\nDecision: \nNext focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 11,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631967.9497914
+    },
+    {
+      "turn": 11,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "type": "agent",
+      "text": "I support defining a 24-hour SLA for human review of AI rejections, prioritizing diverse candidates. This directly addresses user trust and provides a crucial safety net.",
+      "model": "google/gemma-3-27b-it",
+      "move": "support",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631967.9497914
+    },
+    {
+      "turn": 11,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "Propose 24-hour SLA for human review of AI rejections, prioritizing candidates with diversity attributes to ensure fairness and trust. Aligns with guardrails and audit plan.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631967.9497914
+    },
+    {
+      "turn": 11,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "Propose tiered audit sampling with pre-pilot clarity validation as the concrete decision to resolve the highest-value objection.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "propose",
+      "stance": "positive",
+      "objection": "",
+      "timestamp": 1781631967.9497914
+    },
+    {
+      "turn": 11,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council compared proposals, counted agent/human votes, and selected the current leading idea.\nWinning idea: Rejection Override SLA (174).\nAgreement: Current leading agreement: Rejection Override SLA.\nDecision: \nNext focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781631967.9497914
+    }
+  ],
+  "event_graph": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "decision",
+      "content_summary": "uman human Use this as your first strong meeting topic:  ```text Hello everyone. Today we are discussing whether AI agents can replace or assist a human hiring \n...\nth defined KPIs and audit cadence.\",   \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override Objection: I will not fake agent responses.",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 1,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "Propose concrete KPIs: 5% rejection override rate, explainability logs, and monthly bias audits. This operationalizes guardrails for pilot testing.",
+      "objection": "",
+      "idea": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "vote": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 1,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "spoke",
+      "meeting_move": "extend",
+      "stance": "positive",
+      "model": "google/gemma-3-27b-it",
+      "confidence": 0,
+      "content_summary": "Let's define specific, measurable KPIs for bias detection and rejection override rates. A 5% random audit of rejections, with a clear escalation path, could be a starting point. This balances risk mitigation with practical implementation.",
+      "objection": "",
+      "idea": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "vote": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 1,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "listened_silent",
+      "available": true,
+      "confidence": 0,
+      "answer_summary": "Reduces cost and speeds screening if limited to low-risk tasks.",
+      "error": "",
+      "parse_source": "json",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 1,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Could not parse model output: ",
+      "parse_source": "error",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 1,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "winning_score": 160,
+      "agreement_status": "accepted",
+      "next_focus": "Define the MVP workflow: data inputs, safe tasks, explanations, audit logs, and human approval.",
+      "timestamp": 1781631423.2472458
+    },
+    {
+      "turn": 2,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Define the MVP workflow: data inputs, safe tasks, explanations, audit logs, and human approval.",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 2,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "openai/gpt-oss-20b",
+      "confidence": 55,
+      "content_summary": "Define MVP: 1) Data inputs: resumes, assessments, video. 2) Safe tasks: pre‑screening, shortlisting. 3) Explanations: confidence scores, feature importance. 4) Audit logs: timestamp, action, model",
+      "objection": "",
+      "idea": "MVP Workflow Definition",
+      "vote": "MVP Workflow Definition",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 2,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "extend",
+      "stance": "mixed",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "Let’s define the MVP workflow with clear data inputs, safe low-risk tasks, explanation requirements, audit logs, and human approval gates. This operationalizes guardrails and reduces automation bias risk.",
+      "objection": "Need concrete thresholds for safe tasks and explanation depth before pilot.",
+      "idea": "Define MVP workflow: data inputs, safe tasks, explanations, audit logs, human approval",
+      "vote": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 2,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "Propose defining safe tasks (e.g., resume screening) with clear input/output boundaries and 100% audit logging. This ensures traceability and aligns with guardrails. Avoid overloading with edge cases early.",
+      "objection": "",
+      "idea": "MVP Workflow: Safe Task Definition & Audit Cadence",
+      "vote": "MVP Workflow: Safe Task Definition & Audit Cadence",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 2,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "available": true,
+      "confidence": 0,
+      "answer_summary": "Let's start with resumes and job descriptions as MVP data inputs. This limits scope and allows focused bias detection. We can expand later.",
+      "error": "",
+      "parse_source": "json",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 2,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "MVP Workflow Definition",
+      "winning_score": 104,
+      "agreement_status": "accepted",
+      "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631462.9250538
+    },
+    {
+      "turn": 3,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 3,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "openai/gpt-oss-20b",
+      "confidence": 55,
+      "content_summary": "We propose setting concrete guardrail thresholds for the pilot: 100% audit logging, 80% explanation clarity, and a 5% rejection override rate. These metrics give us measurable safety before full rollout.",
+      "objection": "",
+      "idea": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "vote": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 3,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "Proceed with pilot once thresholds are met: 2% adverse impact cap, 0.8 explanation confidence, 100% audit completeness and human override within 24h.",
+      "objection": "",
+      "idea": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "vote": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 3,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "google/gemma-3-27b-it",
+      "confidence": 0,
+      "content_summary": "Let's propose a KPI: percentage of AI rejections overridden by humans, categorized by protected characteristics. A 5% threshold warrants immediate investigation. This directly addresses the 'Bias' objection.",
+      "objection": "",
+      "idea": "KPIs for Rejection Overrides",
+      "vote": "MVP Workflow: Safe Task Definition & Audit Cadence",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 3,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "listened_silent",
+      "available": true,
+      "confidence": 0,
+      "answer_summary": "Propose setting concrete guardrail thresholds—e.g., confidence >90% and no bias flags—for safe task handoffs. This resolves the critic’s objection and enables pilot readiness.",
+      "error": "",
+      "parse_source": "json",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 3,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "winning_score": 199,
+      "agreement_status": "accepted",
+      "next_focus": "Turn guardrails into measurable KPIs, audit cadence, and human review rules.",
+      "timestamp": 1781631537.2666214
+    },
+    {
+      "turn": 4,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Turn guardrails into measurable KPIs, audit cadence, and human review rules.",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 4,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "openai/gpt-oss-20b",
+      "confidence": 55,
+      "content_summary": "We propose a KPI suite: 100% audit logging, 80% explanation clarity score, <5% human override rate, weekly audit of 10% sample, and automatic human review for any confidence <90% or bias flag. This quantifies guardrails and sets audit cadence.",
+      "objection": "",
+      "idea": "Define KPI Suite",
+      "vote": "Define KPI Suite",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 4,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "extend",
+      "stance": "mixed",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "We should define concrete guardrail KPIs, audit cadence, and human review rules to operationalize safety and enable measurable pilot success.",
+      "objection": "Need to ensure thresholds are practical and audit load is sustainable.",
+      "idea": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "vote": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 4,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "mixed",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "Propose: KPIs must be measurable with current tech. Audit logging (100%) and override rate (5%) are feasible. Explanation clarity needs a scoring proxy. Push for pilot with these thresholds.",
+      "objection": "",
+      "idea": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "vote": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 4,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "available": true,
+      "confidence": 0,
+      "answer_summary": "Let's refine the rejection override KPI. We should track overrides categorized by protecte\n...\n*overall* is good, but we need to monitor subgroups. This allows proactive bias detection.",
+      "error": "",
+      "parse_source": "json",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 4,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "Mandatory Guardrails for Human-in-the-Loop Hiring Assistant",
+      "winning_score": 160,
+      "agreement_status": "accepted",
+      "next_focus": "Specify concrete KPI targets, audit cadence, and human review rules; define safe task scope and required evidence before pilot.",
+      "timestamp": 1781631603.4984353
+    },
+    {
+      "turn": 5,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Specify concrete KPI targets, audit cadence, and human review rules; define safe task scope and required evidence before pilot.",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 5,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "Proposed concrete KPI targets, audit cadence, and human review rules for the hiring assistant MVP.",
+      "objection": "Need to validate audit capacity and ensure explanation clarity metric is measurable.",
+      "idea": "MVP KPI & Audit Package",
+      "vote": "define_kpi_suite",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 5,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "spoke",
+      "meeting_move": "support",
+      "stance": "positive",
+      "model": "google/gemma-3-27b-it",
+      "confidence": 0,
+      "content_summary": "I support defining a KPI suite. The proposed metrics offer a strong starting point for measuring safety and performance. However, let's discuss the feasibility of the 80% explanation clarity score – can we operationalize that effectively?",
+      "objection": "",
+      "idea": "Define KPI Suite",
+      "vote": "Define KPI Suite",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 5,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "mixed",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "Propose: 100% logging, 80% clarity (post-MVP), <5% override, weekly 10% audit, auto-review at <90% confidence. Feasible now with minimal latency impact.",
+      "objection": "",
+      "idea": "KPI Suite with Audit Sampling",
+      "vote": "define_kpi_suite",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 5,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Could not parse model output: {\"",
+      "parse_source": "error",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 5,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "define_kpi_suite",
+      "winning_score": 160,
+      "agreement_status": "accepted",
+      "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631661.9938762
+    },
+    {
+      "turn": 6,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "mixed",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "Produce concrete evidence and guardrail requirements plus a sustainable audit cadence.",
+      "objection": "",
+      "idea": "concrete_kpi_evidence_and_audit_plan",
+      "vote": "concrete_kpi_evidence_and_audit_plan",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "google/gemma-3-27b-it",
+      "confidence": 0,
+      "content_summary": "Let's focus on defining specific KPI thresholds. I propose: <5% rejection override rate, >80% explanation clarity (measured via user feedback post-pilot), and a weekly audit of 10% of flagged cases. This balances risk with utility.",
+      "objection": "",
+      "idea": "KPI Thresholds",
+      "vote": "define_kpi_suite",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "Propose adopting the KPI Suite with Audit Sampling as the concrete decision—immediately implementable, low latency, and aligns with guardrails. Explanation clarity deferred to post-MVP.",
+      "objection": "",
+      "idea": "KPI Suite with Audit Sampling",
+      "vote": "kpi_suite_with_audit_sampling",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Could not parse model output: {\"move\":\"propose\",\"stance\":\"positive\",\"idea\":\"Concrete KPI & Guardrail Threshold",
+      "parse_source": "error",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "concrete_kpi_evidence_and_audit_plan",
+      "winning_score": 80,
+      "agreement_status": "temporary_consensus",
+      "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631715.971849
+    },
+    {
+      "turn": 6,
+      "speaker": "Human",
+      "action": "voted",
+      "idea_id": "kpi_thresholds",
+      "idea_title": "KPI Thresholds",
+      "vote": "support",
+      "note": "",
+      "timestamp": 1781631748.9166453
+    },
+    {
+      "turn": 7,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: KPI Thresholds",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "mixed",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "Propose finalizing KPI Thresholds with audit sampling: <5% override, >80% clarity (post-pilot), weekly 10% audit. Feasible, low latency, aligns with guardrails. Critic: validate clarity metric pre-pilot.",
+      "objection": "Explanation clarity requires pre-pilot validation to avoid proxy failure.",
+      "idea": "KPI Thresholds with Audit Sampling",
+      "vote": "concrete_kpi_evidence_and_audit_plan",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "spoke",
+      "meeting_move": "extend",
+      "stance": "positive",
+      "model": "google/gemma-3-27b-it",
+      "confidence": 0,
+      "content_summary": "Let's build on the proposed thresholds: <5% rejection override, >80% explanation clarity, 10% weekly audit. I propose we *also* track 'time to resolution' for rejected candidates – a UX signal.",
+      "objection": "",
+      "idea": "KPI Thresholds",
+      "vote": "kpi_thresholds",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "listened_silent",
+      "available": true,
+      "confidence": 0,
+      "answer_summary": "Aligns pilot with guardrails; enables data-driven decisions and clear human review rules",
+      "error": "",
+      "parse_source": "json",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Could not parse model output: ",
+      "parse_source": "error",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "KPI Thresholds",
+      "winning_score": 115,
+      "agreement_status": "accepted",
+      "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631768.5827
+    },
+    {
+      "turn": 7,
+      "speaker": "Human",
+      "action": "voted",
+      "idea_id": "concrete_kpi_evidence_and_audit_plan",
+      "idea_title": "concrete_kpi_evidence_and_audit_plan",
+      "vote": "support",
+      "note": "",
+      "timestamp": 1781631768.6234875
+    },
+    {
+      "turn": 8,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: concrete_kpi_evidence_and_audit_plan",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "openai/gpt-oss-20b",
+      "confidence": 55,
+      "content_summary": "Propose a 10% weekly",
+      "objection": "",
+      "idea": "Audit Cadence & Evidence Plan",
+      "vote": "Audit Cadence & Evidence Plan",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "extend",
+      "stance": "mixed",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "Define the evidence schema and audit protocol to standardize logs and validate explanation clarity pre-pilot; this reduces proxy failure but adds pre-pilot work.",
+      "objection": "Need to confirm data input scope and audit capacity before finalizing schema and cadence.",
+      "idea": "Define evidence schema & audit protocol",
+      "vote": "Define evidence schema & audit protocol",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "Propose finalizing KPI Thresholds with Audit Sampling as operational baseline: <5% override, >80% clarity (post-pilot), weekly 10% audit. Feasible, low-latency, aligns with guardrails. Requires pre-pilot clarity validation.",
+      "objection": "",
+      "idea": "KPI Thresholds with Audit Sampling",
+      "vote": "kpi_thresholds_with_audit_sampling",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "available": true,
+      "confidence": 0,
+      "answer_summary": "Let's operationalize audit sampling. I propose a tiered approach: 10% of *rejected* candid\n...\ns for spot-check clarity. This prioritizes learning from errors while managing audit load.",
+      "error": "",
+      "parse_source": "json",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "Audit Cadence & Evidence Plan",
+      "winning_score": 104,
+      "agreement_status": "accepted",
+      "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631819.4819775
+    },
+    {
+      "turn": 8,
+      "speaker": "Human",
+      "action": "voted",
+      "idea_id": "kpi_thresholds_with_audit_sampling",
+      "idea_title": "KPI Thresholds with Audit Sampling",
+      "vote": "reject",
+      "note": "",
+      "timestamp": 1781631819.5250013
+    },
+    {
+      "turn": 9,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Find a better alternative to rejected idea: KPI Thresholds with Audit Sampling",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 9,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "spoke",
+      "meeting_move": "support",
+      "stance": "positive",
+      "model": "openai/gpt-oss-20b",
+      "confidence": 55,
+      "content_summary": "I support the tiered Audit Sampling Rate idea: 10% of rejections for full",
+      "objection": "",
+      "idea": "Audit Sampling Rate",
+      "vote": "audit_sampling_rate",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 9,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "google/gemma-3-27b-it",
+      "confidence": 7,
+      "content_summary": "Let's operationalize audit sampling. I propose a tiered approach: 10% of *rejected* candidates for full review, 5% of *approved* candidates for spot-check clarity. This prioritizes learning from errors while managing audit load.",
+      "objection": "",
+      "idea": "Tiered Audit Sampling",
+      "vote": "audit_sampling_rate",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 9,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "mixed",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "Propose adaptive, tiered audit sampling with dynamic thresholds to balance learning, safety, and audit capacity.",
+      "objection": "",
+      "idea": "Adaptive Audit Sampling with Dynamic Thresholds",
+      "vote": "Adaptive Audit Sampling with Dynamic Thresholds",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 9,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "listened_silent",
+      "available": true,
+      "confidence": 0,
+      "answer_summary": "Propose tiered audit sampling: 10% of rejected candidates, 5% of approved, with pre-pilot clarity validation. Balances rigor and feasibility.",
+      "error": "",
+      "parse_source": "json",
+      "timestamp": 1781631874.8787029
+    },
+    {
+      "turn": 9,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "Audit Sampling Rate",
+      "winning_score": 159,
+      "agreement_status": "accepted",
+      "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631874.8837845
+    },
+    {
+      "turn": 10,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 10,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "Proposing to finalize tiered audit sampling with pre-pilot clarity validation as the concrete decision. This aligns with builder feasibility and product safety goals.",
+      "objection": "",
+      "idea": "Tiered Audit Sampling with Pre-Pilot Clarity Validation",
+      "vote": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 10,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "google/gemma-3-27b-it",
+      "confidence": 0,
+      "content_summary": "Let's define an SLA for human review of AI rejections. A 24-hour response time, prioritizing candidates with diversity attributes, would build trust and ensure fairness.",
+      "objection": "",
+      "idea": "Rejection Override SLA",
+      "vote": "Rejection Override SLA",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 10,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "Propose tiered audit sampling (10% rejections, 5% spot-checks) with pre-pilot clarity validation to convert the highest-value objection into a concrete, measurable decision.",
+      "objection": "",
+      "idea": "Adopt tiered audit sampling with pre-pilot clarity validation",
+      "vote": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 10,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Could not parse model output: ",
+      "parse_source": "error",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 10,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "winning_score": 95,
+      "agreement_status": "accepted",
+      "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631921.0865762
+    },
+    {
+      "turn": 11,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631967.9497914
+    },
+    {
+      "turn": 11,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "spoke",
+      "meeting_move": "support",
+      "stance": "positive",
+      "model": "google/gemma-3-27b-it",
+      "confidence": 85,
+      "content_summary": "I support defining a 24-hour SLA for human review of AI rejections, prioritizing diverse candidates. This directly addresses user trust and provides a crucial safety net.",
+      "objection": "",
+      "idea": "Rejection Override SLA",
+      "vote": "Rejection Override SLA",
+      "timestamp": 1781631967.9497914
+    },
+    {
+      "turn": 11,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "Propose 24-hour SLA for human review of AI rejections, prioritizing candidates with diversity attributes to ensure fairness and trust. Aligns with guardrails and audit plan.",
+      "objection": "",
+      "idea": "Rejection Override SLA with Diversity Priority",
+      "vote": "rejection_override_sla",
+      "timestamp": 1781631967.9497914
+    },
+    {
+      "turn": 11,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "Propose tiered audit sampling with pre-pilot clarity validation as the concrete decision to resolve the highest-value objection.",
+      "objection": "",
+      "idea": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "vote": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "timestamp": 1781631967.9497914
+    },
+    {
+      "turn": 11,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Could not parse model output: ",
+      "parse_source": "error",
+      "timestamp": 1781631967.9497914
+    },
+    {
+      "turn": 11,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "Rejection Override SLA",
+      "winning_score": 174,
+      "agreement_status": "accepted",
+      "next_focus": "Resolve the highest-value unresolved objection and convert it into a concrete decision.",
+      "timestamp": 1781631967.9497914
+    }
+  ],
+  "agent_private_memory": {
+    "product": "\n\nRound 1: Focus on quantifiable metrics for guardrail effectiveness.\n\nRound 2: Prioritize data minimization for initial safety.\n\nRound 3: Pushing for concrete KPIs to address bias concerns.\n\nRound 4: Pushing for granular data in rejection overrides. Expect pushback on data privacy.\n\nRound 5: Focus on practical KPI implementation. Question explanation clarity threshold.\n\nRound 6: Pushing for concrete KPI thresholds to move to pilot.\n\nRound 7: Adding 'time to resolution' as a key UX metric for pilot.\n\nRound 8: Focus on concrete implementation details for the pilot.\n\nRound 9: Pushing for a practical, phased audit approach. Prioritizing rejected candidates for review seems most efficient. Need clarity definition for 'approved' candidate audits.\n\nRound 10: Focus on operationalizing the pilot with clear response times.\n\nRound 11: Prioritize SLA definition to address fairness concerns & build trust.",
+    "builder": "\n\nRound 1: Push for testable KPIs: 5% override, logs, monthly audits.\n\nRound 2: MVP must balance safety, feasibility, and value. Start narrow.\n\nRound 3: Need concrete guardrail thresholds to unblock pilot; aligns with builder’s feasibility focus.\n\nRound 4: Explain clarity metric needs proxy model; don't block MVP.\n\nRound 5: Builder Agent supports KPI suite with audit sampling, but flags explanation clarity as post-MVP.\n\nRound 6: Finalize KPIs with audit sampling; defer explanation clarity metric validation to post-MVP.\n\nRound 7: Validate explanation clarity metric before pilot; ensure audit sampling is sustainable.\n\nRound 8: Push for pre-pilot validation of explanation clarity metric to avoid proxy failure.\n\nRound 9: Proposed alternative to rejected KPI Thresholds with Audit Sampling; focuses on risk-based sampling and pre-pilot validation.\n\nRound 10: Finalize audit sampling with pre-validation to resolve remaining objection on explanation clarity and enable pilot readiness.\n\nRound 11: Propose SLA with diversity priority to resolve open human review urgency and support audit cadence.",
+    "strategy": "\n\nRound 1: No private update.\n\nRound 2: No private update.\n\nRound 3: Document threshold\n\nRound 4: Now supporting pilot guardrail thresholds and KPI definition\n\nRound 5: No private update.\n\nRound 6: No private update.\n\nRound 7: No private update.\n\nRound 8: No private update.\n\nRound 9: No private update.\n\nRound 10: No private update.\n\nRound 11: No private update.",
+    "critic": "\n\nRound 1: No private update.\n\nRound 2: Propose to enumerate input schema, safe task list, explanation templates, audit fields, and approval rules.\n\nRound 3: No private update.\n\nRound 4: Draft KPI targets and audit cadence for next round; align on owner and tooling.\n\nRound 5: Proposed KPI suite for council review and pilot readiness.\n\nRound 6: No private update.\n\nRound 7: Extend definition to include validation of audit load and measurable explanation clarity metric before pilot.\n\nRound 8: Draft evidence schema (fields, formats) and a lightweight audit protocol (sampling, metrics, human review steps) for pre-pilot review.\n\nRound 9: Use this as next step: design tiered sampling rules and threshold update cadence.\n\nRound 10: No private update.\n\nRound 11: No private update."
+  },
+  "agent_positions": {
+    "product": {
+      "base_perspective": "Product value, user trust, UX, positioning, adoption, and customer framing.",
+      "current_position": "AI Hiring Assistant with defined, measurable guardrails, limited initial data scope, detailed rejection override KPIs *plus* time-to-resolution tracking *and* a 24-hour rejection override SLA is optimal.",
+      "accepted_agreements": [
+        "Human host supported: KPI Thresholds",
+        "Human host supported: concrete_kpi_evidence_and_audit_plan"
+      ],
+      "remaining_objections": []
+    },
+    "builder": {
+      "base_perspective": "Implementation feasibility, APIs, data flow, latency, cost, and what can be built now.",
+      "current_position": "Tiered audit sampling with pre-pilot clarity validation",
+      "accepted_agreements": [
+        "Human host supported: KPI Thresholds",
+        "Human host supported: concrete_kpi_evidence_and_audit_plan"
+      ],
+      "remaining_objections": [
+        "Explanation clarity requires pre-pilot validation to avoid proxy failure."
+      ]
+    },
+    "strategy": {
+      "base_perspective": "Business strategy, market, pricing, roadmap, KPIs, and decision tradeoffs.",
+      "current_position": "Now supporting pilot guardrail thresholds and KPI definition",
+      "accepted_agreements": [
+        "Human host supported: KPI Thresholds",
+        "Human host supported: concrete_kpi_evidence_and_audit_plan"
+      ],
+      "remaining_objections": []
+    },
+    "critic": {
+      "base_perspective": "Risks, weak assumptions, bias, legal issues, safety, governance, and failure modes.",
+      "current_position": "Refining KPI thresholds and audit cadence with concrete evidence requirements and sustainability checks",
+      "accepted_agreements": [
+        "Human host supported: KPI Thresholds",
+        "Human host supported: concrete_kpi_evidence_and_audit_plan"
+      ],
+      "remaining_objections": [
+        "Bias, legal exposure, and lack of context for rejections.",
+        "Need concrete thresholds for safe tasks and explanation depth before pilot.",
+        "Need to ensure thresholds are practical and audit load is sustainable.",
+        "Need to validate audit capacity and ensure explanation clarity metric is measurable.",
+        "Need concrete thresholds for safe tasks, explanation clarity, and audit capacity validated",
+        "Need to confirm data input scope and audit capacity before finalizing schema and cadence."
+      ]
+    }
+  },
+  "last_agent_outputs": [
+    {
+      "agent_key": "product",
+      "agent_name": "Product Agent",
+      "model": "google/gemma-3-27b-it",
+      "available": true,
+      "parse_source": "json",
+      "meeting_move": "support",
+      "stance": "positive",
+      "positive_view": "Builds trust, ensures fairness, and provides a clear path for human intervention. Aligns with user trust goals.",
+      "negative_view": "May create a bottleneck if volume exceeds capacity. Requires clear prioritization rules.",
+      "proposed_idea_title": "Rejection Override SLA",
+      "proposed_idea_summary": "I support defining a 24-hour SLA for human review of AI rejections, prioritizing diverse candidates. This directly addresses user trust and provides a crucial safety net.",
+      "vote_for_idea_title": "Rejection Override SLA",
+      "agreement_with_previous": 60,
+      "should_speak": true,
+      "confidence": 85,
+      "objection": "",
+      "spoken_response": "I support defining a 24-hour SLA for human review of AI rejections, prioritizing diverse candidates. This directly addresses user trust and provides a crucial safety net.",
+      "position_update": "AI Hiring Assistant with defined, measurable guardrails, limited initial data scope, detailed rejection override KPIs *plus* time-to-resolution tracking *and* a 24-hour rejection override SLA is optimal.",
+      "private_memory_update": "Prioritize SLA definition to address fairness concerns & build trust.",
+      "error": ""
+    },
+    {
+      "agent_key": "critic",
+      "agent_name": "Critic Agent",
+      "model": "inclusionai/ling-2.6-flash",
+      "available": true,
+      "parse_source": "json",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "positive_view": "Convert the highest-value objection into a concrete decision: adopt tiered audit sampling (10% rejections, 5% spot-checks) with pre-pilot clarity validation.",
+      "negative_view": "May delay pilot start and requires upfront clarity work.",
+      "proposed_idea_title": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "proposed_idea_summary": "Propose tiered audit sampling with pre-pilot clarity validation as the concrete decision to resolve the highest-value objection.",
+      "vote_for_idea_title": "tiered_audit_sampling_with_pre_pilot_clarity_valid",
+      "agreement_with_previous": 60,
+      "should_speak": true,
+      "confidence": 0,
+      "objection": "",
+      "spoken_response": "Propose tiered audit sampling with pre-pilot clarity validation as the concrete decision to resolve the highest-value objection.",
+      "position_update": "",
+      "private_memory_update": "",
+      "error": ""
+    },
+    {
+      "agent_key": "strategy",
+      "agent_name": "Strategy Agent",
+      "model": "openai/gpt-oss-20b",
+      "available": false,
+      "parse_source": "error",
+      "meeting_move": "silent",
+      "stance": "neutral",
+      "positive_view": "",
+      "negative_view": "",
+      "proposed_idea_title": "",
+      "proposed_idea_summary": "",
+      "vote_for_idea_title": "",
+      "agreement_with_previous": 0,
+      "should_speak": false,
+      "confidence": 0,
+      "objection": "",
+      "spoken_response": "",
+      "position_update": "",
+      "private_memory_update": "",
+      "error": "Could not parse model output: "
+    },
+    {
+      "agent_key": "builder",
+      "agent_name": "Builder Agent",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "available": true,
+      "parse_source": "json",
+      "meeting_move": "propose",
+      "stance": "positive",
+      "positive_view": "24-hour SLA for rejections with diversity candidate prioritization ensures fairness and builds trust.",
+      "negative_view": "May strain human review capacity if rejection volume is high.",
+      "proposed_idea_title": "Rejection Override SLA with Diversity Priority",
+      "proposed_idea_summary": "Propose 24-hour SLA for human review of AI rejections, prioritizing candidates with diversity attributes to ensure fairness and trust. Aligns with guardrails and audit plan.",
+      "vote_for_idea_title": "rejection_override_sla",
+      "agreement_with_previous": 60,
+      "should_speak": true,
+      "confidence": 0,
+      "objection": "",
+      "spoken_response": "Propose 24-hour SLA for human review of AI rejections, prioritizing candidates with diversity attributes to ensure fairness and trust. Aligns with guardrails and audit plan.",
+      "position_update": "Tiered audit sampling with pre-pilot clarity validation",
+      "private_memory_update": "Propose SLA with diversity priority to resolve open human review urgency and support audit cadence.",
+      "error": ""
+    }
+  ]
+}

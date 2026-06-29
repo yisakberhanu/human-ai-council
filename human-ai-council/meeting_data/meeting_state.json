@@ -1,0 +1,78 @@
+{
+  "meeting_id": "77f5c5a8-1ec4-4b9a-b80b-56887e78a9a5",
+  "created_at": 1781630403.638128,
+  "global_memory": "Meeting goal: human-led multi-model AI roundtable. The human is the host. All agents listen to the same data, think from different model perspectives, and speak only when useful.\n\nTurn 1:\nHuman asked: Use this as your first strong meeting topic:  ```text Hello everyone. Today we are discussing whether AI agents can repl\n...\n 1. AI hiring manager replacement 2. AI hiring assistant 3. AI interview council 4. or something else.  Let’s begin. ```\nOpenAI OSS Agent spoke with confidence 80: From a system perspective, the key trade‑off is that an AI hiring assistant can cut costs and standardize scre\n...\ning, and interview scheduling, while a human manager retains final decision authority and contextual judgment.\nSilent notes: Qwen Agent listened silently (confidence 55): Simple confidence-based speaking rule. Gemini Agent listened silently (confidence 55): Simple confidence-based speaking rule. Nemotron Agent listened silently (confidence 55): Simple confidence-based speaking rule.",
+  "agent_memories": {
+    "qwen": "Qwen Agent private memory starts empty.\n\nTurn 1 private note (listened_silent, confidence 55): Human asked: Use this as your first strong meeting topic:  ```text Hello everyone. Today we a\n...\nhiring assistant 3. AI interview council 4. or something else.  Let’s begin. ``` | My short note: focus on simple confidence-based discussion and compact memory.",
+    "gemini": "Gemini Agent private memory starts empty.\n\nTurn 1 private note (listened_silent, confidence 55): Human asked: Use this as your first strong meeting topic:  ```text Hello everyone. Today we a\n...\nhiring assistant 3. AI interview council 4. or something else.  Let’s begin. ``` | My short note: focus on simple confidence-based discussion and compact memory.",
+    "openai": "OpenAI OSS Agent private memory starts empty.\n\nTurn 1 private note (spoke, confidence 80): Human asked for balanced view; I propose hybrid assistant model to reduce risk.",
+    "nemotron": "Nemotron Agent private memory starts empty.\n\nTurn 1 private note (listened_silent, confidence 55): Human asked: Use this as your first strong meeting topic:  ```text Hello everyone. Today we a\n...\nhiring assistant 3. AI interview council 4. or something else.  Let’s begin. ``` | My short note: focus on simple confidence-based discussion and compact memory."
+  },
+  "transcript": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Use this as your first strong meeting topic:  ```text Hello everyone. Today we are discussing whether AI agents can replace or assist a human hiring manager.  I want this meeting to be realistic. Do not just agree with me. Each agent must give both the positive side and the negative side.  The main question is:  Can an AI agent reduce hiring cost and improve hiring decisions, or is it too risky because of bias, fairness, legal responsibility, and lack of human judgment?  Product Agent: focus on product value, user trust, and how to position this idea.  Builder Agent: focus on what we can actually build first, what tools/data are needed, and what should not be automated yet.  Strategy Agent: focus on business opportunity, market, pricing, and whether this is a good startup direction.  Critic Agent: focus on objections, risks, weak assumptions, bias, legal issues, and why this idea may fail.  After one agent speaks, the others must listen and respond. If you disagree, object clearly. If you agree, add something new. Do not repeat each other.  The goal of this meeting is to decide whether the first product should be: 1. AI hiring manager replacement 2. AI hiring assistant 3. AI interview council 4. or something else.  Let’s begin. ```",
+      "timestamp": 1781630550.32715
+    },
+    {
+      "turn": 1,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "type": "agent",
+      "text": "From a system perspective, the key trade‑off is that an AI hiring assistant can cut costs and standardize screening, but it must be tightly coupled with human oversight to mitigate bias and legal exposure. The assistant should focus on pre‑screening, data‑driven candidate ranking, and interview scheduling, while a human manager retains final decision authority and contextual judgment.",
+      "confidence": 80,
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781630550.32715
+    }
+  ],
+  "event_graph": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "action": "asked",
+      "content_summary": "Use this as your first strong meeting topic:  ```text Hello everyone. Today we are discussing whether AI agents can repl\n...\n 1. AI hiring manager replacement 2. AI hiring assistant 3. AI interview council 4. or something else.  Let’s begin. ```",
+      "target_agent": "none",
+      "timestamp": 1781630550.32715
+    },
+    {
+      "turn": 1,
+      "speaker": "OpenAI OSS Agent",
+      "agent_key": "openai",
+      "action": "spoke",
+      "confidence": 80,
+      "content_summary": "From a system perspective, the key trade‑off is that an AI hiring assistant can cut costs and standardize screening, but it must b\n...\nriven candidate ranking, and interview scheduling, while a human manager retains final decision authority and contextual judgment.",
+      "model": "openai/gpt-oss-20b:free",
+      "timestamp": 1781630550.32715
+    },
+    {
+      "turn": 1,
+      "speaker": "Qwen Agent",
+      "agent_key": "qwen",
+      "action": "listened_silent",
+      "confidence": 55,
+      "content_summary": "Simple confidence-based speaking rule.",
+      "timestamp": 1781630550.32715
+    },
+    {
+      "turn": 1,
+      "speaker": "Gemini Agent",
+      "agent_key": "gemini",
+      "action": "listened_silent",
+      "confidence": 55,
+      "content_summary": "Simple confidence-based speaking rule.",
+      "timestamp": 1781630550.32715
+    },
+    {
+      "turn": 1,
+      "speaker": "Nemotron Agent",
+      "agent_key": "nemotron",
+      "action": "listened_silent",
+      "confidence": 55,
+      "content_summary": "Simple confidence-based speaking rule.",
+      "timestamp": 1781630550.32715
+    }
+  ],
+  "turn_count": 1
+}

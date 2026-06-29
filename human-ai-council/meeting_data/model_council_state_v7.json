@@ -1,0 +1,105 @@
+{
+  "meeting_id": "bbc6bec9-78c6-4bf3-8fce-90488cd221c4",
+  "created_at": 1781621206.838971,
+  "turn": 1,
+  "active_topic": "Whether an AI agent can replace or assist a human hiring manager, including cost, candidate evaluation, fairness, objections, and practical design.",
+  "user_goal": "The human wants a human-led Model Council where agents discuss, object, remember, and give short perspectives.",
+  "decisions": [],
+  "disagreements": [
+    "Turn 1 Critic Agent objected: High risk of bias, fairness issues, and accountability gaps; human oversight is essential for ethical hiring."
+  ],
+  "open_questions": [
+    "How will the hiring agent test and reduce bias/fairness risk?"
+  ],
+  "global_summary": "Model Council started. Human is the host. Agents should answer shortly, object when useful, and avoid repeating.\nTurn 1: Human asked Let's talk about how we can replace the human hiring manager with an AI agent.. Responses: Critic Agent: AI can support hiring but replacing humans entirely is too risky; oversight is essential.",
+  "agent_notes": {
+    "product": "Product Agent has no private notes yet.",
+    "builder": "Builder Agent has no private notes yet.",
+    "strategist": "Strategy Agent has no private notes yet.",
+    "critic": "Critic Agent has no private notes yet.\nTurn 1: Flag need for guardrails, auditability, and human-in-the-loop review."
+  },
+  "transcript": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Let's talk about how we can replace the human hiring manager with an AI agent.",
+      "raw_caption": "Let's talk about how we can replace the human hiring manager with an AI agent.",
+      "repair_source": "already_cleaned",
+      "timestamp": 1781621262.5975616
+    },
+    {
+      "turn": 1,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "AI can automate parts of hiring but should augment rather than replace human judgment due to bias and accountability risks.",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 8,
+      "stance": "mixed",
+      "objection": "High risk of bias, fairness issues, and accountability gaps; human oversight is essential for ethical hiring.",
+      "timestamp": 1781621262.5975616
+    }
+  ],
+  "events": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "discussion",
+      "target_agent": "",
+      "content_summary": "Let's talk about how we can replace the human hiring manager with an AI agent.",
+      "raw_caption": "Let's talk about how we can replace the human hiring manager with an AI agent.",
+      "timestamp": 1781621262.5975616
+    },
+    {
+      "turn": 1,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "model": "inclusionai/ling-2.6-flash",
+      "adjusted_score": 8,
+      "self_confidence": 0,
+      "stance": "mixed",
+      "objection": "High risk of bias, fairness issues, and accountability gaps; human oversight is essential for ethical hiring.",
+      "content_summary": "AI can automate parts of hiring but should augment rather than replace human judgment due to bias and accountability risks.",
+      "timestamp": 1781621262.5975616
+    },
+    {
+      "turn": 1,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategist",
+      "action": "listened_silent",
+      "available": false,
+      "error": "Strategy Agent returned bad JSON: {\n  \"should_speak\": true,\n  \"self_confidence\": 0.8,\n  \"s\n...\nr, but it must be paired with transparent bias checks, human oversight for final decisions",
+      "answer_summary": "",
+      "timestamp": 1781621262.5975616
+    },
+    {
+      "turn": 1,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "listened_silent",
+      "available": true,
+      "error": "",
+      "answer_summary": "AI can assist in hiring but shouldn't fully replace human managers due to bias and accountability risks.",
+      "timestamp": 1781621262.5975616
+    },
+    {
+      "turn": 1,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "available": true,
+      "error": "",
+      "answer_summary": "Full replacement is a poor framing; augmentation is more realistic and ethical.",
+      "timestamp": 1781621262.5975616
+    }
+  ],
+  "last_errors": [
+    {
+      "time": 1781621259.9603307,
+      "message": "Strategy Agent: Strategy Agent returned bad JSON: {\n  \"should_speak\": true,\n  \"self_confidence\": 0.8,\n  \"stance\": \"mixed\",\n  \"objection\": \"Without a robust bias‑mitigation and accountability framework, an AI hiring manager risks unfair outcomes.\",\n  \"response\": \"AI can streamline screening and reduce human error, but it must be paired with transparent bias checks, human oversight for final decisions"
+    }
+  ]
+}

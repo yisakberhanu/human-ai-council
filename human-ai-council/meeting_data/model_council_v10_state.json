@@ -1,0 +1,822 @@
+{
+  "meeting_id": "900bcfa5-703b-450a-aa09-cdedead4bcfd",
+  "created_at": 1781630616.0564625,
+  "round_count": 6,
+  "auto_rounds": 5,
+  "is_running": false,
+  "last_error": "",
+  "active_topic": "Use this as your first strong meeting topic:  ```text Hello everyone. Today we are discussing whether AI agents can replace or assist a huma\n...\nt product should be: 1. AI hiring manager replacement 2. AI hiring assistant 3. AI interview council 4. or something else.  Let’s begin. ```",
+  "user_goal": "The human host wants an adaptive debate with positive/negative views, objections, voting, agreement, and forward progress.",
+  "meeting_stage": "continue",
+  "next_focus": "Refine and operationalize the human-supported idea: Define mandatory guardrails for human-in-the-loop hiring assistant",
+  "current_conflict": "Which idea should win and what safeguards are required?",
+  "decisions": [
+    "Human preference recorded: AI hiring manager replacement",
+    "Human preference recorded: AI Hiring Assistant",
+    "Human preference recorded: Define mandatory guardrails for human-in-the-loop hiring assistant"
+  ],
+  "agreements": [
+    "Current leading idea: AI hiring manager replacement",
+    "Human host voted for: AI hiring manager replacement",
+    "Human host voted for: AI Hiring Assistant",
+    "Current leading idea: Define mandatory guardrails for human-in-the-loop hiring assistant",
+    "Human host voted for: Define mandatory guardrails for human-in-the-loop hiring assistant"
+  ],
+  "open_questions": [
+    "What must be true before this idea can be safely implemented?"
+  ],
+  "disagreements": [],
+  "ideas": [
+    {
+      "id": "define_mandatory_guardrails_for_human_in",
+      "title": "Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "summary": "Specify when human review is required, what explainability is needed, and measurable bias/accuracy KPIs before any deployment.",
+      "score": 0,
+      "supporting_agents": [
+        "Critic Agent"
+      ],
+      "risks": "Human-in-the-loop can negate speed gains and still inherit bias if data and explanations aren't rigorously governed."
+    }
+  ],
+  "human_votes": [
+    {
+      "timestamp": 1781630751.4761202,
+      "idea_id": "ai_hiring_manager_replacement",
+      "idea_title": "AI hiring manager replacement",
+      "vote": "prefer",
+      "note": ""
+    },
+    {
+      "timestamp": 1781630751.5010822,
+      "idea_id": "ai_hiring_assistant",
+      "idea_title": "AI Hiring Assistant",
+      "vote": "support",
+      "note": ""
+    },
+    {
+      "timestamp": 1781630824.260353,
+      "idea_id": "define_mandatory_guardrails_for_human_in",
+      "idea_title": "Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "vote": "support",
+      "note": ""
+    }
+  ],
+  "agent_positions": {
+    "product": {
+      "base_perspective": "Product value, user trust, positioning, UX, adoption, and customer framing.",
+      "current_position": "Initial position formed: favoring an AI assistant as the first product.",
+      "accepted_agreements": [
+        "Human host voted for: AI hiring manager replacement",
+        "Human host voted for: AI Hiring Assistant",
+        "Human host voted for: Define mandatory guardrails for human-in-the-loop hiring assistant"
+      ],
+      "remaining_objections": []
+    },
+    "builder": {
+      "base_perspective": "Implementation feasibility, architecture, APIs, data flow, latency, cost, and what can be built now.",
+      "current_position": "Now favoring AI hiring assistant with human-in-the-loop as the first product.",
+      "accepted_agreements": [
+        "Human host voted for: AI hiring manager replacement",
+        "Human host voted for: AI Hiring Assistant",
+        "Human host voted for: Define mandatory guardrails for human-in-the-loop hiring assistant"
+      ],
+      "remaining_objections": []
+    },
+    "strategy": {
+      "base_perspective": "Business strategy, market, pricing, roadmap, KPIs, competitive advantage, and decision tradeoffs.",
+      "current_position": "Strategy Agent has not formed a position yet.",
+      "accepted_agreements": [
+        "Human host voted for: AI hiring manager replacement",
+        "Human host voted for: AI Hiring Assistant",
+        "Human host voted for: Define mandatory guardrails for human-in-the-loop hiring assistant"
+      ],
+      "remaining_objections": []
+    },
+    "critic": {
+      "base_perspective": "Risks, weak assumptions, bias, safety, legal issues, governance, and failure modes.",
+      "current_position": "Shifted from cautious support to requiring explicit guardrails before proceeding.",
+      "accepted_agreements": [
+        "Human host voted for: AI hiring manager replacement",
+        "Human host voted for: AI Hiring Assistant",
+        "Human host voted for: Define mandatory guardrails for human-in-the-loop hiring assistant"
+      ],
+      "remaining_objections": [
+        "Bias and legal accountability: automated rejections can discriminate and expose the company to liability; lack of context understanding risks bad hires and brand damage."
+      ]
+    }
+  },
+  "agent_private_memory": {
+    "product": "Product Agent private memory is empty. Stay consistent with your base perspective.\n\nRound 1: Prioritize building features that enhance, not replace, human judgment. Focus on transparency and explainability to build trust.\n\nRound 2: No private update.\n\nRound 3: No private update.\n\nRound 4: No private update.\n\nRound 5: No private update.\n\nRound 6: No private update.",
+    "builder": "Builder Agent private memory is empty. Stay consistent with your base perspective.\n\nRound 1: Confirmed: initial automation of low-risk tasks (filtering, scheduling) is feasible and defensible. Avoid full autonomy for now.\n\nRound 2: No private update.\n\nRound 3: No private update.\n\nRound 4: No private update.\n\nRound 5: No private update.\n\nRound 6: No private update.",
+    "strategy": "Strategy Agent private memory is empty. Stay consistent with your base perspective.\n\nRound 1: No private update.\n\nRound 2: No private update.\n\nRound 3: No private update.\n\nRound 4: No private update.\n\nRound 5: No private update.\n\nRound 6: No private update.",
+    "critic": "Critic Agent private memory is empty. Stay consistent with your base perspective.\n\nRound 1: Recorded strong objections to full replacement; prioritize bias mitigation, explainability, and human oversight in any design.\n\nRound 2: No private update.\n\nRound 3: Remember to push for auditable logs and a phased rollout with legal review.\n\nRound 4: No private update.\n\nRound 5: No private update.\n\nRound 6: No private update."
+  },
+  "transcript": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Use this as your first strong meeting topic:  ```text Hello everyone. Today we are discussing whether AI agents can replace or assist a human hiring manager.  I want this meeting to be realistic. Do not just agree with me. Each agent must give both the positive side and the negative side.  The main question is:  Can an AI agent reduce hiring cost and improve hiring decisions, or is it too risky because of bias, fairness, legal responsibility, and lack of human judgment?  Product Agent: focus on product value, user trust, and how to position this idea.  Builder Agent: focus on what we can actually build first, what tools/data are needed, and what should not be automated yet.  Strategy Agent: focus on business opportunity, market, pricing, and whether this is a good startup direction.  Critic Agent: focus on objections, risks, weak assumptions, bias, legal issues, and why this idea may fail.  After one agent speaks, the others must listen and respond. If you disagree, object clearly. If you agree, add something new. Do not repeat each other.  The goal of this meeting is to decide whether the first product should be: 1. AI hiring manager replacement 2. AI hiring assistant 3. AI interview council 4. or something else.  Let’s begin. ```",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 1,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "I object to replacing human hiring managers. The risk of biased outcomes, legal exposure, and lost trust is too high without human-in-the-loop safeguards.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "speak",
+      "objection": "Bias and legal accountability: automated rejections can discriminate and expose the company to liability; lack of context understanding risks bad hires and brand damage.",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 1,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "type": "agent",
+      "text": "I propose we start with an AI hiring assistant that handles screening and scheduling—feasible now with existing NLP and calendar APIs—but requires human sign-off. This balances value, risk, and buildability.",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "move": "propose_alternative",
+      "objection": "",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 1,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "type": "agent",
+      "text": "I support starting with an AI hiring assistant. It offers strong product value by augmenting recruiters, rather than replacing them outright. This approach minimizes risk to user trust and allows us to build responsibly.",
+      "model": "google/gemma-3-27b-it",
+      "move": "support",
+      "objection": "",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 1,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council discussed the current topic and produced candidate ideas.\nWinning idea: AI hiring manager replacement (0).\nNext focus: Resolve the strongest remaining objection and make the idea more buildable.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 2,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Resolve the strongest remaining objection and make the idea more buildable.",
+      "timestamp": 1781630751.4516191
+    },
+    {
+      "turn": 2,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "type": "agent",
+      "text": "No agent could speak this round. Latest model error: Model returned non-JSON: {\n  \"meeting_move\": \"object\",\n  \"stance\": \"negative\",\n  \"positive_view\": \"An AI hiring assistant with human-in-the-loop can augment recruiters and sca\n...\nral to requiring human-in-the-loop guardrails for any hiring automation.\",\n  \"private_memory_update\": \"Push to make human-in-the-loop for rejections a",
+      "model": "local",
+      "move": "clarify",
+      "objection": "I will not fake agent responses.",
+      "timestamp": 1781630751.4516191
+    },
+    {
+      "turn": 2,
+      "speaker": "Human Vote",
+      "type": "vote",
+      "text": "PREFER — AI hiring manager replacement. ",
+      "timestamp": 1781630751.4761202
+    },
+    {
+      "turn": 2,
+      "speaker": "Human Vote",
+      "type": "vote",
+      "text": "SUPPORT — AI Hiring Assistant. ",
+      "timestamp": 1781630751.5010822
+    },
+    {
+      "turn": 3,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: AI Hiring Assistant",
+      "timestamp": 1781630789.487798
+    },
+    {
+      "turn": 3,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "type": "agent",
+      "text": "I support extending the assistant to human-in-the-loop, but we must codify guardrails: mandatory human review for rejections, explainability standards, and ongoing bias monitoring KPIs.",
+      "model": "inclusionai/ling-2.6-flash",
+      "move": "extend",
+      "objection": "",
+      "timestamp": 1781630789.487798
+    },
+    {
+      "turn": 3,
+      "speaker": "Evaluator",
+      "type": "evaluator",
+      "text": "The council discussed the current topic and produced candidate ideas.\nWinning idea: Define mandatory guardrails for human-in-the-loop hiring assistant (0).\nNext focus: Resolve the strongest remaining objection and make the idea more buildable.",
+      "model": "inclusionai/ling-2.6-flash",
+      "timestamp": 1781630789.487798
+    },
+    {
+      "turn": 4,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Resolve the strongest remaining objection and make the idea more buildable.",
+      "timestamp": 1781630824.2367404
+    },
+    {
+      "turn": 4,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "type": "agent",
+      "text": "No agent could speak this round. Latest model error: Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n  \"positive_view\": \"Codifying guardrails (human review for rejections, explainability, bias KPIs) m\n...\naudit log to prove compliance.\",\n  \"position_update\": \"Moved from cautious support to specifying concrete, testable guardrails that make the assistant",
+      "model": "local",
+      "move": "clarify",
+      "objection": "I will not fake agent responses.",
+      "timestamp": 1781630824.2367404
+    },
+    {
+      "turn": 4,
+      "speaker": "Human Vote",
+      "type": "vote",
+      "text": "SUPPORT — Define mandatory guardrails for human-in-the-loop hiring assistant. ",
+      "timestamp": 1781630824.260353
+    },
+    {
+      "turn": 5,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "timestamp": 1781630860.6749792
+    },
+    {
+      "turn": 5,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "type": "agent",
+      "text": "No agent could speak this round. Latest model error: Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n  \"positive_view\": \"Strong guardrails (human review for rejections, explainability, bias KPIs) redu\n...\ning measurable guardrails with pilot metrics and override processes.\",\n  \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override",
+      "model": "local",
+      "move": "clarify",
+      "objection": "I will not fake agent responses.",
+      "timestamp": 1781630860.6749792
+    },
+    {
+      "turn": 6,
+      "speaker": "Human",
+      "type": "human",
+      "text": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "timestamp": 1781630906.4895613
+    },
+    {
+      "turn": 6,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "type": "agent",
+      "text": "No agent could speak this round. Latest model error: Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n  \"positive_view\": \"Concrete guardrails (human review for high-risk decisions, explainability logs,\n...\ng concrete, testable guardrails with defined KPIs and audit cadence.\",\n  \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override",
+      "model": "local",
+      "move": "clarify",
+      "objection": "I will not fake agent responses.",
+      "timestamp": 1781630906.4895613
+    }
+  ],
+  "event_graph": [
+    {
+      "turn": 1,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "decision",
+      "content_summary": "Use this as your first strong meeting topic:  ```text Hello everyone. Today we are discussing whether AI agents can replace or assist a human hiring manager.  I\n...\nide whether the first product should be: 1. AI hiring manager replacement 2. AI hiring assistant 3. AI interview council 4. or something else.  Let’s begin. ```",
+      "target_agent": "",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 1,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "speak",
+      "stance": "negative",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "I object to replacing human hiring managers. The risk of biased outcomes, legal exposure, and lost trust is too high without human-in-the-loop safeguards.",
+      "objection": "Bias and legal accountability: automated rejections can discriminate and expose the company to liability; lack of context understanding risks bad hires and brand damage.",
+      "proposed_idea_title": "AI hiring manager replacement",
+      "vote_for_idea_title": "AI hiring assistant",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 1,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "spoke",
+      "meeting_move": "propose_alternative",
+      "stance": "mixed",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "confidence": 0,
+      "content_summary": "I propose we start with an AI hiring assistant that handles screening and scheduling—feasible now with existing NLP and calendar APIs—but requires human sign-off. This balances value, risk, and buildability.",
+      "objection": "",
+      "proposed_idea_title": "AI Hiring Assistant with Human-in-the-Loop",
+      "vote_for_idea_title": "AI hiring assistant",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 1,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "spoke",
+      "meeting_move": "support",
+      "stance": "mixed",
+      "model": "google/gemma-3-27b-it",
+      "confidence": 0,
+      "content_summary": "I support starting with an AI hiring assistant. It offers strong product value by augmenting recruiters, rather than replacing them outright. This approach minimizes risk to user trust and allows us to build responsibly.",
+      "objection": "",
+      "proposed_idea_title": "AI Hiring Assistant",
+      "vote_for_idea_title": "AI Hiring Assistant",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 1,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 1,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "AI hiring manager replacement",
+      "winning_score": 0,
+      "agreement_status": "unresolved",
+      "next_focus": "Resolve the strongest remaining objection and make the idea more buildable.",
+      "timestamp": 1781630654.857449
+    },
+    {
+      "turn": 2,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Resolve the strongest remaining objection and make the idea more buildable.",
+      "target_agent": "",
+      "timestamp": 1781630751.4516191
+    },
+    {
+      "turn": 2,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "action": "spoke",
+      "meeting_move": "clarify",
+      "stance": "neutral",
+      "model": "local",
+      "confidence": 100,
+      "content_summary": "No agent could speak this round. Latest model error: Model returned non-JSON: {\n  \"meeting_move\": \"object\",\n  \"stance\": \"negative\"\n...\nan-in-the-loop guardrails for any hiring automation.\",\n  \"private_memory_update\": \"Push to make human-in-the-loop for rejections a",
+      "objection": "I will not fake agent responses.",
+      "proposed_idea_title": null,
+      "vote_for_idea_title": null,
+      "timestamp": 1781630751.4516191
+    },
+    {
+      "turn": 2,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"object\",\n  \"stance\": \"negative\",\n  \"positive_view\": \"An AI hirin\n...\nrails for any hiring automation.\",\n  \"private_memory_update\": \"Push to make human-in-the-loop for rejections a",
+      "timestamp": 1781630751.4516191
+    },
+    {
+      "turn": 2,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"positive\",\n  \"positive_view\": \"The AI hiri\n...\nposition_update\": \"Now fully aligned with the AI hiring assistant with human-in-the-loop as the first product,",
+      "timestamp": 1781630751.4516191
+    },
+    {
+      "turn": 2,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ```json\n{\n  \"meeting_move\": \"clarify\",\n  \"stance\": \"mixed\",\n  \"positive_view\": \"A hum\n...\n'sign off' isn't enough; we need specific protocols for identifying and addressing potential AI bias and clear",
+      "timestamp": 1781630751.4516191
+    },
+    {
+      "turn": 2,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ",
+      "timestamp": 1781630751.4516191
+    },
+    {
+      "turn": 2,
+      "speaker": "Human",
+      "action": "voted",
+      "idea_id": "ai_hiring_manager_replacement",
+      "idea_title": "AI hiring manager replacement",
+      "vote": "prefer",
+      "note": "",
+      "timestamp": 1781630751.4761202
+    },
+    {
+      "turn": 2,
+      "speaker": "Human",
+      "action": "voted",
+      "idea_id": "ai_hiring_assistant",
+      "idea_title": "AI Hiring Assistant",
+      "vote": "support",
+      "note": "",
+      "timestamp": 1781630751.5010822
+    },
+    {
+      "turn": 3,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: AI Hiring Assistant",
+      "target_agent": "",
+      "timestamp": 1781630789.487798
+    },
+    {
+      "turn": 3,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "spoke",
+      "meeting_move": "extend",
+      "stance": "mixed",
+      "model": "inclusionai/ling-2.6-flash",
+      "confidence": 0,
+      "content_summary": "I support extending the assistant to human-in-the-loop, but we must codify guardrails: mandatory human review for rejections, explainability standards, and ongoing bias monitoring KPIs.",
+      "objection": "",
+      "proposed_idea_title": "Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "vote_for_idea_title": "Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "timestamp": 1781630789.487798
+    },
+    {
+      "turn": 3,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"positive\",\n  \"positive_view\": \"The AI Hiri\n...\nautomated scheduling.\",\n  \"position_update\": \"Now fully aligned with the AI hiring assistant with human-in-the",
+      "timestamp": 1781630789.487798
+    },
+    {
+      "turn": 3,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ```json\n{\n  \"meeting_move\": \"extend\",\n  \"stance\": \"positive\",\n  \"positive_view\": \"The\n...\nness and consistency.\",\n  \"position_update\": \"Reinforced support for the AI assistant model, shifting focus to",
+      "timestamp": 1781630789.487798
+    },
+    {
+      "turn": 3,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ",
+      "timestamp": 1781630789.487798
+    },
+    {
+      "turn": 3,
+      "speaker": "Evaluator",
+      "action": "evaluated",
+      "model": "inclusionai/ling-2.6-flash",
+      "winning_idea_title": "Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "winning_score": 0,
+      "agreement_status": "unresolved",
+      "next_focus": "Resolve the strongest remaining objection and make the idea more buildable.",
+      "timestamp": 1781630789.487798
+    },
+    {
+      "turn": 4,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Resolve the strongest remaining objection and make the idea more buildable.",
+      "target_agent": "",
+      "timestamp": 1781630824.2367404
+    },
+    {
+      "turn": 4,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "action": "spoke",
+      "meeting_move": "clarify",
+      "stance": "neutral",
+      "model": "local",
+      "confidence": 100,
+      "content_summary": "No agent could speak this round. Latest model error: Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n \n...\nompliance.\",\n  \"position_update\": \"Moved from cautious support to specifying concrete, testable guardrails that make the assistant",
+      "objection": "I will not fake agent responses.",
+      "proposed_idea_title": null,
+      "vote_for_idea_title": null,
+      "timestamp": 1781630824.2367404
+    },
+    {
+      "turn": 4,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n  \"positive_view\": \"Codifying guar\n...\ntion_update\": \"Moved from cautious support to specifying concrete, testable guardrails that make the assistant",
+      "timestamp": 1781630824.2367404
+    },
+    {
+      "turn": 4,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ",
+      "timestamp": 1781630824.2367404
+    },
+    {
+      "turn": 4,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"positive\",\n  \"positive_view\": \"Codifying g\n...\nnabling immediate implementation with safety and compliance built in.\",\n  \"private_memory_update\": \"Guardrails",
+      "timestamp": 1781630824.2367404
+    },
+    {
+      "turn": 4,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ```json\n{\n  \"meeting_move\": \"extend\",\n  \"stance\": \"positive\",\n  \"positive_view\": \"Def\n...\nizing the need for practical, phased guardrail implementation.\",\n  \"private_memory_update\": \"Track progress on",
+      "timestamp": 1781630824.2367404
+    },
+    {
+      "turn": 4,
+      "speaker": "Human",
+      "action": "voted",
+      "idea_id": "define_mandatory_guardrails_for_human_in",
+      "idea_title": "Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "vote": "support",
+      "note": "",
+      "timestamp": 1781630824.260353
+    },
+    {
+      "turn": 5,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "target_agent": "",
+      "timestamp": 1781630860.6749792
+    },
+    {
+      "turn": 5,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "action": "spoke",
+      "meeting_move": "clarify",
+      "stance": "neutral",
+      "model": "local",
+      "confidence": 100,
+      "content_summary": "No agent could speak this round. Latest model error: Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n \n...\nrails with pilot metrics and override processes.\",\n  \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override",
+      "objection": "I will not fake agent responses.",
+      "proposed_idea_title": null,
+      "vote_for_idea_title": null,
+      "timestamp": 1781630860.6749792
+    },
+    {
+      "turn": 5,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n  \"positive_view\": \"Strong guardra\n...\nrics and override processes.\",\n  \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override",
+      "timestamp": 1781630860.6749792
+    },
+    {
+      "turn": 5,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ",
+      "timestamp": 1781630860.6749792
+    },
+    {
+      "turn": 5,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"propose_alternative\",\n  \"stance\": \"positive\",\n  \"positive_view\":\n...\ne, phased version of the guardrails idea that balances safety and speed.\",\n  \"private_memory_update\": \"Builder",
+      "timestamp": 1781630860.6749792
+    },
+    {
+      "turn": 5,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ```json\n{\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n  \"positive_view\": \"Mandat\n...\nility.\",\n  \"position_update\": \"Refined position: Support guardrails with a focus on targeted, risk-based human",
+      "timestamp": 1781630860.6749792
+    },
+    {
+      "turn": 6,
+      "speaker": "Human",
+      "action": "asked",
+      "mode": "continue",
+      "content_summary": "Continue the council discussion. Current next focus: Refine and operationalize the human-supported idea: Define mandatory guardrails for human-in-the-loop hiring assistant",
+      "target_agent": "",
+      "timestamp": 1781630906.4895613
+    },
+    {
+      "turn": 6,
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "action": "spoke",
+      "meeting_move": "clarify",
+      "stance": "neutral",
+      "model": "local",
+      "confidence": 100,
+      "content_summary": "No agent could speak this round. Latest model error: Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n \n...\n guardrails with defined KPIs and audit cadence.\",\n  \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override",
+      "objection": "I will not fake agent responses.",
+      "proposed_idea_title": null,
+      "vote_for_idea_title": null,
+      "timestamp": 1781630906.4895613
+    },
+    {
+      "turn": 6,
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n  \"positive_view\": \"Concrete guard\n...\nined KPIs and audit cadence.\",\n  \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override",
+      "timestamp": 1781630906.4895613
+    },
+    {
+      "turn": 6,
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"propose_alternative\",\n  \"stance\": \"positive\",\n  \"positive_view\":\n...\nfted from general support to advocating a concrete, executable rollout plan that aligns with current guardrail",
+      "timestamp": 1781630906.4895613
+    },
+    {
+      "turn": 6,
+      "speaker": "Strategy Agent",
+      "agent_key": "strategy",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ",
+      "timestamp": 1781630906.4895613
+    },
+    {
+      "turn": 6,
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "action": "listened_silent",
+      "available": false,
+      "confidence": 0,
+      "answer_summary": "",
+      "error": "Model returned non-JSON: ```json\n{\n  \"meeting_move\": \"extend\",\n  \"stance\": \"positive\",\n  \"positive_view\": \"Def\n...\npproach to guardrail implementation.\",\n  \"private_memory_update\": \"Track progress on defining initial fairness",
+      "timestamp": 1781630906.4895613
+    }
+  ],
+  "last_agent_outputs": [
+    {
+      "agent_key": "critic",
+      "agent_name": "Critic Agent",
+      "model": "inclusionai/ling-2.6-flash",
+      "available": false,
+      "meeting_move": "stay_silent",
+      "stance": "neutral",
+      "positive_view": "",
+      "negative_view": "",
+      "proposed_idea_title": "",
+      "proposed_idea_summary": "",
+      "vote_for_idea_title": "",
+      "agreement_with_previous": 0,
+      "should_speak": false,
+      "confidence": 0,
+      "responding_to": "",
+      "objection": "",
+      "spoken_response": "",
+      "position_update": "",
+      "private_memory_update": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"extend\",\n  \"stance\": \"mixed\",\n  \"positive_view\": \"Concrete guardrails (human review for high-risk decisions, explainability logs,\n...\ng concrete, testable guardrails with defined KPIs and audit cadence.\",\n  \"private_memory_update\": \"Push for specific KPIs (e.g., 5% rejection override"
+    },
+    {
+      "agent_key": "builder",
+      "agent_name": "Builder Agent",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "available": false,
+      "meeting_move": "stay_silent",
+      "stance": "neutral",
+      "positive_view": "",
+      "negative_view": "",
+      "proposed_idea_title": "",
+      "proposed_idea_summary": "",
+      "vote_for_idea_title": "",
+      "agreement_with_previous": 0,
+      "should_speak": false,
+      "confidence": 0,
+      "responding_to": "",
+      "objection": "",
+      "spoken_response": "",
+      "position_update": "",
+      "private_memory_update": "",
+      "error": "Model returned non-JSON: {\n  \"meeting_move\": \"propose_alternative\",\n  \"stance\": \"positive\",\n  \"positive_view\": \"Mandatory guardrails are essential to ensure accountability, fa\n...\n deployment.\",\n  \"position_update\": \"Shifted from general support to advocating a concrete, executable rollout plan that aligns with current guardrail"
+    },
+    {
+      "agent_key": "strategy",
+      "agent_name": "Strategy Agent",
+      "model": "openai/gpt-oss-20b",
+      "available": false,
+      "meeting_move": "stay_silent",
+      "stance": "neutral",
+      "positive_view": "",
+      "negative_view": "",
+      "proposed_idea_title": "",
+      "proposed_idea_summary": "",
+      "vote_for_idea_title": "",
+      "agreement_with_previous": 0,
+      "should_speak": false,
+      "confidence": 0,
+      "responding_to": "",
+      "objection": "",
+      "spoken_response": "",
+      "position_update": "",
+      "private_memory_update": "",
+      "error": "Model returned non-JSON: "
+    },
+    {
+      "agent_key": "product",
+      "agent_name": "Product Agent",
+      "model": "google/gemma-3-27b-it",
+      "available": false,
+      "meeting_move": "stay_silent",
+      "stance": "neutral",
+      "positive_view": "",
+      "negative_view": "",
+      "proposed_idea_title": "",
+      "proposed_idea_summary": "",
+      "vote_for_idea_title": "",
+      "agreement_with_previous": 0,
+      "should_speak": false,
+      "confidence": 0,
+      "responding_to": "",
+      "objection": "",
+      "spoken_response": "",
+      "position_update": "",
+      "private_memory_update": "",
+      "error": "Model returned non-JSON: ```json\n{\n  \"meeting_move\": \"extend\",\n  \"stance\": \"positive\",\n  \"positive_view\": \"Defining mandatory guardrails proactively builds user trust and miti\n...\nl position, advocating for a pragmatic approach to guardrail implementation.\",\n  \"private_memory_update\": \"Track progress on defining initial fairness"
+    }
+  ],
+  "last_evaluation": {}
+}

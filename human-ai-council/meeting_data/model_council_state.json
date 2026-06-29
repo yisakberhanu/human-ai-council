@@ -1,0 +1,124 @@
+{
+  "meeting_id": "dd5a65e3-5cc5-4aa5-8d80-c277bcdff43c",
+  "created_at": 1781618149.3665106,
+  "turn_count": 1,
+  "meeting_title": "Model Council",
+  "active_topic": "AI agent that can replace or assist a hiring manager, including product value, implementation, bias, fairness, legal risk, and human oversight.",
+  "user_goal": "The human wants short, useful perspectives, objections, and decisions from multiple model council members.",
+  "decisions": [],
+  "disagreements": [],
+  "open_questions": [],
+  "global_memory": "MEETING TITLE: Model Council.\nSYSTEM: Human is the host. All council members use the same OpenRouter Gemma model in live mode, but each has a different perspective. They must remember the active topic, object when useful, and answer recall questions from memory.\n\nTurn 1 | Human: hello everyone let me tell you today we're going to discuss on this thing we have to decide this today  to you know what the  candidate idea is replac\n...\nour human and you know have a problem you know it's costing a lot of money to hire someone so we have to replace your perspective I want to understand | Spoken: Memory System: I need one more detail: do you want practical implementation, product framing, strategy, or criticism?",
+  "agent_memories": {
+    "builder": "Builder Agent private memory starts empty.\nTurn 1: Human asked: hello everyone let me tell you today we're going to discuss on this thing we have to decid\n...\na lot of money to hire someone so we have to replace your perspective I want to understand | My stance: clarify | My note: Agent unavailable: OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 10\n...\n: free-models-per-day. Add 5 credits to unlock 1000 free model requests per day\"}]}},\"user_id\":\"user_3BJ17BUj0mQQDN3BLVmYsNvK9ur\"}",
+    "product": "Product Agent private memory starts empty.\nTurn 1: Human asked: hello everyone let me tell you today we're going to discuss on this thing we have to decid\n...\na lot of money to hire someone so we have to replace your perspective I want to understand | My stance: clarify | My note: Agent unavailable: OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 10\n...\n: free-models-per-day. Add 5 credits to unlock 1000 free model requests per day\"}]}},\"user_id\":\"user_3BJ17BUj0mQQDN3BLVmYsNvK9ur\"}",
+    "strategist": "Strategy Agent private memory starts empty.\nTurn 1: Human asked: hello everyone let me tell you today we're going to discuss on this thing we have to decid\n...\na lot of money to hire someone so we have to replace your perspective I want to understand | My stance: clarify | My note: Agent unavailable: OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 10\n...\n: free-models-per-day. Add 5 credits to unlock 1000 free model requests per day\"}]}},\"user_id\":\"user_3BJ17BUj0mQQDN3BLVmYsNvK9ur\"}",
+    "critic": "Critic Agent private memory starts empty.\nTurn 1: Human asked: hello everyone let me tell you today we're going to discuss on this thing we have to decid\n...\na lot of money to hire someone so we have to replace your perspective I want to understand | My stance: clarify | My note: Agent unavailable: OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 10\n...\n: free-models-per-day. Add 5 credits to unlock 1000 free model requests per day\"}]}},\"user_id\":\"user_3BJ17BUj0mQQDN3BLVmYsNvK9ur\"}"
+  },
+  "transcript": [
+    {
+      "turn": 1,
+      "type": "human",
+      "speaker": "Human",
+      "text": "hello everyone let me tell you today we're going to discuss on this thing we have to decide this today  to you know what the  candidate idea is replacing our women  and hiring manager  with a agent so  our human and you know have a problem you know it's costing a lot of money to hire someone so we have to replace your perspective I want to understand",
+      "raw_caption": "hello everyone let me tell you today we're going to discuss on this thing we have to decide this today  to you know what the  candidate idea is replacing our women  and hiring manager  with a agent so  our human and you know have a problem you know it's costing a lot of money to hire someone so we have to replace your perspective I want to understand",
+      "repair_source": "browser_caption",
+      "timestamp": 1781618231.9970589
+    },
+    {
+      "turn": 1,
+      "type": "agent",
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "text": "I need one more detail: do you want practical implementation, product framing, strategy, or criticism?",
+      "model": "local",
+      "provider": "local",
+      "self_confidence": 100,
+      "adjusted_score": 100,
+      "stance": "clarify",
+      "objection": "",
+      "timestamp": 1781618231.9970589
+    }
+  ],
+  "event_graph": [
+    {
+      "turn": 1,
+      "action": "asked",
+      "speaker": "Human",
+      "mode": "everyone",
+      "target_agent": "",
+      "content_summary": "hello everyone let me tell you today we're going to discuss on this thing we have to decide this today  to you know what the  candidate idea is replac\n...\nour human and you know have a problem you know it's costing a lot of money to hire someone so we have to replace your perspective I want to understand",
+      "raw_caption": "hello everyone let me tell you today we're going to discuss on this thing we have to decide this today  to you know what the  candidate idea is replac\n...\nour human and you know have a problem you know it's costing a lot of money to hire someone so we have to replace your perspective I want to understand",
+      "timestamp": 1781618231.9970589
+    },
+    {
+      "turn": 1,
+      "action": "spoke",
+      "speaker": "Memory System",
+      "agent_key": "system",
+      "content_summary": "I need one more detail: do you want practical implementation, product framing, strategy, or criticism?",
+      "stance": "clarify",
+      "objection": "",
+      "self_confidence": 100,
+      "adjusted_score": 100,
+      "model": "local",
+      "timestamp": 1781618231.9970589
+    },
+    {
+      "turn": 1,
+      "action": "listened_silent",
+      "speaker": "Product Agent",
+      "agent_key": "product",
+      "answer_summary": "",
+      "self_confidence": 0,
+      "available": false,
+      "error": "OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 1\n...\ny. Add 5 credits to unlock 1000 free model requests per day\"}]}},\"user_id\":\"user_3BJ17BUj0mQQDN3BLVmYsNvK9ur\"}",
+      "timestamp": 1781618231.9970589
+    },
+    {
+      "turn": 1,
+      "action": "listened_silent",
+      "speaker": "Critic Agent",
+      "agent_key": "critic",
+      "answer_summary": "",
+      "self_confidence": 0,
+      "available": false,
+      "error": "OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 1\n...\ny. Add 5 credits to unlock 1000 free model requests per day\"}]}},\"user_id\":\"user_3BJ17BUj0mQQDN3BLVmYsNvK9ur\"}",
+      "timestamp": 1781618231.9970589
+    },
+    {
+      "turn": 1,
+      "action": "listened_silent",
+      "speaker": "Builder Agent",
+      "agent_key": "builder",
+      "answer_summary": "",
+      "self_confidence": 0,
+      "available": false,
+      "error": "OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 1\n...\ny. Add 5 credits to unlock 1000 free model requests per day\"}]}},\"user_id\":\"user_3BJ17BUj0mQQDN3BLVmYsNvK9ur\"}",
+      "timestamp": 1781618231.9970589
+    },
+    {
+      "turn": 1,
+      "action": "listened_silent",
+      "speaker": "Strategy Agent",
+      "agent_key": "strategist",
+      "answer_summary": "",
+      "self_confidence": 0,
+      "available": false,
+      "error": "OpenRouter error 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 1\n...\ny. Add 5 credits to unlock 1000 free model requests per day\"}]}},\"user_id\":\"user_3BJ17BUj0mQQDN3BLVmYsNvK9ur\"}",
+      "timestamp": 1781618231.9970589
+    }
+  ],
+  "speaker_counts": {
+    "builder": 0,
+    "product": 0,
+    "strategist": 0,
+    "critic": 0
+  },
+  "last_agent_responses": {
+    "builder": "",
+    "product": "",
+    "strategist": "",
+    "critic": ""
+  }
+}

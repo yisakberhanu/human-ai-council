@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Model Council V13 — Real Meeting Round</title>
+  <style>
+    :root{
+      --bg:#070b16; --panel:#10192e; --panel2:#16213d; --line:#283857; --text:#edf4ff; --muted:#95a8ca;
+      --green:#4ade80; --blue:#60a5fa; --purple:#c084fc; --red:#fb7185; --yellow:#fbbf24; --cyan:#22d3ee;
+      --shadow:0 20px 60px rgba(0,0,0,.36);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at top left,#1d2b58 0,#0b1020 42%,#050813 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;height:100vh;overflow:hidden}
+    button,textarea,input{font:inherit}
+    .app{height:100vh;display:grid;grid-template-columns:1fr 430px;gap:14px;padding:14px}
+    .left{display:flex;flex-direction:column;gap:14px;min-width:0;min-height:0}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;background:rgba(16,25,46,.92);border:1px solid var(--line);border-radius:22px;padding:12px 14px;box-shadow:var(--shadow)}
+    .brand{display:flex;gap:12px;align-items:center;min-width:0}
+    .logo{width:46px;height:46px;border-radius:16px;background:linear-gradient(135deg,var(--cyan),var(--green));display:grid;place-items:center;color:#03101a;font-weight:950}
+    h1{font-size:17px;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .sub{font-size:12px;color:var(--muted);margin-top:3px}
+    .top-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+    .btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:13px;padding:9px 12px;cursor:pointer;transition:.15s;white-space:nowrap}
+    .btn:hover:not(:disabled){transform:translateY(-1px);border-color:#46618d}
+    .btn:disabled{opacity:.45;cursor:not-allowed}
+    .btn.primary{background:linear-gradient(135deg,var(--cyan),var(--green));border:0;color:#03101a;font-weight:900}
+    .btn.stop{background:#3b0b16;border-color:#7f1d1d;color:#fecdd3}
+    .btn.warn{background:#33240a;border-color:#854d0e;color:#fde68a}
+    .btn.good{background:#052e1a;border-color:#15803d;color:#bbf7d0}
+    .btn.bad{background:#3b0b16;border-color:#be123c;color:#fecdd3}
+    .btn.small{font-size:12px;padding:6px 8px;border-radius:9px}
+
+    .meeting{flex:1;display:grid;grid-template-rows:auto 1fr;gap:14px;min-height:0}
+    .tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;min-height:145px}
+    .tile{position:relative;overflow:hidden;border:1px solid var(--line);background:linear-gradient(180deg,rgba(22,33,61,.92),rgba(11,18,35,.96));border-radius:22px;padding:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;box-shadow:var(--shadow);transition:.22s}
+    .tile.product{--agent:var(--green)} .tile.builder{--agent:var(--blue)} .tile.strategy{--agent:var(--purple)} .tile.critic{--agent:var(--red)} .tile.human{--agent:var(--cyan)}
+    .tile.speaking{border-color:var(--agent);box-shadow:0 0 0 3px color-mix(in srgb,var(--agent) 28%, transparent),0 0 55px color-mix(in srgb,var(--agent) 28%, transparent);transform:translateY(-2px)}
+    .tile.speaking:before{content:"";position:absolute;inset:-3px;background:radial-gradient(circle at 50% 40%,color-mix(in srgb,var(--agent) 28%, transparent),transparent 55%);animation:pulse 900ms infinite alternate;pointer-events:none}
+    .tile.listened{border-color:#64748b;opacity:.82}
+    .tile.voted{border-color:var(--agent);background:linear-gradient(180deg,color-mix(in srgb,var(--agent) 13%, #16213d),rgba(11,18,35,.96))}
+    @keyframes pulse{from{opacity:.35}to{opacity:1}}
+    .avatar{z-index:1;width:58px;height:58px;border-radius:20px;background:#1f2a44;border:1px solid #344563;display:grid;place-items:center;font-size:27px;font-weight:950;margin-bottom:8px}
+    .tile.speaking .avatar{background:var(--agent);color:#03101a}
+    .tile h3{z-index:1;margin:0;font-size:14px;text-align:center;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .model{z-index:1;color:var(--muted);font-size:10px;text-align:center;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:3px}
+    .status{position:absolute;top:10px;right:10px;z-index:2;font-size:10px;color:#dbeafe;border:1px solid var(--line);background:#081122;border-radius:999px;padding:3px 7px;text-transform:uppercase;letter-spacing:.05em}
+    .tile.speaking .status{background:var(--agent);color:#03101a;border:0;font-weight:900}
+    .vote-badge{position:absolute;bottom:9px;left:9px;right:9px;z-index:2;font-size:10px;color:#eaf2ff;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+    .stage{display:grid;grid-template-columns:1fr 330px;gap:14px;min-height:0}
+    .speaker-card{background:rgba(16,25,46,.92);border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:var(--shadow);min-width:0;display:flex;flex-direction:column;gap:14px;overflow:hidden}
+    .speaker-card.product{border-color:color-mix(in srgb,var(--green) 52%, var(--line))}.speaker-card.builder{border-color:color-mix(in srgb,var(--blue) 52%, var(--line))}.speaker-card.strategy{border-color:color-mix(in srgb,var(--purple) 52%, var(--line))}.speaker-card.critic{border-color:color-mix(in srgb,var(--red) 52%, var(--line))}
+    .stage-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+    .stage-title h2{margin:0;font-size:20px}
+    .stage-title p{margin:5px 0 0;color:var(--muted);font-size:13px;line-height:1.35}
+    .round-pill{border:1px solid var(--line);background:#0b1223;border-radius:999px;padding:6px 10px;font-size:12px;color:#cfe0ff;white-space:nowrap}
+    .idea-box{flex:1;overflow:auto;border:1px solid rgba(40,56,87,.85);background:#091020;border-radius:18px;padding:15px;font-size:18px;line-height:1.55;white-space:pre-wrap}
+    .idea-title{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px}
+    .speaker-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .vote-panel{border:1px solid var(--line);background:#0b1223;border-radius:18px;padding:12px}
+    .vote-panel h4{margin:0 0 8px;font-size:13px}
+    .vote-panel p{margin:0 0 10px;color:var(--muted);font-size:12px;line-height:1.35}
+    .progress{display:flex;gap:6px;flex-wrap:wrap}.dot{width:32px;height:8px;border-radius:999px;background:#334155}.dot.done{background:var(--green)}.dot.current{background:var(--yellow)}
+
+    .side-stage{display:flex;flex-direction:column;gap:10px;min-width:0;overflow:auto}
+    .mini-card{background:rgba(16,25,46,.86);border:1px solid var(--line);border-radius:18px;padding:12px}
+    .mini-card h3{font-size:13px;margin:0 0 8px}.mini-card p{font-size:12px;color:#dbeafe;line-height:1.42;margin:5px 0}.mini{font-size:11px;color:var(--muted)}
+    .idea-mini{border-top:1px solid rgba(40,56,87,.6);padding-top:8px;margin-top:8px}.idea-mini.active{color:#fff}.idea-mini .name{font-weight:800;font-size:12px}.idea-mini .title{font-size:12px;color:#dbeafe}.idea-mini .v{font-size:11px;color:var(--muted)}
+
+    .composer{background:rgba(16,25,46,.92);border:1px solid var(--line);border-radius:22px;padding:12px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+    textarea{width:100%;min-height:80px;max-height:145px;resize:vertical;border:1px solid var(--line);background:#081122;color:var(--text);border-radius:15px;padding:11px;line-height:1.45;outline:none}
+    textarea:focus{border-color:#3b82f6}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.caption{font-size:12px;color:var(--muted);min-height:18px}
+
+    .right{background:rgba(16,25,46,.92);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;overflow:hidden}
+    .tabs{display:flex;border-bottom:1px solid var(--line);overflow-x:auto}.tab{padding:12px 10px;border:0;background:transparent;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;font-size:13px;white-space:nowrap}.tab.active{color:var(--text);border-bottom-color:var(--cyan)}
+    .pane{display:none;flex:1;overflow:auto;padding:12px}.pane.active{display:block}
+    .board{background:rgba(8,17,34,.8);border:1px solid var(--line);border-radius:17px;padding:12px;margin-bottom:10px}.board h3{font-size:14px;margin:0 0 8px}.board p,.board li{font-size:12px;color:#dbeafe;line-height:1.42}.board ul{margin:6px 0 0;padding-left:18px}
+    .score-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;border-top:1px solid rgba(40,56,87,.58);padding-top:8px;margin-top:8px}.score-num{font-size:20px;font-weight:950;color:var(--green)}
+    .bar{height:8px;background:#24324d;border-radius:999px;overflow:hidden;margin-top:5px}.bar span{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--green));border-radius:999px}
+    .msg{background:#0b1223;border:1px solid var(--line);border-radius:15px;padding:10px;margin-bottom:9px}.msg.agent{border-left:3px solid var(--blue)}.msg.human{border-left:3px solid var(--green)}.msg.system{border-left:3px solid var(--yellow)}.msg-head{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:11px;margin-bottom:5px}.msg-text{white-space:pre-wrap;font-size:12px;line-height:1.42}
+    .decision-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .footer-note{padding:9px 12px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+
+    @media(max-width:1200px){body{overflow:auto}.app{height:auto;min-height:100vh;grid-template-columns:1fr}.right{height:60vh}.stage{grid-template-columns:1fr}.tiles{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <section class="left">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">V13</div>
+        <div>
+          <h1>Model Council — Real Meeting Round</h1>
+          <div class="sub">Listen to each agent → vote → finish round → accept decision → next round</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="btn" id="homeBtn">Home / Reset</button>
+        <button class="btn warn" id="muteBtn">🔊 Voice On</button>
+        <button class="btn stop" id="stopSpeechBtn">Stop Speech</button>
+      </div>
+    </div>
+
+    <div class="meeting">
+      <div class="tiles" id="tiles"></div>
+      <div class="stage">
+        <div class="speaker-card" id="speakerCard">
+          <div class="stage-head">
+            <div class="stage-title">
+              <h2 id="speakerName">Start a round</h2>
+              <p id="speakerMeta">Paste a topic, then each agent will speak one by one. You must vote after each idea.</p>
+            </div>
+            <div class="round-pill" id="roundPill">No round</div>
+          </div>
+          <div class="progress" id="progressDots"></div>
+          <div class="idea-box" id="ideaBox"><span class="idea-title">Waiting</span>\nStart the first round from the composer below.</div>
+          <div class="vote-panel" id="votePanel">
+            <h4>Human vote for this idea</h4>
+            <p>Human vote is 30% total. After you vote on all ideas, agents vote for other agents’ ideas and the round decision becomes ready.</p>
+            <div class="speaker-actions">
+              <button class="btn good" id="supportBtn">Support</button>
+              <button class="btn primary" id="preferBtn">Prefer / Strong Vote</button>
+              <button class="btn bad" id="rejectBtn">Reject</button>
+              <button class="btn" id="replayBtn">Replay Voice</button>
+              <button class="btn primary" id="nextSpeakerBtn">Next Agent</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side-stage">
+          <div class="mini-card">
+            <h3>Round Control</h3>
+            <p id="roundStatus">No active round.</p>
+            <div class="speaker-actions">
+              <button class="btn primary" id="finishRoundBtn">Finish Round + Agent Votes</button>
+              <button class="btn good" id="acceptBtn">Accept Winning Decision</button>
+              <button class="btn bad" id="rejectDecisionBtn">Reject / Reopen</button>
+              <button class="btn primary" id="nextRoundBtn">Next Round</button>
+            </div>
+          </div>
+          <div class="mini-card">
+            <h3>Agent Ideas This Round</h3>
+            <div id="ideaList"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="composer">
+      <textarea id="message" placeholder="Write the meeting topic here..."></textarea>
+      <div class="row">
+        <button class="btn" id="micBtn">🎙️ Mic</button>
+        <button class="btn" id="fixBtn">Fix Text</button>
+        <button class="btn primary" id="startRoundBtn">Start Round</button>
+      </div>
+      <div class="caption" id="caption">Ready.</div>
+    </div>
+  </section>
+
+  <aside class="right">
+    <div class="tabs">
+      <button class="tab active" data-tab="decision">Decision Board</button>
+      <button class="tab" data-tab="memory">Memory</button>
+      <button class="tab" data-tab="skills">Agent Skills</button>
+      <button class="tab" data-tab="transcript">Transcript</button>
+    </div>
+    <div class="pane active" id="decisionPane"></div>
+    <div class="pane" id="memoryPane"></div>
+    <div class="pane" id="skillsPane"></div>
+    <div class="pane" id="transcriptPane"></div>
+    <div class="footer-note">V13: evaluator is non-voting. Final round result = Human 30% + Agents 70%.</div>
+  </aside>
+</div>
+
+<script>
+const AGENTS = {
+  human:{name:'Human Host', emoji:'👤', model:'30% vote weight', color:'human'},
+  product:{name:'Product Agent', emoji:'🟢', color:'product'},
+  builder:{name:'Builder Agent', emoji:'🔵', color:'builder'},
+  strategy:{name:'Strategy Agent', emoji:'🟣', color:'strategy'},
+  critic:{name:'Critic Agent', emoji:'🔴', color:'critic'},
+};
+const ORDER = ['human','product','builder','strategy','critic'];
+let state = null;
+let currentIndex = 0;
+let speakingAgent = null;
+let muted = false;
+let recognizing = false;
+let recognizer = null;
+
+const $ = (id)=>document.getElementById(id);
+function esc(s){return String(s ?? '').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+function cap(s,n=120){s=String(s??'');return s.length>n?s.slice(0,n-3)+'...':s;}
+function currentRound(){return state?.current_round || null;}
+function ideas(){return currentRound()?.ideas || []}
+function ideaAt(i){return ideas()[i] || null}
+function allHumanVoted(){return ideas().length && ideas().every(x=>['support','prefer','reject'].includes(x.human_vote));}
+function setCaption(t){$('caption').textContent=t;}
+
+async function api(path, body){
+  const res = await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body||{})});
+  const data = await res.json().catch(()=>({error:'Invalid JSON response'}));
+  if(!res.ok){throw new Error(data.error || res.statusText);}
+  return data;
+}
+async function load(){
+  const res = await fetch('/api/state');
+  state = await res.json();
+  render();
+}
+
+function render(){
+  renderTiles();
+  renderStage();
+  renderDecision();
+  renderMemory();
+  renderSkills();
+  renderTranscript();
+}
+
+function renderTiles(){
+  const r=currentRound();
+  const html=ORDER.map(k=>{
+    const a=AGENTS[k];
+    let model = a.model || state?.agent_states?.[k]?.model || '';
+    let status='listening';
+    let vote='';
+    if(k==='human'){
+      status='host'; vote=`Human weight ${state?.weights?.human ?? 30}%`;
+    } else if(r){
+      const idx=ideas().findIndex(x=>x.agent_key===k);
+      const id=ideas()[idx];
+      if(speakingAgent===k) status='speaking';
+      else if(id?.human_vote) status='voted';
+      else if(idx < currentIndex) status='listened';
+      else if(idx === currentIndex) status='ready';
+      else status='waiting';
+      vote=id?.human_vote ? `Human: ${id.human_vote.toUpperCase()}` : '';
+    }
+    const cls=`tile ${a.color} ${speakingAgent===k?'speaking':''} ${status==='voted'?'voted':''} ${status==='listened'?'listened':''}`;
+    return `<div class="${cls}" id="tile-${k}">
+      <div class="status">${esc(status)}</div>
+      <div class="avatar">${a.emoji}</div>
+      <h3>${esc(a.name)}</h3>
+      <div class="model">${esc(model)}</div>
+      <div class="vote-badge">${esc(vote)}</div>
+    </div>`;
+  }).join('');
+  $('tiles').innerHTML=html;
+}
+
+function renderStage(){
+  const r=currentRound();
+  const isRound = !!r;
+  if(!isRound){
+    $('speakerName').textContent='Start a round';
+    $('speakerMeta').textContent='Paste a topic, then each agent will speak one by one. You must vote after each idea.';
+    $('roundPill').textContent='No round';
+    $('ideaBox').innerHTML='<span class="idea-title">Waiting</span>\nStart the first round from the composer below.';
+    $('speakerCard').className='speaker-card';
+    $('roundStatus').textContent='No active round.';
+    $('ideaList').innerHTML='<p class="mini">No ideas yet.</p>';
+    setButtons(); renderProgress(); return;
+  }
+  const list=ideas();
+  if(currentIndex >= list.length) currentIndex = Math.max(0, list.length-1);
+  const idea = ideaAt(currentIndex);
+  $('roundPill').textContent=`Round ${r.round_number} · ${r.phase}`;
+  $('roundStatus').textContent = statusText(r);
+  if(idea){
+    $('speakerCard').className=`speaker-card ${idea.agent_key}`;
+    $('speakerName').textContent=`${idea.agent_name}: ${idea.idea_title}`;
+    $('speakerMeta').textContent=`Model: ${idea.model || ''} · Vote after listening before next agent.`;
+    $('ideaBox').innerHTML=`<div class="idea-title">${esc(idea.stance || 'idea')} · ${esc(idea.human_vote ? 'Human voted: '+idea.human_vote.toUpperCase() : 'Human vote needed')}</div>${esc(idea.idea)}`;
+  } else {
+    $('speakerCard').className='speaker-card';
+    $('speakerName').textContent='All agents listened';
+    $('speakerMeta').textContent='Finish the round so agents can vote and decision board can calculate winner.';
+    $('ideaBox').innerHTML='<span class="idea-title">Round listening complete</span>\nClick Finish Round + Agent Votes.';
+  }
+  renderProgress(); renderIdeaList(); setButtons();
+}
+function statusText(r){
+  if(r.phase==='listening') return `Listen and vote on each idea. ${ideas().filter(x=>x.human_vote).length}/${ideas().length} human votes complete.`;
+  if(r.phase==='agent_voting') return 'Agents are voting on other agents’ ideas.';
+  if(r.phase==='decision_ready') return 'Decision ready. Review vote board, then accept or reject before next round.';
+  if(r.phase==='accepted') return 'Decision accepted. You can start the next round from the accepted focus.';
+  if(r.phase==='rejected') return 'Decision rejected. Start a new round to reopen debate.';
+  return r.phase || 'Round active';
+}
+function renderProgress(){
+  const list=ideas();
+  $('progressDots').innerHTML=list.map((x,i)=>`<div class="dot ${x.human_vote?'done':i===currentIndex?'current':''}"></div>`).join('');
+}
+function renderIdeaList(){
+  const list=ideas();
+  $('ideaList').innerHTML = list.map((x,i)=>`<div class="idea-mini ${i===currentIndex?'active':''}">
+    <div class="name">${esc(x.agent_name)}</div>
+    <div class="title">${esc(x.idea_title)}</div>
+    <div class="v">Human vote: ${esc(x.human_vote || 'waiting')}</div>
+  </div>`).join('') || '<p class="mini">No ideas yet.</p>';
+}
+function setButtons(){
+  const r=currentRound(); const idea=ideaAt(currentIndex);
+  const listening = r?.phase==='listening';
+  $('supportBtn').disabled = !listening || !idea;
+  $('preferBtn').disabled = !listening || !idea;
+  $('rejectBtn').disabled = !listening || !idea;
+  $('replayBtn').disabled = !idea;
+  $('nextSpeakerBtn').disabled = !listening || !idea || !idea.human_vote;
+  $('finishRoundBtn').disabled = !r || !allHumanVoted() || r.phase!=='listening';
+  $('acceptBtn').disabled = !r || r.phase!=='decision_ready';
+  $('rejectDecisionBtn').disabled = !r || r.phase!=='decision_ready';
+  $('nextRoundBtn').disabled = !r || !['accepted','rejected','closed'].includes(r.phase);
+}
+
+function renderDecision(){
+  const r=currentRound();
+  if(!r){$('decisionPane').innerHTML='<div class="board"><h3>Decision Board</h3><p>No active round.</p></div>';return;}
+  const scores=r.scores||{};
+  const ideasHtml=(r.ideas||[]).map(i=>{
+    const sc=scores[i.idea_id]||{total:0,human:0,agents:0,agent_voters:[]};
+    const isWin=r.winner && r.winner.idea_id===i.idea_id;
+    return `<div class="board">
+      <h3>${isWin?'🏆 ':''}${esc(i.idea_title)} <span class="mini">— ${esc(i.agent_name)}</span></h3>
+      <p>${esc(i.idea)}</p>
+      <div class="score-row"><div><b>Total</b><div class="bar"><span style="width:${Math.min(100,sc.total||0)}%"></span></div></div><div class="score-num">${esc(sc.total||0)}%</div></div>
+      <p>Human: ${esc(sc.human||0)}% (${esc(i.human_vote||'no vote')}) · Agents: ${esc(sc.agents||0)}%</p>
+      <p class="mini">Agent voters: ${(sc.agent_voters||[]).map(v=>esc(v.voter_name)).join(', ') || 'waiting'}</p>
+    </div>`;
+  }).join('');
+  const winner=r.winner?`<div class="board"><h3>Winning Idea</h3><p><b>${esc(r.winner.idea_title)}</b> from ${esc(r.winner.agent_name)}</p><p>${esc(r.winner.idea)}</p><p class="mini">Accept or reject this decision before next round.</p><div class="decision-actions"><button class="btn good" onclick="acceptDecision()">Accept Winning Decision</button><button class="btn bad" onclick="rejectDecision()">Reject / Reopen</button></div></div>`:'';
+  const judge=r.judge_note?`<div class="board"><h3>Non-voting Judge Note</h3><p>${esc(r.judge_note)}</p></div>`:'';
+  $('decisionPane').innerHTML=`<div class="board"><h3>Voting Weights</h3><p>Human = ${state.weights.human}% · Agents total = ${state.weights.agents_total}% · Each agent = ${state.weights.per_agent}%</p></div>${winner}${judge}${ideasHtml}`;
+}
+function renderMemory(){
+  const decisions=(state.decisions||[]).map(d=>`<li>${esc(d.decision)}</li>`).join('')||'<li>No accepted decisions yet.</li>';
+  const agreements=(state.agreements||[]).map(a=>`<li>${esc(a)}</li>`).join('')||'<li>No agreements yet.</li>';
+  $('memoryPane').innerHTML=`<div class="board"><h3>Active Topic</h3><p>${esc(state.active_topic||'No topic')}</p></div><div class="board"><h3>Next Focus</h3><p>${esc(state.next_focus||'No focus')}</p></div><div class="board"><h3>Accepted Decisions</h3><ul>${decisions}</ul></div><div class="board"><h3>Agreements</h3><ul>${agreements}</ul></div>`;
+}
+function renderSkills(){
+  const html=Object.entries(state.agent_states||{}).map(([k,s])=>`<div class="board"><h3>${esc(s.name)}</h3><p><b>Base:</b> ${esc(s.base)}</p><p><b>Current:</b> ${esc(s.current)}</p><p class="mini">Speak count: ${esc(s.speak_count)} · Updated: ${esc(s.updated_at)}</p><ul>${(s.skill_rules||[]).map(r=>`<li>${esc(r)}</li>`).join('')}</ul></div>`).join('');
+  $('skillsPane').innerHTML=html||'<div class="board"><p>No skill state.</p></div>';
+}
+function renderTranscript(){
+  const html=(state.transcript||[]).slice().reverse().map(m=>`<div class="msg ${esc(m.role)}"><div class="msg-head"><b>${esc(m.name)}</b><span>${esc(m.kind||m.role)}</span></div><div class="msg-text">${esc(m.text)}</div></div>`).join('');
+  $('transcriptPane').innerHTML=html||'<div class="board"><p>No transcript yet.</p></div>';
+}
+
+async function startRound(){
+  const topic=$('message').value.trim();
+  if(!topic){setCaption('Write a topic first.');return;}
+  setCaption('Generating one idea per agent...');
+  try{state=await api('/api/start_round',{topic}); currentIndex=0; render(); setCaption('Round started. Listen to the first agent and vote.'); autoSpeakCurrent();}
+  catch(e){setCaption(e.message);}
+}
+async function vote(v){
+  const idea=ideaAt(currentIndex); if(!idea) return;
+  setCaption(`Saving human vote: ${v}...`);
+  try{state=await api('/api/human_vote',{idea_id:idea.idea_id,vote:v}); render(); setCaption('Vote saved. Now go to next agent.');}
+  catch(e){setCaption(e.message);}
+}
+function nextSpeaker(){
+  const idea=ideaAt(currentIndex); if(idea && !idea.human_vote){setCaption('Please vote before next agent.');return;}
+  if(currentIndex < ideas().length-1){currentIndex++; render(); autoSpeakCurrent();}
+  else{setCaption('All agents listened. Click Finish Round + Agent Votes.'); currentIndex=ideas().length; render();}
+}
+async function finishRound(){
+  setCaption('Agents are voting on other agents’ ideas...');
+  try{state=await api('/api/finish_round',{}); render(); setCaption('Round finished. Review decision board and accept or reject.');}
+  catch(e){setCaption(e.message); if(e.state){state=e.state; render();}}
+}
+async function acceptDecision(){
+  setCaption('Accepting decision and updating positions...');
+  try{state=await api('/api/accept_decision',{}); render(); setCaption('Decision accepted. You can start the next round.');}
+  catch(e){setCaption(e.message);}
+}
+async function rejectDecision(){
+  const reason=prompt('Why reject/reopen this decision?','Need one more debate round before accepting.');
+  if(reason===null) return;
+  setCaption('Rejecting decision...');
+  try{state=await api('/api/reject_decision',{reason}); render(); setCaption('Decision rejected. Start next round to reopen.');}
+  catch(e){setCaption(e.message);}
+}
+async function nextRound(){
+  setCaption('Starting next round from accepted focus...');
+  try{state=await api('/api/next_round',{}); currentIndex=0; render(); setCaption('Next round started. Listen and vote agent-by-agent.'); autoSpeakCurrent();}
+  catch(e){setCaption(e.message);}
+}
+async function reset(){
+  if(!confirm('Reset the whole meeting?')) return;
+  state=await api('/api/reset',{}); currentIndex=0; render(); setCaption('Meeting reset.');
+}
+async function fixText(){
+  const text=$('message').value.trim(); if(!text) return;
+  setCaption('Fixing text...');
+  try{const data=await api('/api/repair_text',{text}); $('message').value=data.repaired||text; setCaption('Text fixed.');}
+  catch(e){setCaption(e.message);}
+}
+
+function speak(text, agentKey){
+  if(muted || !('speechSynthesis' in window) || !text){return;}
+  window.speechSynthesis.cancel(); speakingAgent=agentKey; renderTiles();
+  const u=new SpeechSynthesisUtterance(text);
+  u.rate=0.95; u.pitch=1; u.volume=1;
+  u.onend=()=>{speakingAgent=null; renderTiles();};
+  u.onerror=()=>{speakingAgent=null; renderTiles();};
+  window.speechSynthesis.speak(u);
+}
+function autoSpeakCurrent(){const i=ideaAt(currentIndex); if(i) speak(`${i.agent_name}. ${i.idea_title}. ${i.idea}`, i.agent_key);}
+function stopSpeech(){if('speechSynthesis' in window) window.speechSynthesis.cancel(); speakingAgent=null; renderTiles();}
+
+function setupMic(){
+  const SR=window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR){$('micBtn').disabled=true; $('micBtn').textContent='Mic unavailable'; return;}
+  recognizer=new SR(); recognizer.lang='en-US'; recognizer.continuous=true; recognizer.interimResults=true;
+  recognizer.onresult=(e)=>{let final='';let interim='';for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal) final+=t+' '; else interim+=t;} if(final){$('message').value=($('message').value+' '+final).trim();} setCaption(interim?`Listening: ${interim}`:'Listening...');};
+  recognizer.onend=()=>{recognizing=false;$('micBtn').textContent='🎙️ Mic';};
+}
+function toggleMic(){if(!recognizer)return;if(recognizing){recognizer.stop();recognizing=false;$('micBtn').textContent='🎙️ Mic';}else{recognizer.start();recognizing=true;$('micBtn').textContent='⏹️ Stop Mic';}}
+
+// Events
+$('startRoundBtn').onclick=startRound;
+$('supportBtn').onclick=()=>vote('support');
+$('preferBtn').onclick=()=>vote('prefer');
+$('rejectBtn').onclick=()=>vote('reject');
+$('nextSpeakerBtn').onclick=nextSpeaker;
+$('finishRoundBtn').onclick=finishRound;
+$('acceptBtn').onclick=acceptDecision;
+$('rejectDecisionBtn').onclick=rejectDecision;
+$('nextRoundBtn').onclick=nextRound;
+$('homeBtn').onclick=reset;
+$('fixBtn').onclick=fixText;
+$('replayBtn').onclick=autoSpeakCurrent;
+$('stopSpeechBtn').onclick=stopSpeech;
+$('muteBtn').onclick=()=>{muted=!muted; $('muteBtn').textContent=muted?'🔇 Voice Off':'🔊 Voice On'; if(muted) stopSpeech();};
+$('micBtn').onclick=toggleMic;
+for(const b of document.querySelectorAll('.tab')){b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.pane').forEach(x=>x.classList.remove('active'));b.classList.add('active');$(b.dataset.tab+'Pane').classList.add('active');};}
+window.acceptDecision=acceptDecision; window.rejectDecision=rejectDecision;
+
+setupMic(); load();
+</script>
+</body>
+</html>

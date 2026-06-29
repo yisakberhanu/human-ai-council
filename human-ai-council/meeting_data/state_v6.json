@@ -1,0 +1,29 @@
+{
+  "meeting_id": "973acc8f-d855-4cf2-bac5-3def4d02875f",
+  "created_at": 1781620526.1672149,
+  "turn_count": 0,
+  "memory": {
+    "title": "Model Council discussion",
+    "active_topic": "No active topic yet.",
+    "user_goal": "The human host wants multiple model perspectives with objections, criticisms, and short decisions.",
+    "decisions": [],
+    "disagreements": [],
+    "open_questions": [],
+    "agent_positions": {
+      "product": "Product Agent tracks framing, UX, and trust.",
+      "builder": "Builder Agent tracks implementation, tools, APIs, and data flow.",
+      "strategist": "Strategy Agent tracks structure, decisions, and business logic.",
+      "critic": "Critic Agent tracks risks, objections, legality, fairness, and weak assumptions."
+    },
+    "concise_timeline": []
+  },
+  "agent_private_memory": {
+    "product": "Product Agent private memory starts empty.",
+    "builder": "Builder Agent private memory starts empty.",
+    "strategist": "Strategy Agent private memory starts empty.",
+    "critic": "Critic Agent private memory starts empty."
+  },
+  "transcript": [],
+  "event_graph": [],
+  "last_error": "AssemblyAI transcript error 400: {\"error\": \"The speech_model parameter is deprecated. Use speech_models: [\\\"universal-3-pro\\\", \\\"universal-2\\\"] for the best accuracy, performance, and language coverage. See documentation: https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model\"}"
+}
